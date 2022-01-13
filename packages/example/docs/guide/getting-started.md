@@ -89,4 +89,4 @@ npm run docs:dev
 
 VuePress will start a hot-reloading development server at [http://localhost:8080](http://localhost:8080).
 
-By now, you should have a basic but functional VuePress documentation site powered by `vuepress-theme-vt`.
+By now, you should have a basic VuePress documentation site powered by VT.
