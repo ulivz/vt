@@ -1,10 +1,8 @@
 ---
 newHome: true
+heroImage: /logo.svg
 ---
 
-::: slot tagline
-<span>
-    A <b>Elegant</b> VuePress Theme
-</span>
+::: slot heroText
+A <b>Elegant</b> VuePress Theme
 :::
-

@@ -1,13 +1,20 @@
 <template>
   <div class="home">
     <section id="hero">
-      <!-- tagline -->
-      <h1 class="tagline" v-if="data.tagline">
+      <img
+        class="hero-img"
+        v-if="data.heroImage"
+        :src="$withBase(data.heroImage)"
+        :alt="data.heroAlt || 'hero'"
+      />
+
+      <!-- heroText -->
+      <h1 class="heroText" v-if="data.heroText">
         <span>
-          {{ data.tagline || $description || "Welcome to your VuePress site" }}
+          {{ data.heroText || $description || "Welcome to your VuePress site" }}
         </span>
       </h1>
-      <Content v-else slot-key="tagline" class="tagline" />
+      <Content v-else slot-key="heroText" class="heroText" />
 
       <p class="description">
         PIA, Abbrev of "Progressive Instant Application", pronounced
@@ -117,7 +124,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="stylus">
 .theme-default-content:not(.custom) > .home {
   margin-top: 0;
 }
@@ -138,22 +145,32 @@ section {
   margin-block-end: 0.5em;
 }
 
-.tagline {
+.hero-img {
+  max-width: 50px;
+  max-height: 280px;
+}
+
+.heroText {
   font-size: 62px;
   line-height: 1.25;
   font-weight: 900;
   letter-spacing: -1.5px;
+  display: inline-block;
+
+  p {
+    margin: 0;
+  }
+
+  b {
+    font-weight: bolder;
+    color: var(--c-brand);
+    background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
-.tagline b {
-  font-weight: bolder;
-  color: var(--c-brand);
-  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.dark .tagline {
+.dark .heroText {
   color: var(--vp-c-green-light);
   background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
   -webkit-background-clip: text;
@@ -276,10 +293,11 @@ section {
 }
 
 @media (max-width: 768px) {
-  .tagline {
+  .heroText {
     font-size: 48px;
     letter-spacing: -0.5px;
   }
+
   .description {
     font-size: 18px;
     margin-bottom: 48px;
@@ -294,27 +312,32 @@ section {
   #hero {
     padding: 64px 10px;
   }
-  .tagline {
+
+  .heroText {
     font-size: 38px;
   }
+
   .description {
     font-size: 16px;
     margin: 18px 0 30px;
   }
+
   #special-sponsor img {
     display: block;
     margin: 2px auto 1px;
   }
+
   #highlights h3 {
     margin-bottom: 0.6em;
   }
+
   #highlights .vt-box {
     padding: 20px 36px;
   }
 }
 
 @media (max-width: 370px) {
-  .tagline {
+  .heroText {
     font-size: 36px;
   }
 }
