@@ -59,8 +59,8 @@
       <span>Tiktok</span>
     </section>
 
-    <section id="highlights" class="vt-box-container">
-      <div class="vt-box" v-for="feature in features" :key="feature.title">
+    <section v-if="data.features" id="highlights" class="vt-box-container">
+      <div class="vt-box" v-for="feature in data.features" :key="feature.title">
         <h3>{{ feature.title }}</h3>
         <p>{{ feature.details }}</p>
       </div>
@@ -85,43 +85,6 @@ export default {
   computed: {
     data() {
       return this.$page.frontmatter;
-    },
-    features() {
-      return this.$localePath === "/en/"
-        ? [
-            {
-              title: "Progressive",
-              details:
-                'Starting from Web standards, combined with "client capabilities" to improve the performance of Web applications Progressively.',
-            },
-            {
-              title: "Performant",
-              details:
-                "Jump out of Webview to optimize Web performance, such as Prefetch, PreRender, NSR, etc.",
-            },
-            {
-              title: "Business-friendly",
-              details:
-                "Faced with the performance and user experience issues of business concerns in various scenarios, various capabilities are available out of the box.",
-            },
-          ]
-        : [
-            {
-              title: "Progressive",
-              details:
-                "以 Web 标准为起点，结合 “端能力” 渐进式地提升 Web 应用的性能。",
-            },
-            {
-              title: "Performant",
-              details:
-                "跳出 Webview 来优化 Web 性能，如 Prefetch、PreRender、NSR 等。",
-            },
-            {
-              title: "Business-friendly",
-              details:
-                "直面各类场景中业务关注的性能和用户体验问题，各类能力开箱即用。",
-            },
-          ];
     },
   },
 };
