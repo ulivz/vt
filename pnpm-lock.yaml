@@ -34,17 +34,17 @@ importers:
       '@vuepress/plugin-medium-zoom': 1.9.5
       less: 4.1.2
       vuepress: 1.9.5
-      vuepress-theme-vuejs: link:../vuepress-theme-vuejs
+      vuepress-theme-vuejs: link:../..
 
   packages/example:
     specifiers:
       vuepress: 1.9.5
-      vuepress-theme-vuejs: 0.0.0
+      vuepress-theme-vt: 0.0.0
     devDependencies:
       vuepress: 1.9.5
-      vuepress-theme-vuejs: link:../vuepress-theme-vuejs
+      vuepress-theme-vt: link:../vuepress-theme-vt
 
-  packages/vuepress-theme-vuejs:
+  packages/vuepress-theme-vt:
     specifiers:
       '@vuepress/plugin-active-header-links': 1.9.5
       '@vuepress/plugin-nprogress': 1.9.5
