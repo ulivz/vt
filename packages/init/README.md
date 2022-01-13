@@ -1,3 +1,3 @@
-# @piajs/init
+# create-vt
 
-> Scaffolding a PIA.
+> Scaffolding a VuePress website with [vuepress-theme-vt](https://github.com/ulivz/vuepress-theme-vt).
