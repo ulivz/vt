@@ -4,6 +4,7 @@ newHome: true
 
 ::: slot tagline
 <span>
-    The <b>Progressive</b> JavaScript Framework
+    A <b>Elegant</b> VuePress Theme
 </span>
 :::
+
