@@ -22,6 +22,14 @@ importers:
 
   packages/docs:
     specifiers:
+      vuepress: 1.9.5
+      vuepress-theme-vt: 0.0.0
+    devDependencies:
+      vuepress: 1.9.5
+      vuepress-theme-vt: link:../vuepress-theme-vt
+
+  packages/i18n:
+    specifiers:
       '@types/node': 16.10.9
       '@vuepress/plugin-back-to-top': 1.9.5
       '@vuepress/plugin-medium-zoom': 1.9.5
@@ -35,14 +43,6 @@ importers:
       less: 4.1.2
       vuepress: 1.9.5
       vuepress-theme-vuejs: link:../..
-
-  packages/example:
-    specifiers:
-      vuepress: 1.9.5
-      vuepress-theme-vt: 0.0.0
-    devDependencies:
-      vuepress: 1.9.5
-      vuepress-theme-vt: link:../vuepress-theme-vt
 
   packages/init:
     specifiers:
