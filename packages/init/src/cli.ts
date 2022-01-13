@@ -5,10 +5,7 @@ import * as path from "path";
 import { SAO } from "sao";
 import chalk from "chalk";
 
-const generator = path.resolve(
-  __dirname,
-  "../node_modules/@piajs/generator-app"
-);
+const generator = path.resolve(__dirname, "../generator");
 
 export async function bootstrapCli() {
   const cwd = process.cwd();
@@ -18,7 +15,6 @@ export async function bootstrapCli() {
     outDir,
     generator,
     update: true,
-    registry: "https://bnpm.byted.org",
   });
 
   sao.logger.tip("output directory", chalk.gray(outDir));

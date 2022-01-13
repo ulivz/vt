@@ -10,15 +10,16 @@
   "bin": "bin/cli.js",
   "scripts": {
     "dev": "npm run build -- -w",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json && node scripts/build.js",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@nomadland/cp": "0.1.1",
+    "@nomadland/cp": "0.1.2",
     "chalk": "^4.1.0",
     "sao": "^2.0.0-beta.1"
   },
   "devDependencies": {
+    "fs-extra": "9.1.0",
     "typescript": "4.4.4"
   },
   "author": "ULIVZ <chl814@foxmail.com>",
