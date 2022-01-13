@@ -6,11 +6,11 @@ async function build() {
   const generatorDir = path.join(__dirname, "../generator");
   const actions = [
     {
-      source: path.join(__dirname, "../../example"),
+      source: path.join(__dirname, "../../docs"),
       target: path.join(generatorDir, "default"),
     },
     {
-      source: path.join(__dirname, "../../docs"),
+      source: path.join(__dirname, "../../i18n"),
       target: path.join(generatorDir, "i18n"),
     },
   ];
