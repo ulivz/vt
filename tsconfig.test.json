@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "noEmit": true,
+    "noImplicitThis": false,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "skipLibCheck": true
+  },
+  "include": [
+    "packages/*/__tests__",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

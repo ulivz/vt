@@ -1,18 +1,31 @@
 {
-  "extends": "../../tsconfig.build.json",
   "compilerOptions": {
-    "skipLibCheck": true,
-    "lib": [
-      "es5",
-      "es6"
-    ],
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": true,
+    "incremental": true,
+    "noUncheckedIndexedAccess": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "allowJs": false,
+    "alwaysStrict": true,
     "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": false,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
     "outDir": "./lib",
-    "typeRoots": [
-      "../../node_modules/@types"
-    ]
+    "sourceMap": true,
+    "target": "ES2019",
+    "typeRoots": ["node_modules/@types", "types"],
+    "declaration": true,
+    "declarationMap": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "lib": ["es5", "es6"]
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src", "types", "*.d.ts"],
+  "exclude": ["node_modules"]
 }

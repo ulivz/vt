@@ -10,9 +10,7 @@
     "lint": "cross-env NODE_ENV=production eslint --max-warnings=0 --ext .js,.vue,.md ."
   },
   "dependencies": {
-    "flexsearch": "^0.6.32",
-    "html-to-text": "^7.0.0",
-    "lodash": "^4.17.19"
+   
   },
   "peerDependencies": {
     "vuepress": "^1.4.0"

@@ -1,54 +1,25 @@
 {
+  "private": "true",
   "name": "vuepress-theme-vuejs",
-  "version": "0.2.24",
-  "description": "A VuePress implementation for VitePress theme @vue/theme, fully compatible with VuePress default theme.",
-  "keywords": [
-    "documentation",
-    "generator",
-    "vue",
-    "vuepress"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "types": "lib/index.d.ts",
   "scripts": {
-    "dev": "npm run build -- -w",
-    "build": "tsc -p tsconfig.build.json",
-    "prepublishOnly": "npm run build"
+    "bootstrap": "pnpm install --prefer-offline --registry https://registry.npmmirror.com",
+    "build": "lerna run build",
+    "test": "jest",
+    "cov": "jest --coverage",
+    "dev:docs": "lerna exec --scope docs -- npm run dev",
+    "build:docs": "lerna exec --scope docs -- npm run dev",
+    "dev:example": "lerna exec --scope example -- npm run dev",
+    "build:example": "lerna exec --scope example -- npm run dev",
+    "dev": "mono d",
+    "release": "mono r --changelog --ignore-scripts --build"
   },
   "devDependencies": {
-    "typescript": "4.5.3"
-  },
-  "dependencies": {
-    "@vuepress/plugin-active-header-links": "1.9.5",
-    "@vuepress/plugin-nprogress": "1.9.5",
-    "@vuepress/plugin-search": "1.9.5",
-    "@vuepress/shared-utils": "1.9.5",
-    "@vuepress/types": "1.9.5",
-    "cheap-watch": "1.0.3",
-    "docsearch.js": "^2.5.2",
-    "lodash": "^4.17.15",
-    "markdown-it-attrs": "^2",
-    "node-google-translate-skidz": "1.1.2",
-    "prism-themes": "1.9.0",
-    "stylus": "^0.54.8",
-    "stylus-loader": "^3.0.2",
-    "vue": "^2",
-    "vue-router": "^3.4.5",
-    "vuepress-plugin-container": "^2.0.2",
-    "vuepress-plugin-smooth-scroll": "^0.0.3"
-  },
-  "files": [
-    "components",
-    "global-components",
-    "layouts",
-    "plugins",
-    "styles",
-    "lib",
-    "!lib/*.tsbuildinfo",
-    "!lib/*.map",
-    "types",
-    "*.d.ts"
-  ],
-  "author": "ULIVZ <chl814@foxmail.com>"
+    "@nomadland/mono": "0.3.3",
+    "lerna": "^4.0.0",
+    "@types/jest": "27.0.0",
+    "jest": "27.3.1",
+    "jest-cli": "27.3.1",
+    "jest-serializer-path": "0.1.15",
+    "ts-jest": "27.0.7"
+  }
 }

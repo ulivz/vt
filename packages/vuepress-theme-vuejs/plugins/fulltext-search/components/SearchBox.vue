@@ -134,18 +134,29 @@ export default {
     bindIndexPages() {
       const options = OPTIONS || {};
       const locales = this.$site.locales;
-      const nonMatchedLocales = Object.keys(locales).filter(
-        (key) => key !== this.$localePath
-      );
-      const indexPages = this.$site.pages.filter((page) =>
-        nonMatchedLocales.every((locale) => {
-          if (locale === "/") {
-            return page.path.startsWith(this.$localePath);
-          }
-          return !page.path.startsWith(locale);
-        })
-      );
-      flexsearchSvc.buildIndex(indexPages, options);
+
+      /**
+       * Handle search scope for i18n.
+       */
+      if (typeof locales === "object") {
+        const nonMatchedLocales = Object.keys(locales).filter(
+          (key) => key !== this.$localePath
+        );
+        const indexPages = this.$site.pages.filter((page) =>
+          nonMatchedLocales.every((locale) => {
+            if (locale === "/") {
+              return page.path.startsWith(this.$localePath);
+            }
+            return !page.path.startsWith(locale);
+          })
+        );
+        flexsearchSvc.buildIndex(indexPages, options);
+      } else {
+        console.log("this.$site.pages", this.$site.pages);
+
+        flexsearchSvc.buildIndex(this.$site.pages, options);
+      }
+
       document.addEventListener("keydown", this.onHotkey);
     },
     async getSuggestions() {

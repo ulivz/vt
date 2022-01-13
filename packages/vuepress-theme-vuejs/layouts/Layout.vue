@@ -28,6 +28,8 @@
     </Sidebar>
 
     <Home v-if="$page.frontmatter.home" />
+    
+    <Home v-else-if="$page.frontmatter.newHome" />
 
     <Page
       v-else
@@ -47,6 +49,7 @@
 
 <script>
 import Home from '@theme/components/Home.vue'
+import NewHome from '@theme/components/NewHome.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
@@ -58,6 +61,7 @@ export default {
 
   components: {
     Home,
+    NewHome,
     Page,
     Sidebar,
     Navbar,
