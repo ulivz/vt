@@ -5,6 +5,7 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
   theme: "vt",
   title: "VT",
   themeConfig: {
+    repo: 'https://github.com/ulivz/vuepress-theme-vt',
     logo: 'https://vuejs.org/images/logo.svg',
     nav: [
       { text: "Guide", link: "/guide/" },
