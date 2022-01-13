@@ -7,7 +7,7 @@
     "test": "jest",
     "cov": "jest --coverage",
     "dev:docs": "lerna exec --scope docs -- npm run dev",
-    "build:docs": "lerna exec --scope docs -- npm run build",
+    "build:docs": "npm run build && lerna exec --scope docs -- npm run build",
     "dev:i18n": "lerna exec --scope i18n -- npm run dev",
     "build:i18n": "lerna exec --scope i18n -- npm run build",
     "dev": "mono d",
