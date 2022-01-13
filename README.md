@@ -35,7 +35,6 @@ inspired by <code>@vue/theme</code> .
 
 I made this theme to combine eXperience of `@vue/theme` and [current huge VuePress ecosystem](https://github.com/vuepress/awesome-vuepress/), and introducing some extra features like **default full text-search**, **i18n** etc.
 
-
 ## Install
 
 ```bash
@@ -47,8 +46,8 @@ npm i vuepress-theme-vt -D
 ```js
 // .vuepress/config.js
 module.exports = {
-  theme: 'vt'
-}
+  theme: "vt",
+};
 ```
 
 ## Documentation
@@ -64,3 +63,23 @@ module.exports = {
 `vuepress-theme-vt` won't exist without `@vue/theme` and [VuePress ecosystem](https://github.com/vuepress/awesome-vuepress/):
 
 - [vuepress-plugin-fulltext-search](https://github.com/leo-buneev/vuepress-plugin-fulltext-search).
+
+## Sponsors
+
+If my code has helped you, please consider sponsoring me. I'd like to thank these awesome companies for sponsoring me:
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://n8n.io/" target="_blank">
+          <img width="222px" src="https://avatars.githubusercontent.com/u/45487711?s=200&v=4">
+        </a>
+      </td>
+    </tr><tr></tr>
+  </tbody>
+</table>
+
+- [Become a backer or sponsor on Patreon.](https://www.patreon.com/ulivz).
+
+## LICENSE
