@@ -9,58 +9,57 @@ VT's homepage [frontmatter](https://vuepress.vuejs.org/guide/frontmatter.html) c
 
 1. Create `docs/index.md`, and declare `home: true` with [Frontmatter](https://vuepress.vuejs.org/guide/frontmatter.html):
 
-    ```md
-    ---
-    home: true
-    ---
-    ```
+```md
+---
+home: true
+---
+```
 
 2. Declare hero image and hero text:
 
-    ```md
-    ---
-    heroImage: /logo.svg
-    heroText: A Elegant VuePress Theme
-    ---
-    ```
+```md
+---
+heroImage: /logo.svg
+heroText: A Elegant VuePress Theme
+---
+```
 
-   If you want to use markdown syntax to define `heroText`, you can use [Markdown Slot](https://vuepress.vuejs.org/guide/markdown-slot.html):
+If you want to use markdown syntax to define `heroText`, you can use [Markdown Slot](https://vuepress.vuejs.org/guide/markdown-slot.html):
 
-    ```md
-    ---
-    heroImage: /logo.svg
-    ---
+```md
+---
+heroImage: /logo.svg
+---
 
-    ::: slot heroText
-    A <b class="gradient">Elegant</b> VuePress Theme
-    :::
-    ```
+::: slot heroText
+A <b class="gradient">Elegant</b> VuePress Theme
+:::
+```
 
 3. Declare action buttons:
 
-    ```md
-    ---
-    actionText: Getting Started
-    actionLink: /guide/
-    subActionText: Install
-    subActionLink: /guide/
-    ---
-    ```
+```md
+---
+actionText: Getting Started
+actionLink: /guide/
+subActionText: Install
+subActionLink: /guide/
+---
+```
 
 4. Declare main features
 
-
-    ```md
-    ---
-    features:
-    - title: Full-text search
-    details: Full-text search is supported by default, no server dependency, distinguishing locales.
-    - title: Out of the box
-    details: Compatible with VuePress' default theme, built-in common documentation features, e.g. i18n, Code Copy, TOC.
-    - title: TypeScript
-    details: It's easier to custom your own config with full TypeScript support.
-    ---
-    ```
+```md
+---
+features:
+- title: Full-text search
+details: Full-text search is supported by default, no server dependency, distinguishing locales.
+- title: Out of the box
+details: Compatible with VuePress' default theme, built-in common documentation features, e.g. i18n, Code Copy, TOC.
+- title: TypeScript
+details: It's easier to custom your own config with full TypeScript support.
+---
+```
 
 
 ## Example

@@ -35,58 +35,58 @@ If you prefer, you can build a basic VuePress documentation site from ground up 
 
 1. Create and change into a new directory
 
-   ```bash
-   mkdir my-vt && cd my-vt
-   ```
+```bash
+mkdir my-vt && cd my-vt
+```
 
 2. Initialize with your preferred package manager
 
-   ```bash
-   pnpm init
-   ```
+```bash
+pnpm init
+```
 
 3. Install `vuepress-theme-vt` and `vuepress` locally
 
-   ```bash
-   pnpm i vuepress-theme-vt vuepress -D
-   ```
+```bash
+pnpm i vuepress-theme-vt vuepress -D
+```
 
 4. Create your first document
 
-   ```bash
-   mkdir docs && echo '# Hello VT' > docs/README.md
-   ```
+```bash
+mkdir docs && echo '# Hello VT' > docs/README.md
+```
 
 5. Create config file and use this theme
   
-   Creating [.vuepress/config.js](https://vuepress.vuejs.org/guide/basic-config.html) with following config:
+Creating [.vuepress/config.js](https://vuepress.vuejs.org/guide/basic-config.html) with following config:
 
-   ```js
-   // .vuepress/config.js
-   module.exports = {
-      theme: "vt",
-   };
-   ```
+```js
+// .vuepress/config.js
+module.exports = {
+   theme: "vt",
+};
+```
 
 5. Add npm scripts to `package.json`
 
-   This step is optional but highly recommended, as the rest of the documentation will assume those scripts being present.
+This step is optional but highly recommended, as the rest of the documentation will assume those scripts being present.
 
-   ```json
-   {
-     "scripts": {
-       "docs:dev": "vuepress dev docs",
-       "docs:build": "vuepress build docs"
-     }
+```json
+{
+   "scripts": {
+      "docs:dev": "vuepress dev docs",
+      "docs:build": "vuepress build docs"
    }
-   ```
+}
+```
 
 6. Serve the documentation site in the local server
 
-   ```bash
-   npm run docs:dev
-   ```
+```bash
+npm run docs:dev
+```
 
-   VuePress will start a hot-reloading development server at [http://localhost:8080](http://localhost:8080).
+VuePress will start a hot-reloading development server at [http://localhost:8080](http://localhost:8080).
 
 By now, you should have a basic but functional VuePress documentation site powered by `vuepress-theme-vt`.
