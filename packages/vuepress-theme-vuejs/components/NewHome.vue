@@ -1,14 +1,14 @@
 <template>
   <div class="home">
     <section id="hero">
-      <h1 class="tagline">
-        <span
-          >Build <b class="instant-text">instant</b> web applications that
-          <b class="breaks-text">breaks</b> through
-          <b class="webview-text">webview</b>
+      <!-- tagline -->
+      <h1 class="tagline" v-if="data.tagline">
+        <span>
+          {{ data.tagline || $description || "Welcome to your VuePress site" }}
         </span>
-        <!-- Progressive Instant Application -->
       </h1>
+      <Content v-else slot-key="tagline" class="tagline" />
+
       <p class="description">
         PIA, Abbrev of "Progressive Instant Application", pronounced
         <code>/pɪaɪeɪ/</code>.
@@ -73,6 +73,9 @@
 <script>
 export default {
   computed: {
+    data() {
+      return this.$page.frontmatter;
+    },
     features() {
       return this.$localePath === "/en/"
         ? [
@@ -114,7 +117,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .theme-default-content:not(.custom) > .home {
   margin-top: 0;
 }
@@ -143,11 +146,15 @@ section {
 }
 
 .tagline b {
+  font-weight: bolder;
   color: var(--c-brand);
+  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .dark .tagline {
-  /* color: var(--vp-c-green-light); */
+  color: var(--vp-c-green-light);
   background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

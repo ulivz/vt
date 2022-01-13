@@ -29,7 +29,7 @@
 
     <Home v-if="$page.frontmatter.home" />
     
-    <Home v-else-if="$page.frontmatter.newHome" />
+    <NewHome v-else-if="$page.frontmatter.newHome" />
 
     <Page
       v-else
