@@ -15,7 +15,7 @@ features:
 sponsors:
 - title: n8n.io
   img: https://avatars.githubusercontent.com/u/45487711?s=200&v=4
-  link: 'https://n8n.io/'
+  link: https://n8n.io/
 ---
 
 ::: slot heroText
@@ -30,4 +30,3 @@ A VuePress 1.x theme inspired by `@vue/theme`, fully compatible with VuePress de
 Released under the MIT License.<br>
 Copyright © 2022 ULIVZ
 :::
-
