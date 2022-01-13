@@ -224,7 +224,7 @@ export default {
 
     &:focus {
       cursor: auto;
-      border-color: $accentColor;
+      border-color: var(--c-brand);;
     }
   }
 
@@ -267,7 +267,7 @@ export default {
       background-color: #f3f4f5;
 
       a {
-        color: $accentColor;
+        color: var(--c-brand);;
       }
     }
   }

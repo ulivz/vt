@@ -142,12 +142,12 @@ export default {
   &.clickable {
     &.active {
       font-weight: 600;
-      color: $accentColor;
-      border-left-color: $accentColor;
+      color: var(--c-brand);;
+      border-left-color: var(--c-brand);;
     }
 
     &:hover {
-      color: $accentColor;
+      color: var(--c-brand);;
     }
   }
 }

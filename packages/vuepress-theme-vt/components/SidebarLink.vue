@@ -131,12 +131,12 @@ a.sidebar-link {
   box-sizing: border-box;
 
   &:hover {
-    color: $accentColor;
+    color: var(--c-brand);;
   }
 
   &.active {
     font-weight: 600;
-    color: $accentColor;
+    color: var(--c-brand);;
   }
 
   .sidebar-group & {

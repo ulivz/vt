@@ -163,7 +163,7 @@ export default {
 
     font-size inherit {
       &:hover {
-        color: $accentColor;
+        color: var(--c-brand);;
       }
     }
   }
@@ -200,11 +200,11 @@ export default {
         padding: 0 1.5rem 0 1.25rem;
 
         &:hover {
-          color: $accentColor;
+          color: var(--c-brand);;
         }
 
         &.router-link-active {
-          color: $accentColor;
+          color: var(--c-brand);;
         }
       }
 

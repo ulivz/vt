@@ -188,17 +188,17 @@ export default {
     }
 
     &.active {
-      border-left-color: $accentColor;
+      border-left-color: var(--c-brand);;
 
       a {
-        color: $accentColor;
+        color: var(--c-brand);;
         font-weight: 500;
       }
     }
 
     &:hover {
       a {
-        color: $accentColor;
+        color: var(--c-brand);;
       }
     }
   }

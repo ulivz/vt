@@ -124,7 +124,7 @@ export default {
     color: inherit;
 
     &:hover, &.router-link-active {
-      color: $accentColor;
+      color: var(--c-brand);;
     }
   }
 

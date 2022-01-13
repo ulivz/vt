@@ -329,7 +329,7 @@ function highlight(str, strHighlight) {
 
     &:focus {
       cursor: auto;
-      border-color: $accentColor;
+      border-color: var(--c-brand);;
 
       &::placeholder {
         color: var(--c-brand);
@@ -400,7 +400,7 @@ function highlight(str, strHighlight) {
       .parent-page-title {
         color: white;
         font-weight: 600;
-        background-color: $accentColor;
+        background-color: var(--c-brand);;
         padding: 5px;
       }
 
