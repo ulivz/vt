@@ -58,6 +58,6 @@ module.exports = {
 
 ## Prior Art
 
-`vuepress-theme-vt` is inseparable from `@vue/theme` and [VuePress ecosystem](https://github.com/vuepress/awesome-vuepress/), especially the following projects
+`vuepress-theme-vt` won't exist without `@vue/theme` and [VuePress ecosystem](https://github.com/vuepress/awesome-vuepress/):
 
 - [vuepress-plugin-fulltext-search](https://github.com/leo-buneev/vuepress-plugin-fulltext-search).
