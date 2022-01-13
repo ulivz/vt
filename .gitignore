@@ -1,0 +1,21 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+npm-debug.log*
+yarn-error.log
+yarn.lock
+package-lock.json
+
+coverage
+.nyc_output
+.temp
+.tmp
+dist
+lib
+
+# misc
+.DS_Store
+.node
+*.log
+.rpt2_cache
