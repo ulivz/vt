@@ -67,13 +67,10 @@
       </div>
     </section>
 
-    <section id="ways-to-use">
-      <!-- TODO show toggleable example between CDN vs. SFC usage -->
-    </section>
-
-    <section id="tooling">
-      <!-- TODO show tooling screenshots -->
-    </section>
+    <div v-if="data.footer" class="footer">
+      {{ data.footer }}
+    </div>
+    <Content v-else slot-key="footer" class="footer" />
   </div>
 </template>
 
@@ -330,5 +327,9 @@ section {
     flex: 0 100%;
     margin-bottom: 20px;
   }
+}
+
+.footer {
+  font-size: 12px;
 }
 </style>

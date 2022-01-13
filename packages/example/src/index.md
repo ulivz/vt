@@ -26,3 +26,8 @@ A <b>Elegant</b> VuePress Theme
 A VuePress 1.x theme inspired by `@vue/theme`, fully compatible with VuePress default theme.
 :::
 
+::: slot footer
+Released under the MIT License.<br>
+Copyright © 2022 ULIVZ
+:::
+
