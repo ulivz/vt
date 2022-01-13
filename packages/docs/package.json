@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "docs",
-  "version": "0.2.24",
+  "version": "0.0.0",
   "description": "A VuePress implementation for VitePress theme @vue/theme, fully compatible with VuePress default theme.",
   "keywords": [
     "documentation",
@@ -18,7 +18,7 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "vuepress-theme-vuejs": "0.2.24",
+    "vuepress-theme-vuejs": "0.0.0",
     "@types/node": "16.10.9",
     "@vuepress/plugin-back-to-top": "1.9.5",
     "@vuepress/plugin-medium-zoom": "1.9.5",

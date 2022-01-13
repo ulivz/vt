@@ -27,7 +27,7 @@ importers:
       '@vuepress/plugin-medium-zoom': 1.9.5
       less: 4.1.2
       vuepress: 1.9.5
-      vuepress-theme-vuejs: 0.2.24
+      vuepress-theme-vuejs: 0.0.0
     devDependencies:
       '@types/node': 16.10.9
       '@vuepress/plugin-back-to-top': 1.9.5
@@ -39,7 +39,7 @@ importers:
   packages/example:
     specifiers:
       vuepress: 1.9.5
-      vuepress-theme-vuejs: 0.2.24
+      vuepress-theme-vuejs: 0.0.0
     devDependencies:
       vuepress: 1.9.5
       vuepress-theme-vuejs: link:../vuepress-theme-vuejs
