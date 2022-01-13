@@ -47,7 +47,7 @@ subActionLink: /guide/
 ---
 ```
 
-4. Declare main features
+4. Declare main features:
 
 ```md
 ---
