@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-A VuePress theme inspired by `@vue/theme` <br>
-fully compatible with VuePress default theme.
+An <b>Elegant</b> VuePress Theme,<br>
+inspired by <code>@vue/theme</code> .
 </p>
 
 <br>
