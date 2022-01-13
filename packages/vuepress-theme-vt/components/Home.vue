@@ -23,6 +23,7 @@
       </p>
       <Content v-else slot-key="tagline" class="tagline" />
 
+      <!-- actions -->
       <p class="actions">
         <VPLink
           v-if="data.actionText && data.actionLink"
@@ -52,6 +53,7 @@
       </p>
     </section>
 
+    <!-- special sponsor -->
     <section id="special-sponsor" v-show="data.sponsors">
       <span class="special-sponsor-title">Special Sponsor</span>
       <span v-for="sponsor in data.sponsors" :key="sponsor.title">
@@ -60,6 +62,7 @@
       </span>
     </section>
 
+    <!-- features -->
     <section v-if="data.features" id="highlights" class="vt-box-container">
       <div class="vt-box" v-for="feature in data.features" :key="feature.title">
         <h3>{{ feature.title }}</h3>
@@ -67,6 +70,7 @@
       </div>
     </section>
 
+    <!-- footer -->
     <div v-if="data.footer" class="footer">
       {{ data.footer }}
     </div>
@@ -84,7 +88,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .theme-default-content:not(.custom) > .home {
   margin-top: 0;
 }
@@ -116,18 +120,6 @@ section {
   font-weight: 900;
   letter-spacing: -1.5px;
   display: inline-block;
-
-  p {
-    margin: 0;
-  }
-
-  b {
-    font-weight: bolder;
-    color: var(--c-brand);
-    background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 }
 
 .dark .heroText {
