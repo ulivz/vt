@@ -3,8 +3,8 @@
   "name": "example",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "devDependencies": {
     "vuepress-theme-vt": "0.0.0",
