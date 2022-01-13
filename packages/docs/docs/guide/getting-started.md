@@ -65,6 +65,7 @@ Creating [.vuepress/config.js](https://vuepress.vuejs.org/guide/basic-config.htm
 // .vuepress/config.js
 module.exports = {
    theme: "vt",
+   themeConfig: {}
 };
 ```
 
