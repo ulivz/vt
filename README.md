@@ -73,13 +73,16 @@ If my code has helped you, please consider sponsoring me. I'd like to thank thes
     <tr>
       <td align="center" valign="middle">
         <a href="https://n8n.io/" target="_blank">
-          <img width="222px" src="https://avatars.githubusercontent.com/u/45487711?s=200&v=4">
+          <img width="100px" src="https://avatars.githubusercontent.com/u/45487711?s=200&v=4">
         </a>
       </td>
     </tr><tr></tr>
   </tbody>
 </table>
 
+You can donate through the following channels:
+
 - [Become a backer or sponsor on Patreon.](https://www.patreon.com/ulivz).
+- Github Sponsors (WIP)
 
 ## LICENSE
