@@ -86,3 +86,5 @@ You can donate through the following channels:
 - Github Sponsors (WIP)
 
 ## LICENSE
+
+MIT License © [ULIVZ](https://github.com/ulivz)
