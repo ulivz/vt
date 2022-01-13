@@ -4,12 +4,18 @@
 <p align="center">
     <img width="80" src="./media/logo.svg">
     <br>
-    <span><b>VT</b><span>
+    <h1 align="center">VT</h1>
 </p>
+
+<p align="center">
+A VuePress theme inspired by `@vue/theme` <br>
+fully compatible with VuePress default theme.
+</p>
+
 <br>
 <br>
 
-A VuePress theme inspired by `@vue/theme`, fully compatible with VuePress default theme.
+
 
 ## Motivation
 
