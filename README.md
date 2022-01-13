@@ -9,6 +9,21 @@ A VuePress theme inspired by `@vue/theme`, fully compatible with VuePress defaul
 I made this theme to combine eXperience of `@vue/theme` and [current huge VuePress ecosystem](https://github.com/vuepress/awesome-vuepress/), and introducing some extra features like **default full text-search**, **i18n** etc.
 
 
+## Install
+
+```bash
+npm i vuepress-theme-vt
+```
+
+## Usage
+
+```js
+// .vuepress/config.js
+module.exports = {
+  theme: 'vt'
+}
+```
+
 ## Features
 
 - Full-text search (No server dependencies, support distinguishing locales)
