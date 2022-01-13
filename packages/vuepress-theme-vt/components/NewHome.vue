@@ -52,13 +52,12 @@
       </p>
     </section>
 
-    <!-- TODO make dynamic based on data -->
-    <section id="special-sponsor">
-      <span>Partners</span>
-      <a href="#"><img src="/toutiao.webp" /></a>
-      <span>Toutiao</span>
-      <a href="#"><img src="/tiktok.webp" /></a>
-      <span>Tiktok</span>
+    <section id="special-sponsor" v-show="data.sponsors">
+      <span class="special-sponsor-title">Special Sponsor</span>
+      <span v-for="sponsor in data.sponsors" :key="sponsor.title">
+        <span>{{ sponsor.title }}</span>
+        <a :href="sponsor.link"><img :src="sponsor.img" /></a>
+      </span>
     </section>
 
     <section v-if="data.features" id="highlights" class="vt-box-container">
@@ -66,10 +65,6 @@
         <h3>{{ feature.title }}</h3>
         <p>{{ feature.details }}</p>
       </div>
-    </section>
-
-    <section id="sponsors">
-      <!-- TODO -->
     </section>
 
     <section id="ways-to-use">
@@ -216,6 +211,10 @@ section {
   border-bottom: 1px solid var(--vp-c-divider-light);
   padding: 12px 24px;
   text-align: center;
+
+  .special-sponsor-title {
+    margin: 0;
+  }
 }
 
 #special-sponsor span {
@@ -223,7 +222,7 @@ section {
   font-weight: 500;
   font-size: 13px;
   vertical-align: middle;
-  margin: 0 24px;
+  margin: 0 20px;
 }
 
 #special-sponsor img {

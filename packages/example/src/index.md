@@ -12,6 +12,10 @@ features:
   details: Compatible with VuePress' default theme, built-in common documentation features, e.g. i18n, Code Copy, TOC.
 - title: TypeScript
   details: It's easier to custom your own config with full TypeScript support.
+sponsors:
+- title: n8n.io
+  img: https://avatars.githubusercontent.com/u/45487711?s=200&v=4
+  link: 'https://n8n.io/'
 ---
 
 ::: slot heroText
