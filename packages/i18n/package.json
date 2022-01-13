@@ -12,13 +12,7 @@
   "license": "MIT",
   "main": "index.js",
   "types": "lib/index.d.ts",
-  "scripts": {
-    "dev": "npm run build -- -w",
-    "build": "tsc -p tsconfig.build.json",
-    "prepublishOnly": "npm run build"
-  },
   "devDependencies": {
-    "vuepress-theme-vuejs": "0.0.0",
     "@types/node": "16.10.9",
     "@vuepress/plugin-back-to-top": "1.9.5",
     "@vuepress/plugin-medium-zoom": "1.9.5",
