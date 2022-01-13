@@ -18,6 +18,17 @@ inspired by <code>@vue/theme</code> .
 <br>
 <br>
 
+## Features
+
+- **Full-text search**: No server dependencies, support distinguishing locales.
+- TypeScript Support
+- i18n
+- TOC (Table of Contents)
+- Code Copy
+- Sidebar
+- Navbar
+- Fully compatible with [VuePress's Default Theme Config](https://vuepress.vuejs.org/theme/default-theme-config.html).
+
 ## Motivation
 
 [Next Vue's documentation](https://staging.vuejs.org/) is very cool, which is powered by [VitePress](https://github.com/vuejs/vitepress) and `@vue/theme` —— A next-generation SSG for Vue ecosystem, but currently VitePress is still in early stage and there is no plugin system.
@@ -40,15 +51,7 @@ module.exports = {
 }
 ```
 
-## Features
 
-- Full-text search (No server dependencies, support distinguishing locales)
-- Code Copy
-- i18n
-- Sidebar
-- Navbar
-- TOC (Table of Contents)
-- Fully compatible with [VuePress's Default Theme Config](https://vuepress.vuejs.org/theme/default-theme-config.html).
 
 ## Live Examples
 
