@@ -1,4 +1,13 @@
-# vuepress-theme-vt
+<br>
+<br>
+
+<p align="center">
+    <img width="80" src="./media/logo.svg">
+    <br>
+    <span><b>VT</b><span>
+</p>
+<br>
+<br>
 
 A VuePress theme inspired by `@vue/theme`, fully compatible with VuePress default theme.
 
@@ -12,7 +21,7 @@ I made this theme to combine eXperience of `@vue/theme` and [current huge VuePre
 ## Install
 
 ```bash
-npm i vuepress-theme-vt
+npm i vuepress-theme-vt -D
 ```
 
 ## Usage
