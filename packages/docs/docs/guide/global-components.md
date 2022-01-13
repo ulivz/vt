@@ -1,1 +1,46 @@
 # Global Components
+
+## `<VPLink />`
+
+A universal link component with internal and external link support:
+
+```vue
+<VPLink class="nav-link" text="Guide" link="/guide/" rel="guide" />
+```
+
+## `<API />`
+
+Generate API Page.
+
+- Input:
+
+```vue
+<API />
+```
+
+- Output:
+
+See [API Page](/api/).
+
+## `<NextSteps />`
+
+- Input:
+
+```vue
+<NextSteps>
+  <Step href="/guide/getting-started.html" title="Getting Started" description="Learn how to quickly install and use this theme."/>
+  <Step href="/config/" title="Config" description="Learn about the configuration of this theme."/>
+  <Step href="/guide/migration.html" title="Migration" description="Migrate from other VuePress themes."/>
+</NextSteps>
+```
+
+- Output:
+
+<NextSteps>
+  <Step href="/guide/getting-started.html" title="Getting Started" description="Learn how to quickly install and use this theme."/>
+  <Step href="/config/" title="Config" description="Learn about the configuration of this theme."/>
+  <Step href="/guide/migration.html" title="Migration" description="Migrate from other VuePress themes."/>
+</NextSteps>
+
+
+

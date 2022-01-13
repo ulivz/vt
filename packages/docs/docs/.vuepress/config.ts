@@ -27,7 +27,6 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
           children: [
             '/guide/home',
             '/guide/configuration',
-            '/guide/typescript',
             '/guide/global-components',
             '/guide/search',
           ]
