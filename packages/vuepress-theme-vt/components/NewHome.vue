@@ -99,8 +99,8 @@ section {
 #hero {
   max-width: 1000px;
   margin: 0px auto;
-  padding: 10px 0px 76px 0px;
-  text-align: left;
+  padding: 76px 0px 76px 0px;
+  text-align: center;
 }
 
 #hero h1 {
