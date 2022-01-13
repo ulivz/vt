@@ -25,9 +25,10 @@
 
       <p class="actions">
         <VPLink
-          class="get-started"
-          text="Get Started"
-          :link="$withLocale('/guide/introduction.html')"
+          v-if="data.actionText && data.actionLink"
+          class="action-link"
+          :text="data.actionText"
+          :link="data.actionLink"
         >
           <svg
             slot="after"
@@ -43,9 +44,10 @@
           </svg>
         </VPLink>
         <VPLink
-          class="setup"
-          :link="$withLocale('/guide/quick-start/client.html')"
-          text="Install"
+          v-if="data.subActionText && data.subActionLink"
+          class="sub-action-link"
+          :text="data.subActionText"
+          :link="data.subActionLink"
         />
       </p>
     </section>
@@ -162,7 +164,7 @@ section {
   transition: background-color 0.5s, color 0.5s;
 }
 
-.actions .get-started {
+.actions .action-link {
   font-weight: 600;
   background-color: var(--c-brand);
   color: #fff;
@@ -178,34 +180,34 @@ section {
   transition: transform 0.2s;
 }
 
-.dark .actions .get-started {
+.dark .actions .action-link {
   color: var(--vp-c-indigo);
 }
 
-.actions .get-started:hover {
+.actions .action-link:hover {
   background-color: var(--c-brand-dark);
   transition-duration: 0.2s;
   color: #fff;
 }
 
-.actions .get-started:hover .icon {
+.actions .action-link:hover .icon {
   transform: translateX(2px);
 }
 
-.dark .actions .get-started:hover {
+.dark .actions .action-link:hover {
   background-color: var(--vp-c-green-light);
 }
 
-.actions .setup {
+.actions .sub-action-link {
   color: var(--vp-c-text-code);
 }
 
-.actions .setup:hover {
+.actions .sub-action-link:hover {
   background-color: var(--vp-c-gray-light-4);
   transition-duration: 0.2s;
 }
 
-.dark .actions .setup:hover {
+.dark .actions .sub-action-link:hover {
   background-color: var(--vp-c-gray-dark-3);
 }
 

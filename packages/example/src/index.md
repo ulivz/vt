@@ -1,6 +1,10 @@
 ---
 newHome: true
 heroImage: /logo.svg
+actionText: Getting Started
+actionLink: /guide/
+subActionText: Install
+subActionLink: /guide/
 features:
 - title: Full-text search
   details: Full-text search is supported by default, no server dependency, distinguishing locales.
