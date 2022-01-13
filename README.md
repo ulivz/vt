@@ -12,10 +12,11 @@ An <b>Elegant</b> VuePress Theme,<br>
 inspired by <code>@vue/theme</code> .
 </p>
 
+<p align="center">
+<a href="https://www.npmjs.com/package/vuepress-theme-vt"><img src="https://img.shields.io/npm/v/vuepress-theme-vt?color=c95f8b&amp;label=" alt="NPM version"></a></p>
+
 <br>
 <br>
-
-
 
 ## Motivation
 
