@@ -4,9 +4,15 @@
 
 A universal link component with internal and external link support:
 
+- Input:
+
 ```vue
 <VPLink class="nav-link" text="Guide" link="/guide/" rel="guide" />
 ```
+
+- Output:
+
+<VPLink class="nav-link" text="Guide" link="/guide/" rel="guide" />
 
 ## `<API />`
 
