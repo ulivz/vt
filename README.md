@@ -11,8 +11,11 @@ I made this theme to combine eXperience of `@vue/theme` and [current huge VuePre
 ## Features
 
 - Full-text search (Support distinguishing locales)
-- Table of Contents
 - Code Copy
+- i18n
+- Sidebar
+- Navbar
+- TOC (Table of Contents)
 - Fully compatible with [VuePress's Default Theme Config](https://vuepress.vuejs.org/theme/default-theme-config.html).
 
 ## Live Examples
