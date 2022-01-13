@@ -1,4 +1,4 @@
-import { ThemeConfig } from "vuepress-theme-vuejs";
+import { ThemeConfig } from "vuepress-theme-vt";
 import { defineConfig4CustomTheme } from "vuepress/config";
 
 export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
@@ -11,5 +11,28 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
       { text: "Guide", link: "/guide/" },
       { text: "API", link: "/api/" },
     ],
+    sidebar: {
+      '/guide/': [
+        {
+          title: 'Getting Started',
+          collapsable: false,
+          children: [
+            '/guide/',
+            '/guide/getting-started',
+          ]
+        },
+        {
+          title: 'Guide',
+          collapsable: false,
+          children: [
+            '/guide/home',
+            '/guide/config',
+            '/guide/typescript',
+            '/guide/global-components',
+            '/guide/typescript',
+          ]
+        }
+      ]
+    }
   },
 }));
