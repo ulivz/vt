@@ -22,6 +22,6 @@ I made this theme to combine eXperience of `@vue/theme` and [current huge VuePre
 <NextSteps>
   <Step href="/guide/getting-started.html" title="Getting Started" description="Learn how to quickly install and use this theme."/>
   <Step href="/config/" title="Config" description="Learn about the configuration of this theme."/>
-  <Step href="/guide/migration.html" title="Migration" description="Migrate from other VuePress themes"/>
+  <Step href="/guide/migration.html" title="Migration" description="Migrate from other VuePress themes."/>
 </NextSteps>
 

@@ -14,7 +14,7 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
     sidebar: {
       '/guide/': [
         {
-          title: 'Getting Started',
+          title: 'Introduction',
           collapsable: false,
           children: [
             '/guide/',
@@ -26,10 +26,10 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
           collapsable: false,
           children: [
             '/guide/home',
-            '/guide/config',
+            '/guide/configuration',
             '/guide/typescript',
             '/guide/global-components',
-            '/guide/typescript',
+            '/guide/search',
           ]
         }
       ]

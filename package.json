@@ -2,7 +2,7 @@
   "private": "true",
   "name": "vuepress-theme-vuejs",
   "scripts": {
-    "bootstrap": "pnpm install --prefer-offline --registry https://registry.npmmirror.com",
+    "bootstrap": "pnpm install --prefer-offline --registry https://registry.npmjs.org",
     "build": "lerna run build",
     "test": "jest",
     "cov": "jest --coverage",
