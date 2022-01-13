@@ -1,5 +1,5 @@
 ---
-newHome: true
+home: true
 heroImage: /logo.svg
 actionText: Getting Started
 actionLink: /guide/

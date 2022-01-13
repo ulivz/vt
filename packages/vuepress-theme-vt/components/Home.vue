@@ -1,203 +1,337 @@
 <template>
-  <main
-    class="home"
-    :aria-labelledby="data.heroText !== null ? 'main-title' : null"
-  >
-    <header class="hero">
+  <div class="home">
+    <section id="hero">
+      <!-- heroImage -->
       <img
+        class="hero-img"
         v-if="data.heroImage"
         :src="$withBase(data.heroImage)"
         :alt="data.heroAlt || 'hero'"
       />
 
-      <h1 v-if="data.heroText !== null" id="main-title">
-        {{ data.heroText || $title || "Hello" }}
+      <!-- heroText -->
+      <h1 class="heroText" v-if="data.heroText">
+        <span>
+          {{ data.heroText || $description || "Welcome to your VuePress site" }}
+        </span>
       </h1>
+      <Content v-else slot-key="heroText" class="heroText" />
 
-      <p v-if="data.tagline !== null" class="description">
-        {{ data.tagline || $description || "Welcome to your VuePress site" }}
+      <!-- tagline -->
+      <p class="tagline" v-if="data.tagline">
+        {{ data.tagline }}
       </p>
+      <Content v-else slot-key="tagline" class="tagline" />
 
-      <p v-if="data.actionText && data.actionLink" class="action">
-        <NavLink class="action-button" :item="actionLink" />
+      <p class="actions">
+        <VPLink
+          v-if="data.actionText && data.actionLink"
+          class="action-link"
+          :text="data.actionText"
+          :link="data.actionLink"
+        >
+          <svg
+            slot="after"
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="10"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
+            />
+          </svg>
+        </VPLink>
+        <VPLink
+          v-if="data.subActionText && data.subActionLink"
+          class="sub-action-link"
+          :text="data.subActionText"
+          :link="data.subActionLink"
+        />
       </p>
-    </header>
+    </section>
 
-    <div v-if="data.features && data.features.length" class="features">
-      <div
-        v-for="(feature, index) in data.features"
-        :key="index"
-        class="feature"
-      >
-        <h2>{{ feature.title }}</h2>
+    <section id="special-sponsor" v-show="data.sponsors">
+      <span class="special-sponsor-title">Special Sponsor</span>
+      <span v-for="sponsor in data.sponsors" :key="sponsor.title">
+        <span>{{ sponsor.title }}</span>
+        <a :href="sponsor.link"><img :src="sponsor.img" /></a>
+      </span>
+    </section>
+
+    <section v-if="data.features" id="highlights" class="vt-box-container">
+      <div class="vt-box" v-for="feature in data.features" :key="feature.title">
+        <h3>{{ feature.title }}</h3>
         <p>{{ feature.details }}</p>
       </div>
-    </div>
-
-    <Content class="theme-default-content custom" />
+    </section>
 
     <div v-if="data.footer" class="footer">
       {{ data.footer }}
     </div>
-  </main>
+    <Content v-else slot-key="footer" class="footer" />
+  </div>
 </template>
 
 <script>
-import NavLink from "@theme/components/NavLink.vue";
-
 export default {
-  name: "Home",
-
-  components: { NavLink },
-
   computed: {
     data() {
       return this.$page.frontmatter;
-    },
-
-    actionLink() {
-      return {
-        link: this.data.actionLink,
-        text: this.data.actionText,
-      };
     },
   },
 };
 </script>
 
 <style lang="stylus">
-.home {
-  padding: $navbarHeight 2rem 0;
-  max-width: $homePageWidth;
+.theme-default-content:not(.custom) > .home {
+  margin-top: 0;
+}
+
+section {
+  padding: 42px 32px;
+}
+
+#hero {
+  max-width: 1000px;
+  margin: 50px auto 0 auto;
+  padding: 76px 0px 76px 0px;
+  text-align: center;
+}
+
+#hero h1 {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.hero-img {
+  max-width: 50px;
+  max-height: 280px;
+}
+
+.heroText {
+  font-size: 62px;
+  line-height: 1.25;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  display: inline-block;
+
+  p {
+    margin: 0;
+  }
+
+  b {
+    font-weight: bolder;
+    color: var(--c-brand);
+    background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.dark .heroText {
+  color: var(--vp-c-green-light);
+  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  display: inline-block;
+  max-width: 760px;
+  line-height: 1.5;
+  color: var(--vp-c-text-2);
+  transition: color 0.5s;
+  font-size: 18px;
+  margin: 0px 0px 24px 0px;
+}
+
+.actions a {
+  font-size: 16px;
+  display: inline-block;
+  background-color: var(--vp-c-bg-mute);
+  padding: 8px 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.actions .action-link {
+  font-weight: 600;
+  background-color: var(--c-brand);
+  color: #fff;
+  margin-right: 18px;
+}
+
+.actions .icon {
+  display: inline;
+  position: relative;
+  top: -1px;
+  margin-left: 2px;
+  fill: currentColor;
+  transition: transform 0.2s;
+}
+
+.dark .actions .action-link {
+  color: var(--vp-c-indigo);
+}
+
+.actions .action-link:hover {
+  background-color: var(--c-brand-dark);
+  transition-duration: 0.2s;
+  color: #fff;
+}
+
+.actions .action-link:hover .icon {
+  transform: translateX(2px);
+}
+
+.dark .actions .action-link:hover {
+  background-color: var(--vp-c-green-light);
+}
+
+.actions .sub-action-link {
+  color: var(--vp-c-text-code);
+}
+
+.actions .sub-action-link:hover {
+  background-color: var(--vp-c-gray-light-4);
+  transition-duration: 0.2s;
+}
+
+.dark .actions .sub-action-link:hover {
+  background-color: var(--vp-c-gray-dark-3);
+}
+
+#special-sponsor {
+  border-top: 1px solid var(--vp-c-divider-light);
+  border-bottom: 1px solid var(--vp-c-divider-light);
+  padding: 12px 24px;
+  text-align: center;
+
+  .special-sponsor-title {
+    margin: 0;
+  }
+}
+
+#special-sponsor span {
+  color: var(--vp-c-text-2);
+  font-weight: 500;
+  font-size: 13px;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+
+#special-sponsor img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 36px;
+}
+
+.dark #special-sponsor img {
+  filter: grayscale(1) invert(1);
+}
+
+#highlights {
+  max-width: 960px;
   margin: 0px auto;
-  display: block;
+  color: var(--vp-c-text-2);
+}
 
-  .hero {
-    text-align: center;
+#highlights h3 {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.4px;
+  color: var(--vp-c-text-1);
+  transition: color 0.5s;
+  margin-bottom: 0.75em;
+}
 
-    img {
-      max-width: 100%;
-      max-height: 280px;
-      display: block;
-      margin: 3rem auto 1.5rem;
-    }
+#highlights p {
+  font-weight: 400;
+  font-size: 15px;
+}
 
-    h1 {
-      font-size: 3rem;
-    }
+#highlights .vt-box {
+  background-color: transparent;
+}
 
-    h1, .description, .action {
-      margin: 1.8rem auto;
-    }
-
-    .description {
-      max-width: 35rem;
-      font-size: 1.6rem;
-      line-height: 1.3;
-      color: lighten($textColor, 40%);
-    }
-
-    .action-button {
-      display: inline-block;
-      font-size: 1.2rem;
-      color: #fff;
-      background-color: $accentColor;
-      padding: 0.8rem 1.6rem;
-      border-radius: 4px;
-      transition: background-color 0.1s ease;
-      box-sizing: border-box;
-      border-bottom: 1px solid darken($accentColor, 10%);
-
-      &:hover {
-        background-color: lighten($accentColor, 10%);
-      }
-    }
+@media (max-width: 768px) {
+  .heroText {
+    font-size: 48px;
+    letter-spacing: -0.5px;
   }
 
-  .features {
-    border-top: 1px solid $borderColor;
-    padding: 1.2rem 0;
-    margin-top: 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: stretch;
-    justify-content: space-between;
-  }
-
-  .feature {
-    flex-grow: 1;
-    flex-basis: 30%;
-    max-width: 30%;
-
-    h2 {
-      font-size: 1.4rem;
-      font-weight: 500;
-      border-bottom: none;
-      padding-bottom: 0;
-      color: lighten($textColor, 10%);
-    }
-
-    p {
-      color: lighten($textColor, 25%);
-    }
-  }
-
-  .footer {
-    padding: 2.5rem;
-    border-top: 1px solid $borderColor;
-    text-align: center;
-    color: lighten($textColor, 25%);
+  .description {
+    font-size: 18px;
+    margin-bottom: 48px;
   }
 }
 
-@media (max-width: $MQMobile) {
+@media (max-width: 576px) {
   .home {
-    .features {
-      flex-direction: column;
-    }
+    padding: 0;
+  }
 
-    .feature {
-      max-width: 100%;
-      padding: 0 2.5rem;
-    }
+  #hero {
+    padding: 64px 10px;
+  }
+
+  .heroText {
+    font-size: 38px;
+  }
+
+  .description {
+    font-size: 16px;
+    margin: 18px 0 30px;
+  }
+
+  #special-sponsor img {
+    display: block;
+    margin: 2px auto 1px;
+  }
+
+  #highlights h3 {
+    margin-bottom: 0.6em;
+  }
+
+  #highlights .vt-box {
+    padding: 20px 36px;
   }
 }
 
-@media (max-width: $MQMobileNarrow) {
-  .home {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-
-    .hero {
-      img {
-        max-height: 210px;
-        margin: 2rem auto 1.2rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      h1, .description, .action {
-        margin: 1.2rem auto;
-      }
-
-      .description {
-        font-size: 1.2rem;
-      }
-
-      .action-button {
-        font-size: 1rem;
-        padding: 0.6rem 1.2rem;
-      }
-    }
-
-    .feature {
-      h2 {
-        font-size: 1.25rem;
-      }
-    }
+@media (max-width: 370px) {
+  .heroText {
+    font-size: 36px;
   }
+}
+
+.vt-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.vt-box-container .vt-box {
+  background-color: var(--vp-c-bg-soft);
+  transition: color 0.5s, background-color 0.5s;
+  padding: 28px 36px;
+  border-radius: 8px;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .vt-box-container .vt-box {
+    flex: 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
 }
 </style>
