@@ -7,12 +7,10 @@ export default {
   },
   created() {
     this.apiIndex = [];
-    console.log(this);
   },
   computed: {
     apiGroups() {
       const sidebarConfig = this.$themeLocaleConfig.sidebar;
-      console.log("sidebarConfig", sidebarConfig);
 
       if (typeof sidebarConfig === "object") {
         const apiPath = this.$localePath + "api/";
@@ -43,8 +41,6 @@ export default {
       const q = this.query;
       return this.apiGroups
         .map((section) => {
-          console.log("section", section);
-
           const items = section.items
             .map(({ text, link, headers }) => {
               headers = headers.filter((h) => {
