@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <section id="hero">
+      <!-- heroImage -->
       <img
         class="hero-img"
         v-if="data.heroImage"
@@ -16,10 +17,12 @@
       </h1>
       <Content v-else slot-key="heroText" class="heroText" />
 
-      <p class="description">
-        PIA, Abbrev of "Progressive Instant Application", pronounced
-        <code>/pɪaɪeɪ/</code>.
+      <!-- tagline -->
+      <p class="tagline" v-if="data.tagline">
+        {{ data.tagline }}
       </p>
+      <Content v-else slot-key="tagline" class="tagline" />
+
       <p class="actions">
         <VPLink
           class="get-started"
@@ -177,7 +180,7 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-.description {
+.tagline {
   max-width: 760px;
   line-height: 1.5;
   color: var(--vp-c-text-2);
