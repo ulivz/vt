@@ -1,0 +1,33 @@
+{
+  "name": "create-vt",
+  "version": "0.1.3",
+  "description": "Scaffolding a VuePress website with vuepress-theme-vt.",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ulivz/vuepress-theme-vt"
+  },
+  "bin": "bin/cli.js",
+  "scripts": {
+    "dev": "npm run build -- -w",
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@nomadland/cp": "0.1.1",
+    "chalk": "^4.1.0",
+    "sao": "^2.0.0-beta.1"
+  },
+  "devDependencies": {
+    "typescript": "4.4.4"
+  },
+  "author": "ULIVZ <chl814@foxmail.com>",
+  "files": [
+    "bin",
+    "lib",
+    "!lib/*.tsbuildinfo",
+    "!lib/*.map",
+    "types",
+    "*.d.ts"
+  ]
+}
