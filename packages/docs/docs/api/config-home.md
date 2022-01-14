@@ -86,4 +86,23 @@ features:
 - title: TypeScript
   details: It's easier to custom your own config with full TypeScript support.
 ---
+```## sponsors
+
+- **Type**: `array`
+- **Default**: `undefined`
+
+```md
+---
+sponsors:
+  - title: n8n.io
+    img: https://avatars.githubusercontent.com/u/45487711?s=200&v=4
+    link: https://n8n.io/
+---
 ```
+
+## sponsorsText
+
+- **Type**: `array`
+- **Default**: `'Special Sponsor'`
+
+Sponsor's intro text.

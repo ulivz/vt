@@ -56,7 +56,7 @@
 
     <!-- special sponsor -->
     <section id="special-sponsor" v-show="data.sponsors">
-      <span class="special-sponsor-title">Special Sponsor</span>
+      <span class="special-sponsor-title">{{ data.sponsorsText || 'Special Sponsor' }}</span>
       <span
         class="special-sponsor-item"
         v-for="sponsor in data.sponsors"
