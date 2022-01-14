@@ -22,11 +22,18 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
           title: "Guide",
           collapsable: false,
           children: [
+            "/guide/search",
             "/guide/home",
+            "/guide/api-page",
             "/guide/configuration",
             "/guide/global-components",
-            "/guide/search",
-            "/guide/api-page",
+          ],
+        },
+        {
+          title: "Reference",
+          collapsable: false,
+          children: [
+            ['https://vuepress.vuejs.org/theme/default-theme-config.html', 'Default Theme Config'],
           ],
         },
       ],
