@@ -8,6 +8,7 @@
 @require './header';
 @require './mobile';
 @require './home';
+@require './vp-doc';
 
 html, body {
   padding: 0;
@@ -158,25 +159,7 @@ p, ul, ol {
   line-height: 1.7;
 }
 
-ul, ol {
-  list-style: none;
 
-  li {
-    position: relative;
-
-    &:before {
-      content: '';
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background-color: rgba(60, 60, 60, 0.33);
-      transition: background-color 0.5s;
-      left: -1.25rem;
-      top: 0.75rem;
-    }
-  }
-}
 
 hr {
   border: 0;
