@@ -1,3 +1,12 @@
+## [0.1.3](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.2...v0.1.3) (2022-01-14)
+
+
+### Bug Fixes
+
+* **init:** init project issue: SyntaxError: Invalid or unexpected token while compiling ejs (close: [#19](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/19)) ([f96cd55](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/f96cd55234872cddaff0896168dcad26604c1acf))
+
+
+
 ## [0.1.2](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.1...v0.1.2) (2022-01-14)
 
 
