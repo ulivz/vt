@@ -22,14 +22,14 @@ inspired by <code>@vue/theme</code> .
 
 ## Features
 
-- **Full-text search**: No server dependencies, support distinguishing locales.
-- TypeScript Support
-- i18n
-- TOC (Table of Contents)
-- Code Copy
-- Sidebar
-- Navbar
 - Fully compatible with [VuePress's Default Theme Config](https://vuepress.vuejs.org/theme/default-theme-config.html).
+- [**Full-text search**](https://vuepress-theme-vt.vercel.app/guide/search.html): No server dependencies, distinguishing locales.
+- [TypeScript Support](https://vuepress-theme-vt.vercel.app/guide/configuration.html)
+- [Homepage](https://vuepress-theme-vt.vercel.app/guide/home.html)
+- [API Page](https://vuepress-theme-vt.vercel.app/guide/api-page.html)
+- Code Copy
+- TOC (Table of Contents)
+- i18n
 
 ## Motivation
 
