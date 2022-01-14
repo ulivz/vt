@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.svg
+# heroImage: /logo.svg
 actionText: Getting Started
 actionLink: /guide/
 subActionText: Install

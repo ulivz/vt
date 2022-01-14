@@ -11,6 +11,10 @@ The following are all the frontmatter configurations for the [homepage](../guide
 - **Type**: `string`
 - **Default**: `undefined`
 
+::: tip
+In VT, for the style of the homepage, we do not recommend that you use this config, and this config is kept only for compatibility with [VuePress's Default Theme Config](https://vuepress.vuejs.org/theme/default-theme-config.html), 
+:::
+
 Config hero image.
 
 ```md
