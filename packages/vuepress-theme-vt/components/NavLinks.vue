@@ -16,9 +16,9 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      <VPIconGitlab />
-      <!-- {{ repoLabel }} -->
-      <!-- <VPIconExternalLink /> -->
+      <VPIconGithub v-if="repoLabel === 'GitHub'" />
+      <VPIconGitlab v-else-if="repoLabel === 'Gitlab'" />
+      <template v-else{{ repoLabel }}></template>
     </a>
   </nav>
 </template>
@@ -28,6 +28,7 @@ import DropdownLink from "@theme/components/DropdownLink.vue";
 import { resolveNavLinkItem } from "../lib/util";
 import NavLink from "@theme/components/NavLink.vue";
 import VPIconGitlab from "./icons/VPIconGitlab.vue";
+import VPIconGithub from "./icons/VPIconGithub.vue";
 import VPNavBarAppearance from "./VPNavBarAppearance.vue";
 
 export default {
@@ -37,6 +38,7 @@ export default {
     NavLink,
     DropdownLink,
     VPIconGitlab,
+    VPIconGithub,
     VPNavBarAppearance,
   },
 
@@ -124,7 +126,7 @@ export default {
     color: inherit;
 
     &:hover, &.router-link-active {
-      color: var(--c-brand);;
+      color: var(--c-brand);
     }
   }
 
