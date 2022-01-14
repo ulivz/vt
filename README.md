@@ -56,7 +56,9 @@ module.exports = {
 
 `vuepress-theme-vt` won't exist without `@vue/theme` and [VuePress ecosystem](https://github.com/vuepress/awesome-vuepress/):
 
-- [vuepress-plugin-fulltext-search](https://github.com/leo-buneev/vuepress-plugin-fulltext-search).
+- [vuepress-plugin-fulltext-search](https://github.com/leo-buneev/vuepress-plugin-fulltext-search), by [@leo-buneev](https://github.com/leo-buneev).
+- [icones](https://icones.js.org/), by [@antfu](https://icones.js.org/)
+
 
 ## Sponsors
 
