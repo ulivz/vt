@@ -1,9 +1,3 @@
-# API
-
-## foo
-
-## bar
-
-## baz
-
-## qux
+---
+api: true
+---
