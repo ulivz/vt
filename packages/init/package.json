@@ -29,6 +29,7 @@
     "!lib/*.tsbuildinfo",
     "!lib/*.map",
     "types",
-    "*.d.ts"
+    "*.d.ts",
+    "generator"
   ]
 }
