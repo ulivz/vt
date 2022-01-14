@@ -68,7 +68,7 @@ Sub action button's text
 
 ```md
 ---
-subActionLink: /guide/
+subActionLink: /guide/getting-started.html
 ---
 ```
 

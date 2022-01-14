@@ -4,7 +4,7 @@ home: true
 actionText: Getting Started
 actionLink: /guide/
 subActionText: Install
-subActionLink: /guide/
+subActionLink: /guide/getting-started.html
 features:
 - title: Full-text search
   details: Full-text search is supported by default, no server dependency, distinguishing locales.
