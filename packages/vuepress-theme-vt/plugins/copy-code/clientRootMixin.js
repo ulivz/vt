@@ -55,7 +55,6 @@ export default {
         document.getSelection().removeAllRanges();
         document.getSelection().addRange(selected);
       }
-      
     },
   },
 };
