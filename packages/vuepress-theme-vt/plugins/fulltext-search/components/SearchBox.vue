@@ -152,8 +152,6 @@ export default {
         );
         flexsearchSvc.buildIndex(indexPages, options);
       } else {
-        console.log("this.$site.pages", this.$site.pages);
-
         flexsearchSvc.buildIndex(this.$site.pages, options);
       }
 
