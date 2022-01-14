@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.1...v0.1.2) (2022-01-14)
+
+
+### Bug Fixes
+
+* **init:** failed to init project (close: [#17](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/17)) ([dfdc2f0](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/dfdc2f08396bb7daf19586f0803f4eb7a10687f7))
+
+
+
 ## [0.1.1](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.0...v0.1.1) (2022-01-14)
 
 
