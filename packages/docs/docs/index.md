@@ -22,7 +22,7 @@ sponsors:
 ---
 
 ::: slot heroText
-A <b class="gradient">Elegant</b> VuePress Theme
+An <b class="gradient">Elegant</b> VuePress Theme
 :::
 
 ::: slot tagline
