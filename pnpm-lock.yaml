@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@nomadland/mono': 0.3.3
+      '@nomadland/mono': 0.3.4
       '@types/jest': 27.0.0
       jest: 27.3.1
       jest-cli: 27.3.1
@@ -12,7 +12,7 @@ importers:
       lerna: ^4.0.0
       ts-jest: 27.0.7
     devDependencies:
-      '@nomadland/mono': 0.3.3
+      '@nomadland/mono': 0.3.4
       '@types/jest': 27.0.0
       jest: 27.3.1
       jest-cli: 27.3.1
@@ -23,7 +23,7 @@ importers:
   packages/docs:
     specifiers:
       vuepress: 1.9.5
-      vuepress-theme-vt: 0.1.0
+      vuepress-theme-vt: 0.1.1
     devDependencies:
       vuepress: 1.9.5
       vuepress-theme-vt: link:../vuepress-theme-vt
@@ -2263,8 +2263,8 @@ packages:
       - supports-color
     dev: false
 
-  /@nomadland/mono/0.3.3:
-    resolution: {integrity: sha512-OgXsuLQSBrUmbULcAExSL786ab7EerlQ1b3fv/vOgpOLXxUXkQQTqHWaGgLczgzXvkN5gizdldcitEgEIX04hQ==}
+  /@nomadland/mono/0.3.4:
+    resolution: {integrity: sha512-kYo8MVqcjLFdt1nuqpnUxwcqwYSOyjlPE7NlPXBuTnMvinDV6VTA8jsqmxIohBIiXZzUOCGx/MYPmurdOXkirQ==}
     hasBin: true
     dependencies:
       '@speedy-js/config-loader': 0.1.3
