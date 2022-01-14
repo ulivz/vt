@@ -28,11 +28,11 @@ export default {
       copyElement.title = "Click to Copy to Clipboard";
       copyElement.addEventListener("click", () => {
         this.copyToClipboard(parent.innerText);
-		copyElement.classList.add("copied");
-		const timer = setTimeout(() => {
-		  copyElement.classList.remove("copied");
-		  clearTimeout(timer);
-		}, 2000);
+        copyElement.classList.add("copied");
+        const timer = setTimeout(() => {
+          copyElement.classList.remove("copied");
+          clearTimeout(timer);
+        }, 2000);
       });
       parent.appendChild(copyElement);
       parent.classList.add("codecopy-enabled");

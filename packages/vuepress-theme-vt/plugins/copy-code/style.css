@@ -4,11 +4,11 @@
   cursor: pointer;
 }
 
-div[class*="language-"] pre .code-copy {
+div[class*="language-"] .code-copy {
   position: absolute;
   z-index: 1000;
   bottom: 10px;
-  right:10px;
+  right: 10px;
   width: 18px;
   height: 18px;
   content: url("./assets/copy.svg");
@@ -16,12 +16,11 @@ div[class*="language-"] pre .code-copy {
   transition: all 0.3s;
 }
 
-
-div[class*="language-"] pre .code-copy.copied {
+div[class*="language-"] .code-copy.copied {
   content: url("./assets/copied.svg");
 }
 
-div[class*="language-"] pre:hover .code-copy {
+div[class*="language-"]:hover .code-copy {
   opacity: 0.5;
 }
 
