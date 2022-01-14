@@ -65,7 +65,6 @@ details: It's easier to custom your own config with full TypeScript support.
 ---
 ```
 
-
 ## Example
 
 The source code for [the Home page you are now seeing](/) is as follows:
@@ -79,16 +78,16 @@ actionLink: /guide/
 subActionText: Install
 subActionLink: /guide/getting-started.html
 features:
-- title: Full-text search
-  details: Full-text search is supported by default, no server dependency, distinguishing locales.
-- title: Out of the box
-  details: Compatible with VuePress' default theme, built-in common documentation features, e.g. i18n, Code Copy, TOC.
-- title: TypeScript
-  details: It's easier to custom your own config with full TypeScript support.
+  - title: Full-text search
+    details: Full-text search is supported by default, no server dependency, distinguishing locales.
+  - title: Out of the box
+    details: Compatible with VuePress' default theme, built-in common documentation features, e.g. i18n, Code Copy, TOC.
+  - title: TypeScript
+    details: It's easier to custom your own config with full TypeScript support.
 sponsors:
-- title: n8n.io
-  img: https://avatars.githubusercontent.com/u/45487711?s=200&v=4
-  link: https://n8n.io/
+  - title: n8n.io
+    img: https://avatars.githubusercontent.com/u/45487711?s=200&v=4
+    link: https://n8n.io/
 ---
 
 ::: slot heroText
@@ -104,5 +103,3 @@ Released under the MIT License.<br>
 Copyright © 2022 ULIVZ
 :::
 ```
-
-

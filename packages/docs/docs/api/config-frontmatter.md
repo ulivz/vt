@@ -34,7 +34,6 @@ api: true
 
 For more details please head [Guide > API Page](../guide/api-page.md).
 
-
 ## toc
 
 - **Type**: `boolean`
@@ -67,7 +66,6 @@ sidebar: false
 - **Default**: `1`
 
 Set maximum depth of sidebar headers, set `0` to hide headers at it:
-
 
 ```md
 ---

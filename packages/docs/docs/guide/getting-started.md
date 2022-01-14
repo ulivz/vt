@@ -9,7 +9,6 @@ sidebarDepth: 0
 - [Node.js 10+](https://nodejs.org/en/)
 - [PNPM](https://pnpm.io/) (Optional)\*
 
-
 ## Quick Start
 
 The fastest way to use this theme is to use our [create-vt generator](https://github.com/vuepressjs/create-vuepress-site/), which will help scaffold a basic VuePress site with this theme for you.
@@ -62,14 +61,14 @@ mkdir docs && echo '# Hello VT' > docs/README.md
 ```
 
 5. Create config file and use this theme
-  
+
 Creating [.vuepress/config.js](https://vuepress.vuejs.org/guide/basic-config.html) with following config:
 
 ```js
 // .vuepress/config.js
 module.exports = {
-   theme: "vt",
-   themeConfig: {}
+  theme: "vt",
+  themeConfig: {},
 };
 ```
 
@@ -79,10 +78,10 @@ This step is optional but highly recommended, as the rest of the documentation w
 
 ```json
 {
-   "scripts": {
-      "docs:dev": "vuepress dev docs",
-      "docs:build": "vuepress build docs"
-   }
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
 }
 ```
 

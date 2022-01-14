@@ -27,4 +27,3 @@ I made this theme to combine eXperience of `@vue/theme` and [current huge VuePre
   <Step href="/api/" title="Config" description="Learn about the configuration of this theme."/>
   <Step href="/guide/migration.html" title="Migration" description="Migrate from other VuePress themes."/>
 </NextSteps>
-

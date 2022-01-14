@@ -25,7 +25,7 @@ import { defineConfig4CustomTheme } from "vuepress/config";
 
 export = defineConfig4CustomTheme<ThemeConfig>({
   theme: "vt",
-  themeConfig: {}
+  themeConfig: {},
 });
 ```
 
@@ -36,4 +36,3 @@ VT's config is fully compatible with [VuePress's Default Theme Config](https://v
 In additions, VT introduced the following additional features:
 
 > TODO
-

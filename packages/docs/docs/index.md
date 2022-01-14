@@ -6,19 +6,19 @@ actionLink: /guide/
 subActionText: Install
 subActionLink: /guide/getting-started.html
 features:
-- title: Full-text search
-  details: Full-text search is supported by default, no server dependency, distinguishing locales.
-- title: Out of the box
-  details: Compatible with VuePress' default theme, built-in common documentation features, e.g. i18n, Code Copy, TOC.
-- title: TypeScript
-  details: It's easier to custom your own config with full TypeScript support.
+  - title: Full-text search
+    details: Full-text search is supported by default, no server dependency, distinguishing locales.
+  - title: Out of the box
+    details: Compatible with VuePress' default theme, built-in common documentation features, e.g. i18n, Code Copy, TOC.
+  - title: TypeScript
+    details: It's easier to custom your own config with full TypeScript support.
 sponsors:
-- title: n8n.io
-  img: https://avatars.githubusercontent.com/u/45487711?s=200&v=4
-  link: https://n8n.io/
-- title: n8n.io (2)
-  img: https://avatars.githubusercontent.com/u/45487711?s=200&v=4
-  link: https://n8n.io/
+  - title: n8n.io
+    img: https://avatars.githubusercontent.com/u/45487711?s=200&v=4
+    link: https://n8n.io/
+  - title: n8n.io (2)
+    img: https://avatars.githubusercontent.com/u/45487711?s=200&v=4
+    link: https://n8n.io/
 ---
 
 ::: slot heroText

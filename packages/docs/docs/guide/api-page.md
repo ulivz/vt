@@ -44,11 +44,7 @@ module.exports = {
           title: "Config",
           path: "/api/",
           collapsable: false,
-          children: [
-            "/api/config-foo",
-            "/api/config-bar",
-            "/api/config-baz",
-          ],
+          children: ["/api/config-foo", "/api/config-bar", "/api/config-baz"],
         },
       ],
     },

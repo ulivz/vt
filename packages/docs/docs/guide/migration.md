@@ -11,7 +11,7 @@ Since VT is fully compatible with [VuePress's Default Theme](https://vuepress.vu
 ```diff
  // .vuepress/config.js
  module.exports = {
-+  theme: 'vt',  
++  theme: 'vt',
    themeConfig: {
    }
  }
