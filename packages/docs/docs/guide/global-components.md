@@ -18,20 +18,6 @@ A universal link component with internal and external link support:
 
 <VPLink class="nav-link" text="Guide" link="/guide/" rel="guide" />
 
-## `<API />`
-
-Generate API Page.
-
-- Input:
-
-```vue
-<API />
-```
-
-- Output:
-
-See [API Page](/api/).
-
 ## `<NextSteps />`
 
 - Input:
