@@ -22,7 +22,7 @@ inspired by <code>@vue/theme</code> .
 
 ## Features
 
-- Fully compatible with [VuePress's Default Theme Config](https://vuepress.vuejs.org/theme/default-theme-config.html).
+- [**Compatibility**](http://localhost:8080/guide/migration.html): fully compatible with [VuePress's Default Theme](https://vuepress.vuejs.org/theme/default-theme-config.html).
 - [**Full-text search**](https://vuepress-theme-vt.vercel.app/guide/search.html): No server dependencies, distinguishing locales.
 - [TypeScript Support](https://vuepress-theme-vt.vercel.app/guide/configuration.html)
 - [Homepage](https://vuepress-theme-vt.vercel.app/guide/home.html)
