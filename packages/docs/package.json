@@ -1,13 +1,13 @@
 {
   "private": true,
   "name": "docs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
   "devDependencies": {
-    "vuepress-theme-vt": "0.0.0",
-    "vuepress": "1.9.5"
+    "vuepress": "1.9.5",
+    "vuepress-theme-vt": "0.1.0"
   }
 }
