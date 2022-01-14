@@ -8,6 +8,7 @@
         :src="$withBase(data.heroImage)"
         :alt="data.heroAlt || 'hero'"
       />
+      <br/>
 
       <!-- heroText -->
       <h1 class="heroText" v-if="data.heroText">
@@ -110,7 +111,7 @@ section {
 }
 
 .hero-img {
-  max-width: 50px;
+  max-width: 200px;
   max-height: 280px;
 }
 
