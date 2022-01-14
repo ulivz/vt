@@ -1,6 +1,12 @@
 
 <template>
-  <svg width="1em" height="1em" viewBox="0 0 24 24" stroke-width="1.5px">
+  <svg
+    class="external-link"
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+    stroke-width="1.5px"
+  >
     <g fill="none">
       <path
         d="M21 3h-6"
@@ -35,3 +41,11 @@
     </g>
   </svg>
 </template>
+
+<style scoped>
+.external-link {
+  margin-left: 2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+</style>

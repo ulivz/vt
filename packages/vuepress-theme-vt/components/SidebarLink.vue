@@ -109,7 +109,7 @@ function renderExternal(h, to, text) {
         "sidebar-link": true,
       },
     },
-    [text, h("OutboundLink")]
+    [text, h("VPIconExternalLink")]
   );
 }
 </script>
