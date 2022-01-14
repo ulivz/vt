@@ -16,7 +16,7 @@ The fastest way to use this theme is to use our [create-vt generator](https://gi
 To use it, open up your terminal in the desired directory and run the following command:
 
 ```bash
-npm create vt [optionalDirectoryName]
+npm create vt@latest [optionalDirectoryName]
 ```
 
 The command will interactively ask for details to configure your VuePress site’s metadata such as:

@@ -62,6 +62,7 @@ module.exports = {
           type: "add",
           files: "**",
           templateDir: "default",
+          transformInclude: ['package.json']
         },
         moveAction,
       ];
@@ -71,6 +72,7 @@ module.exports = {
           type: "add",
           files: "**",
           templateDir: "i18n",
+          transformInclude: ['package.json']
         },
         moveAction,
       ];

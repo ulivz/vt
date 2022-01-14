@@ -16,13 +16,19 @@ async function build() {
   ];
 
   for (const action of actions) {
-    fs.ensureDirSync(action.target);
+    if (fs.existsSync(action.target)) {
+      await fs.emptyDir(action.target);
+    } else {
+      fs.ensureDirSync(action.target);
+    }
+
     await cp({
       src: action.source,
       dist: action.target,
       files: {
         "**": true,
         node_modules: false,
+        "docs/.vuepress/dist": false,
         "package.json": {
           rename: "_package.json",
           // set basic interpolation
