@@ -1,4 +1,4 @@
-$newCodeBgColor = rgb(246, 248, 250)
+$newCodeBgColor = rgb(246, 248, 250);
 
 {$contentClass} {
   code {
@@ -11,11 +11,13 @@ $newCodeBgColor = rgb(246, 248, 250)
 
     .token {
       &.deleted {
-        color: #EC5975;
+        color: var(--vp-diff-deleted-text);
+        background-color: var(--vp-diff-deleted-bg);
       }
 
       &.inserted {
-        color: var(--vp-c-green-light);
+        color: var(--vp-diff-inserted-text);
+        background-color: var(--vp-diff-inserted-bg);
       }
     }
   }
@@ -45,10 +47,10 @@ div[class*='language-'] {
   position: relative;
   background-color: $newCodeBgColor;
   border-radius: 6px;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
 
   &:hover {
-    background-color:darken($newCodeBgColor, 1.5%);
+    background-color: darken($newCodeBgColor, 1.5%);
   }
 
   .highlight-lines {
