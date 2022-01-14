@@ -1,3 +1,7 @@
+---
+sidebarDepth: 0
+---
+
 # Search
 
 This theme ships full-text search by default, thi is one of the core reasons for the birth of this theme. For now uou just need to move the mouse to the search box to type some keywords:
