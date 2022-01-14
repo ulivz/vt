@@ -22,7 +22,6 @@
   "dependencies": {
     "@vuepress/plugin-active-header-links": "1.9.5",
     "@vuepress/plugin-nprogress": "1.9.5",
-    "@vuepress/plugin-search": "1.9.5",
     "@vuepress/shared-utils": "1.9.5",
     "@vuepress/types": "1.9.5",
     "cheap-watch": "1.0.3",

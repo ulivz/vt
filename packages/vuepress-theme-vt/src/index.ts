@@ -29,16 +29,7 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
       ["@vuepress/active-header-links", options.activeHeaderLinks],
       [require.resolve("../plugins/copy-code/index.js"), true],
       [require.resolve("../plugins/translate/index.js"), true],
-      [
-        require.resolve("../plugins/search/index.js"),
-        {
-          searchMaxSuggestions: 10,
-        },
-      ],
-      [
-        require.resolve("../plugins/fulltext-search/index.js"),
-        options.enableFullTextSearch,
-      ],
+      [require.resolve("../plugins/fulltext-search/index.js"), true],
       "@vuepress/plugin-nprogress",
       [
         "container",

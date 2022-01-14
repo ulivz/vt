@@ -10,12 +10,21 @@ export default {
   },
   computed: {
     apiGroups() {
-      const sidebarConfig = this.$themeLocaleConfig.sidebar;
+      console.log("this", this);
+
+      const sidebarConfig =
+        this.$themeLocaleConfig.sidebar || this.$themeConfig.sidebar;
+
+      console.log("sidebarConfig", sidebarConfig);
 
       if (typeof sidebarConfig === "object") {
         const apiPath = this.$localePath + "api/";
 
         const apiConfigs = sidebarConfig[apiPath];
+        console.log('apiConfigs',apiConfigs);
+        console.log('apiPath',apiPath);
+        console.log('apiConfigs[0].path ',apiConfigs[0].path );
+        
         if (apiConfigs[0].path === apiPath) {
           return apiConfigs.slice(1).map((group) => {
             return {
@@ -39,6 +48,8 @@ export default {
     },
     filtered() {
       const q = this.query;
+      console.log("this.apiGroups", this.apiGroups);
+
       return this.apiGroups
         .map((section) => {
           const items = section.items
