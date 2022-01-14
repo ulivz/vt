@@ -10,23 +10,15 @@ export default {
   },
   computed: {
     apiGroups() {
-      console.log("this", this);
-
       const sidebarConfig =
         this.$themeLocaleConfig.sidebar || this.$themeConfig.sidebar;
-
-      console.log("sidebarConfig", sidebarConfig);
 
       if (typeof sidebarConfig === "object") {
         const apiPath = this.$localePath + "api/";
 
         const apiConfigs = sidebarConfig[apiPath];
-        console.log('apiConfigs',apiConfigs);
-        console.log('apiPath',apiPath);
-        console.log('apiConfigs[0].path ',apiConfigs[0].path );
-        
         if (apiConfigs[0].path === apiPath) {
-          return apiConfigs.slice(1).map((group) => {
+          return apiConfigs.map((group) => {
             return {
               text: group.title,
               description: group.description,
@@ -44,6 +36,7 @@ export default {
           });
         }
       }
+
       return [];
     },
     filtered() {
@@ -99,7 +92,7 @@ export default {
       <input class="api-filter" placeholder="Filter" v-model="query" />
     </div>
 
-    <div v-for="section of filtered" class="api-section">
+    <div v-for="section of filtered" class="api-section" :key="section.id">
       <h2 :id="section.id">
         {{ section.text }}
         <a class="header-anchor" :href="'#' + section.id" aria-hidden="true"
@@ -113,10 +106,10 @@ export default {
         <p v-html="section.description"></p>
       </div>
       <div class="api-groups">
-        <div v-for="item of section.items" class="api-group">
+        <div v-for="item of section.items" class="api-group" :key="item.text">
           <h3>{{ item.text }}</h3>
-          <ul>
-            <li v-for="h of item.headers">
+          <ul class="api-group-ul">
+            <li v-for="h of item.headers" class="api-group-li" :key="h">
               <VPLink :text="h" :link="item.link + '#' + slugify(h)" />
             </li>
           </ul>
@@ -262,6 +255,26 @@ h6:focus .header-anchor {
   line-height: 2;
   color: var(--vp-c-text-code);
   transition: color 0.5s;
+}
+
+.api-group-ul {
+  list-style: none;
+}
+
+.api-group-li {
+  position: relative;
+}
+
+.api-group-li:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgba(60, 60, 60, 0.33);
+  transition: background-color 0.5s;
+  left: -1.25rem;
+  top: 1rem;
 }
 
 .dark api-groups a {

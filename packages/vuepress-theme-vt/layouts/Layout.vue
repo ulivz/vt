@@ -28,7 +28,9 @@
     </Sidebar>
 
     <Home v-if="$page.frontmatter.home" />
-    
+
+    <API v-else-if="$page.frontmatter.api" />
+  
     <Page
       v-else
       :sidebar-items="sidebarItems"
@@ -51,6 +53,7 @@ import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import Toc from '@theme/components/Toc.vue'
+import API from '@theme/components/API.vue'
 import { resolveSidebarItems } from '../lib/util'
 
 export default {
@@ -62,6 +65,7 @@ export default {
     Sidebar,
     Navbar,
     Toc,
+    API,
   },
 
   data () {
@@ -92,6 +96,7 @@ export default {
       const { frontmatter } = this.$page
       return (
         !frontmatter.home
+        && !frontmatter.api
         && frontmatter.sidebar !== false
         && this.sidebarItems.length
       )
