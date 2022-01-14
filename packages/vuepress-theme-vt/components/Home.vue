@@ -8,7 +8,7 @@
         :src="$withBase(data.heroImage)"
         :alt="data.heroAlt || 'hero'"
       />
-      <br/>
+      <br />
 
       <!-- heroText -->
       <h1 class="heroText" v-if="data.heroText">
@@ -57,7 +57,11 @@
     <!-- special sponsor -->
     <section id="special-sponsor" v-show="data.sponsors">
       <span class="special-sponsor-title">Special Sponsor</span>
-      <span v-for="sponsor in data.sponsors" :key="sponsor.title">
+      <span
+        class="special-sponsor-item"
+        v-for="sponsor in data.sponsors"
+        :key="sponsor.title"
+      >
         <span>{{ sponsor.title }}</span>
         <a :href="sponsor.link"><img :src="sponsor.img" /></a>
       </span>
@@ -283,6 +287,16 @@ section {
   #special-sponsor img {
     display: block;
     margin: 2px auto 1px;
+  }
+
+  #special-sponsor .special-sponsor-title {
+    display: block;
+    margin: 0 0 10px 0;
+    font-weight: bolder;
+  }
+
+  #special-sponsor span {
+    margin: 0;
   }
 
   #highlights h3 {

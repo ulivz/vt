@@ -16,6 +16,9 @@ sponsors:
 - title: n8n.io
   img: https://avatars.githubusercontent.com/u/45487711?s=200&v=4
   link: https://n8n.io/
+- title: n8n.io (2)
+  img: https://avatars.githubusercontent.com/u/45487711?s=200&v=4
+  link: https://n8n.io/
 ---
 
 ::: slot heroText
