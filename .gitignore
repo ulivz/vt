@@ -19,3 +19,7 @@ lib
 .node
 *.log
 .rpt2_cache
+
+# generator assets
+packages/init/generator/default
+packages/init/generator/i18n
