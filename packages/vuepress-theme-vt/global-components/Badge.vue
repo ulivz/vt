@@ -13,6 +13,8 @@ export default {
     },
   },
   render(h, { props, slots }) {
+    const badgeIcon =
+      ["warning", "warn", "error"].indexOf(props.type) > -1 ? "⚠" : "ⓘ";
     return h(
       "span",
       {
@@ -21,7 +23,10 @@ export default {
           verticalAlign: props.vertical,
         },
       },
-      props.text || slots().default
+      [
+        h("span", { class: ["badge-icon"] }, badgeIcon),
+        h("span", { class: ["badge-text"] }, props.text || slots().default),
+      ]
     );
   },
 };
@@ -30,24 +35,40 @@ export default {
 <style lang="stylus" scoped>
 .badge {
   display: inline-block;
-  font-size: 14px;
-  height: 18px;
-  line-height: 18px;
-  border-radius: 3px;
+  height: 24px;
+  line-height: 22px;
+  border-radius: 11px;
   padding: 0 6px;
-  color: white;
-  background-color: #42b983;
+  color: rgba(0, 0, 0, 0.55);
+  background-color: var(--vp-c-bg-soft);
+  font-size: 0;
+  box-shadow: var(--vp-shadow-3);
+
+  .badge-icon {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 16px;
+    // font-weight: bolder;
+  }
+
+  .badge-text {
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: baseline;
+  }
 
   &.tip, &.green {
-    background-color: $badgeTipColor;
+    border: 1px solid rgb(178, 186, 194);
   }
 
   &.error {
-    background-color: $badgeErrorColor;
+    color: var(--vp-c-red-dark);
+    border: 1px solid var(--vp-c-red);
   }
 
   &.warning, &.warn, &.yellow {
-    background-color: $badgeWarningColor;
+    color: var(--vp-c-yellow-dark);
+    border: 1px solid var(--vp-c-yellow);
   }
 
   & + & {
