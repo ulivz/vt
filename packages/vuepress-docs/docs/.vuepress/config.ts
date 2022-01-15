@@ -7,7 +7,7 @@ import {
 } from './config/index'
 
 export = defineConfig(ctx => ({
-  theme: '@vuepress/vue',
+  theme: 'vt',
   dest: '../../vuepress',
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
@@ -54,17 +54,21 @@ export = defineConfig(ctx => ({
   themeConfig: {
     repo: 'vuejs/vuepress',
     editLinks: true,
+    logo: '/hero.png',
     docsDir: 'packages/docs/docs',
+
+    // we don't need algolia at VT.
     // #697 Provided by the official algolia team.
-    algolia: ctx.isProd
-      ? {
-        apiKey: '3a539aab83105f01761a137c61004d85',
-        indexName: 'vuepress',
-        algoliaOptions: {
-          facetFilters: ['tags:v1']
-        }
-      }
-      : null,
+    // algolia: ctx.isProd
+    //   ? {
+    //     apiKey: '3a539aab83105f01761a137c61004d85',
+    //     indexName: 'vuepress',
+    //     algoliaOptions: {
+    //       facetFilters: ['tags:v1']
+    //     }
+    //   }
+    //   : null,
+
     smoothScroll: true,
     locales: {
       '/': {

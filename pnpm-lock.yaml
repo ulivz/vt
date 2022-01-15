@@ -67,6 +67,7 @@ importers:
       vue-toasted: ^1.1.25
       vuepress: 1.9.5
       vuepress-plugin-flowchart: ^1.4.2
+      vuepress-theme-vt: 0.1.4
     devDependencies:
       '@vuepress/plugin-back-to-top': 1.9.5
       '@vuepress/plugin-google-analytics': 1.9.5
@@ -76,6 +77,7 @@ importers:
       vue-toasted: 1.1.28
       vuepress: 1.9.5
       vuepress-plugin-flowchart: 1.5.0
+      vuepress-theme-vt: link:../vuepress-theme-vt
 
   packages/vuepress-theme-vt:
     specifiers:

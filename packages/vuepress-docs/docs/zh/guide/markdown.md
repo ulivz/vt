@@ -384,7 +384,7 @@ module.exports = {
 
 <!--lint disable strong-marker-->
 
-<<< @/../@vuepress/markdown/__tests__/fragments/snippet.js{2}
+<!-- <<< @/../@vuepress/markdown/__tests__/fragments/snippet.js{2} -->
 
 <!--lint enable strong-marker-->
 
@@ -405,7 +405,7 @@ module.exports = {
 
 <!--lint disable strong-marker-->
 
-<<< @/../@vuepress/markdown/__tests__/fragments/snippet-with-region.js
+<!-- <<< @/../@vuepress/markdown/__tests__/fragments/snippet-with-region.js -->
 
 <!--lint enable strong-marker-->
 
@@ -413,7 +413,7 @@ module.exports = {
 
 <!--lint disable strong-marker-->
 
-<<< @/../@vuepress/markdown/__tests__/fragments/snippet-with-region.js#snippet{1}
+<!-- <<< @/../@vuepress/markdown/__tests__/fragments/snippet-with-region.js#snippet{1} -->
 
 <!--lint enable strong-marker-->
 

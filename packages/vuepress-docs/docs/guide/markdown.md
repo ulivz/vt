@@ -382,14 +382,14 @@ It also supports [line highlighting](#line-highlighting-in-code-blocks):
 **Input**
 
 ``` md
-<<< @/../@vuepress/markdown/__tests__/fragments/snippet.js{2}
+<<< @/packages/vuepress-docs/docs/.vuepress/enhanceApp.js{2}
 ```
 
 **Output**
 
 <!--lint disable strong-marker-->
 
-<<< @/../@vuepress/markdown/__tests__/fragments/snippet.js{2}
+<!-- <<< @/../@vuepress/markdown/__tests__/fragments/snippet.js{2} -->
 
 <!--lint enable strong-marker-->
 
@@ -409,7 +409,7 @@ You can also use a [VS Code region](https://code.visualstudio.com/docs/editor/co
 
 <!--lint disable strong-marker-->
 
-<<< @/../@vuepress/markdown/__tests__/fragments/snippet-with-region.js
+<!-- <<< @/../@vuepress/markdown/__tests__/fragments/snippet-with-region.js -->
 
 <!--lint enable strong-marker-->
 
@@ -417,7 +417,7 @@ You can also use a [VS Code region](https://code.visualstudio.com/docs/editor/co
 
 <!--lint disable strong-marker-->
 
-<<< @/../@vuepress/markdown/__tests__/fragments/snippet-with-region.js#snippet{1}
+<!-- <<< @/../@vuepress/markdown/__tests__/fragments/snippet-with-region.js#snippet{1} -->
 
 <!--lint enable strong-marker-->
 

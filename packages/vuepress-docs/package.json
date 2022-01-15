@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "vuepress": "1.9.5",
+    "vuepress-theme-vt": "0.1.4",
     "@vuepress/plugin-back-to-top": "1.9.5",
     "@vuepress/plugin-google-analytics": "1.9.5",
     "@vuepress/plugin-medium-zoom": "1.9.5",
