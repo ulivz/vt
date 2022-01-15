@@ -325,7 +325,7 @@ section {
   transition: color 0.5s, background-color 0.5s;
   padding: 28px 36px;
   border-radius: 8px;
-  flex: 1;
+  flex: 0 32%;
   font-size: 14px;
   font-weight: 500;
 }
