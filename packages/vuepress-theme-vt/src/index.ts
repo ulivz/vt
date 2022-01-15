@@ -20,10 +20,11 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
     alias() {
       return {
         "@AlgoliaSearchBox": isAlgoliaSearch
-          ? path.resolve(__dirname, "components/AlgoliaSearchBox.vue")
+          ? path.resolve(__dirname, "../components/AlgoliaSearchBox.vue")
           : path.resolve(__dirname, "noopModule.js"),
       };
     },
+
 
     plugins: [
       ["@vuepress/active-header-links", options.activeHeaderLinks],
