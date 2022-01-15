@@ -274,7 +274,7 @@ h6:focus .header-anchor {
   background-color: rgba(60, 60, 60, 0.33);
   transition: background-color 0.5s;
   left: -1.25rem;
-  top: 1rem;
+  top: 0.9rem;
 }
 
 .dark api-groups a {
