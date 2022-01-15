@@ -1,3 +1,12 @@
+## [0.1.4](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.3...v0.1.4) (2022-01-15)
+
+
+### Bug Fixes
+
+* **theme:** styling issue of six items features (close: [#20](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/20)) ([d8c1837](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/d8c18374ee15db563b136e6539c58c972ffe77de))
+
+
+
 ## [0.1.3](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.2...v0.1.3) (2022-01-14)
 
 
