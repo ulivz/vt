@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "vuepress-docs",
+  "version": "1.9.5",
+  "description": "docs of VuePress",
+  "keywords": [
+    "documentation",
+    "generator",
+    "vue"
+  ],
+  "scripts": {
+    "build": "vuepress build docs --temp .temp",
+    "dev": "vuepress dev docs --temp .temp",
+    "show-help": "vuepress --help",
+    "view-info": "vuepress view-info docs --temp .temp"
+  },
+  "devDependencies": {
+    "vuepress": "1.9.5",
+    "@vuepress/plugin-back-to-top": "1.9.5",
+    "@vuepress/plugin-google-analytics": "1.9.5",
+    "@vuepress/plugin-medium-zoom": "1.9.5",
+    "@vuepress/plugin-pwa": "1.9.5",
+    "@vuepress/theme-vue": "1.9.5",
+    "vue-toasted": "^1.1.25",
+    "vuepress-plugin-flowchart": "^1.4.2"
+  }
+}
