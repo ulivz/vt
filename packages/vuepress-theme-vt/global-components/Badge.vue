@@ -42,7 +42,6 @@ export default {
   color: rgba(0, 0, 0, 0.55);
   background-color: var(--vp-c-bg-soft);
   font-size: 0;
-  box-shadow: var(--vp-shadow-3);
 
   .badge-icon {
     display: inline-block;
