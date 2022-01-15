@@ -179,11 +179,11 @@ export default {
       &::before {
         content: '';
         position: absolute;
-        width: 200%;
+        width: calc(100% + 30px);
         height: 1px;
         position: absolute;
         bottom: -9px;
-        left: -40%;
+        left: -15px;
         transition: background-color 0.2s;
       }
     }
