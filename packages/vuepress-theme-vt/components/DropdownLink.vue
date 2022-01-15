@@ -178,7 +178,7 @@ export default {
       h4 {
         margin: 0.45rem 0 0;
         border-top: 1px solid #eee;
-        padding: 1rem 1.5rem 0.45rem 1.25rem;
+        padding: 1rem 1.5rem 0 1.25rem;
       }
 
       .dropdown-subitem-wrapper {
