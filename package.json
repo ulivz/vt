@@ -3,7 +3,7 @@
   "name": "vuepress-theme-vuejs",
   "scripts": {
     "bootstrap": "pnpm install --prefer-offline --registry https://registry.npmjs.org",
-    "build": "lerna run build",
+    "build": "lerna exec --scope vuepress-theme-vt -- npm run build",
     "test": "jest",
     "cov": "jest --coverage",
     "dev:docs": "lerna exec --scope docs -- npm run dev",
