@@ -2,7 +2,7 @@
 <br>
 
 <p align="center">
-    <img width="80" src="./media/logo.svg">
+    <img width="80" src="https://github.com/ulivz/vt/raw/master/media/logo.svg">
     <br>
     <h1 align="center">VT</h1>
 </p>
