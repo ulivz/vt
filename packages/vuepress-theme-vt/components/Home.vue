@@ -56,7 +56,9 @@
 
     <!-- special sponsor -->
     <section id="special-sponsor" v-show="data.sponsors">
-      <span class="special-sponsor-title">{{ data.sponsorsText || 'Special Sponsor' }}</span>
+      <span class="special-sponsor-title">{{
+        data.sponsorsText || "Special Sponsor"
+      }}</span>
       <span
         class="special-sponsor-item"
         v-for="sponsor in data.sponsors"
@@ -109,22 +111,35 @@ section {
   text-align: center;
 }
 
-#hero h1 {
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
-}
+#hero {
+  h1 {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+  }
 
-.hero-img {
-  max-width: 200px;
-  max-height: 280px;
-}
+  .hero-img {
+    max-width: 200px;
+    max-height: 280px;
+  }
 
-.heroText {
-  font-size: 62px;
-  line-height: 1.25;
-  font-weight: 900;
-  letter-spacing: -1.5px;
-  display: inline-block;
+  .heroText {
+    font-size: 76px;
+    line-height: 1.25;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .tagline {
+    display: inline-block;
+    max-width: 960px;
+    line-height: 1.5;
+    color: var(--vp-c-text-2);
+    transition: color 0.5s;
+    font-size: 22px;
+    margin: 24px auto 40px;
+  }
 }
 
 .dark .heroText {
@@ -132,16 +147,6 @@ section {
   background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.tagline {
-  display: inline-block;
-  max-width: 760px;
-  line-height: 1.5;
-  color: var(--vp-c-text-2);
-  transition: color 0.5s;
-  font-size: 18px;
-  margin: 0px 0px 24px 0px;
 }
 
 .actions a {
