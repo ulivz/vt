@@ -1,3 +1,21 @@
+## [0.1.5](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.4...v0.1.5) (2022-01-16)
+
+
+### Bug Fixes
+
+* **theme:** bottom border at nav links is too long when nav title is long (close: [#24](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/24)) ([916a469](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/916a46917c8a3c933740ee5c026a9f8de2d87538))
+* **theme:** cannot resolve AlgoliaSearchBox (close: [#27](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/27)) ([5bbd006](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/5bbd006ed7ca44300ce235357b73faa9a8758d3d))
+* **theme:** dropdown group links styling issue (close: [#25](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/25)) ([c978d51](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/c978d51746699c3740078213bf0ff607c7fda127))
+* **theme:** missing padding when hero text is multiple-lined (close: [#23](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/23)) ([b4b1193](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/b4b119336a2bc1bb9f267ef386972bc0be9a26f3))
+* **theme:** should align center at `<API />` page ([944006d](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/944006d941cbc7f986394f0461e28752d9b0c2c3))
+
+
+### Features
+
+* **theme:** new badge component (close: [#22](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/22)) ([88d8d07](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/88d8d073a24bf1916fb39b0ee266d73dc2ff4d83))
+
+
+
 ## [0.1.4](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.3...v0.1.4) (2022-01-15)
 
 
