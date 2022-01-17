@@ -6,7 +6,7 @@
       <NavLink v-else :item="item" />
     </div>
 
-    <!-- <VPNavBarAppearance class="appearance" /> -->
+    <VPNavBarAppearance v-if="enableDarkMode" class="appearance" />
 
     <!-- repo link -->
     <a
@@ -43,6 +43,13 @@ export default {
   },
 
   computed: {
+    enableDarkMode() {
+      return (
+        this.$themeLocaleConfig.enableDarkMode ||
+        this.$site.themeConfig.enableDarkMode
+      );
+    },
+
     userNav() {
       return this.$themeLocaleConfig.nav || this.$site.themeConfig.nav || [];
     },
@@ -168,13 +175,17 @@ export default {
     .nav-item, .repo-link {
       margin-left: 0;
     }
+
+    .appearance {
+      margin-left: 0px;
+    }
   }
 }
 
 @media (min-width: $MQMobile) {
   .nav-links a {
     &:hover, &.router-link-active {
-      color: $textColor;
+      color: var(--c-brand);
 
       &::before {
         content: '';

@@ -36,7 +36,7 @@ export default {
 
   .nav-links {
     display: none;
-    border-bottom: 1px solid $borderColor;
+    border-bottom: 1px solid var(--vp-c-divider-light);
     padding: 0.5rem 0 0.75rem 0;
 
     a {

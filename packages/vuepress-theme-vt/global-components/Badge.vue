@@ -35,11 +35,11 @@ export default {
 <style lang="stylus" scoped>
 .badge {
   display: inline-block;
-  height: 24px;
-  line-height: 22px;
-  border-radius: 11px;
-  padding: 0 6px;
-  color: rgba(0, 0, 0, 0.55);
+  height: 22px;
+  line-height: 20px;
+  border-radius: 10px;
+  padding: 0 5px;
+  color: var(--vp-c-text-code);
   background-color: var(--vp-c-bg-soft);
   font-size: 0;
 
@@ -72,6 +72,15 @@ export default {
 
   & + & {
     margin-left: 5px;
+  }
+}
+
+.dark {
+  .badge {
+    &.tip, &.green {
+      color: var(--c-brand);
+      border: 1px solid var(--c-brand);
+    }
   }
 }
 </style>

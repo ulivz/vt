@@ -1,6 +1,7 @@
 @require './config';
 @require './theme';
 @require './code';
+@require './code-dark';
 @require './custom-blocks';
 @require './arrow';
 @require './wrapper';
@@ -17,12 +18,16 @@ html, body {
   transition: background-color 0.5s;
 }
 
+html.dark {
+  color-scheme: dark;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  color: $textColor;
+  color: var(--vp-c-text-1);
 }
 
 .page {
@@ -32,6 +37,7 @@ body {
 
 .navbar {
   background-color: var(--vp-c-bg);
+  transition: background-color 0.5s;
   position: fixed;
   z-index: 20;
   top: 0;
@@ -39,7 +45,7 @@ body {
   right: 0;
   height: $navbarHeight;
   box-sizing: border-box;
-  border-bottom: 1px solid $borderColor;
+  border-bottom: 1px solid var(--vp-c-divider-light);
 }
 
 .sidebar-mask {
@@ -55,6 +61,7 @@ body {
 .sidebar {
   font-size: 14px;
   background-color: var(--vp-c-bg);
+  transition: background-color 0.5s;
   width: var(--vp-sidebar-width);
   position: fixed;
   z-index: 10;
@@ -63,7 +70,7 @@ body {
   left: 0;
   bottom: 0;
   box-sizing: border-box;
-  border-right: 1px solid $borderColor;
+  border-right: 1px solid var(--vp-c-divider-light);
   overflow-y: auto;
 }
 
@@ -159,11 +166,9 @@ p, ul, ol {
   line-height: 1.7;
 }
 
-
-
 hr {
   border: 0;
-  border-top: 1px solid $borderColor;
+  border-top: 1px solid var(--vp-c-divider-light);
 }
 
 table {
@@ -212,7 +217,9 @@ table {
   }
 
   .sidebar {
-    left: calc(((100% - var(--vp-screen-max-width)) / 2));
+    left: 0;
+    padding-left: calc(((100% - var(--vp-screen-max-width)) / 2));
+    box-sizing: content-box;
   }
 
   .theme-container.no-sidebar {

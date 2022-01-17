@@ -16,7 +16,7 @@
       @click="setOpen(!open)"
     >
       <span class="title">{{ item.text }}</span>
-      <Arrow :open="open"/>
+      <Arrow :open="open" />
     </button>
 
     <DropdownTransition>
@@ -137,8 +137,8 @@ export default {
     background: transparent;
     border: none;
     font-weight: 500;
-    color: $textColor;
 
+    // color: $textColor;
     &:hover {
       border-color: transparent;
     }
@@ -163,7 +163,7 @@ export default {
 
     font-size inherit {
       &:hover {
-        color: var(--c-brand);;
+        color: var(--c-brand);
       }
     }
   }
@@ -200,11 +200,11 @@ export default {
         padding: 0 1.5rem 0 1.25rem;
 
         &:hover {
-          color: var(--c-brand);;
+          color: var(--c-brand);
         }
 
         &.router-link-active {
-          color: var(--c-brand);;
+          color: var(--c-brand);
         }
       }
 
@@ -213,6 +213,18 @@ export default {
         padding-top: 0;
         border-top: 0;
       }
+    }
+  }
+}
+
+.dark .dropdown-wrapper {
+  .nav-dropdown {
+    background: var(--vp-c-bg);
+    box-shadow: var(--vp-shadow-1);
+    border: 1px solid var(--vp-c-divider-light);
+
+    h4 {
+      border-top: 1px solid var(--vp-c-divider-light);
     }
   }
 }
