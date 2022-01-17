@@ -10,8 +10,10 @@
       spellcheck="false"
       @input="query = $event.target.value"
       @focus="focused = true"
+      @blur="focused = false"
       @keyup.enter="go(focusIndex)"
       @keyup.up="onUp"
+      @keyup.down="onDown"
     />
     <IconSearch class="search-icon" @click.native="expandSearchInput" />
     <SearchCommand class="search-command" @onCommand="expandSearchInput" />
