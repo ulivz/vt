@@ -1,7 +1,3 @@
----
-sidebarDepth: 0
----
-
 # Global Components
 
 ## `<VPLink />`

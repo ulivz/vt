@@ -1,7 +1,3 @@
----
-sidebarDepth: 0
----
-
 # Config: Home
 
 The following are all the frontmatter configurations for the [homepage](../guide/home.md).

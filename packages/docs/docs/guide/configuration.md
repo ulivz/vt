@@ -1,7 +1,3 @@
----
-sidebarDepth: 0
----
-
 # Configuration
 
 ## Using TypeScript

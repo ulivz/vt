@@ -35,7 +35,7 @@ export default {
       sidebarDepth,
       $themeLocaleConfig.sidebarDepth,
       $themeConfig.sidebarDepth,
-      1,
+      0,
     ].find((depth) => depth !== undefined);
 
     const displayAllHeaders =

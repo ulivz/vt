@@ -1,7 +1,3 @@
----
-sidebarDepth: 0
----
-
 # Config: Frontmatter
 
 ## home
@@ -68,9 +64,7 @@ sidebar: false
 Set maximum depth of sidebar headers, set `0` to hide headers at it:
 
 ```md
----
-sidebarDepth: 0
----
+
 ```
 
 ## navbar

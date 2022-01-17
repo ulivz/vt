@@ -1,7 +1,3 @@
----
-sidebarDepth: 0
----
-
 # Migration
 
 ## Migrate from default theme
