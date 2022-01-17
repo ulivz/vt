@@ -15,8 +15,10 @@ inspired by <code>@vue/theme</code> .
 <p align="center">
 <a href="https://www.npmjs.com/package/vuepress-theme-vt"><img src="https://img.shields.io/npm/v/vuepress-theme-vt?color=c95f8b&amp;label=" alt="NPM version"></a></p>
 
-<p align="center"><a target="_blank" href="https://vuepress-theme-vt.vercel.app">📖 Live Documentation</a></p>
-<p align="center"><a target="_blank" href="https://vuepress-docs.vercel.app/">📚 VuePress Docs With This Theme</a></p>
+<p align="center">
+  <a target="_blank" href="https://vuepress-theme-vt.vercel.app">📖 Live Documentation</a>
+  <a target="_blank" href="https://vuepress-docs.vercel.app/">📚 VuePress Docs With This Theme</a>
+</p>
 
 <br>
 <br>
@@ -59,7 +61,6 @@ module.exports = {
 
 - [vuepress-plugin-fulltext-search](https://github.com/leo-buneev/vuepress-plugin-fulltext-search), by [@leo-buneev](https://github.com/leo-buneev).
 - [icones](https://icones.js.org/), by [@antfu](https://icones.js.org/).
-
 
 ## Sponsors
 
