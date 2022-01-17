@@ -43,7 +43,7 @@ export default {
       font-weight: 600;
     }
 
-    .nav-item, .repo-link {
+    .nav-item, .repo-link, .appearance {
       display: block;
       line-height: 1.25rem;
       font-size: 13px;

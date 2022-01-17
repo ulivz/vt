@@ -217,18 +217,6 @@ export default {
   }
 }
 
-.dark .dropdown-wrapper {
-  .nav-dropdown {
-    background: var(--vp-c-bg);
-    box-shadow: var(--vp-shadow-1);
-    border: 1px solid var(--vp-c-divider-light);
-
-    h4 {
-      border-top: 1px solid var(--vp-c-divider-light);
-    }
-  }
-}
-
 @media (max-width: $MQMobile) {
   .dropdown-wrapper {
     &.open .dropdown-title {
@@ -269,6 +257,18 @@ export default {
 }
 
 @media (min-width: $MQMobile) {
+  .dark .dropdown-wrapper {
+    .nav-dropdown {
+      background: var(--vp-c-bg);
+      box-shadow: var(--vp-shadow-1);
+      border: 1px solid var(--vp-c-divider-light);
+
+      h4 {
+        border-top: 1px solid var(--vp-c-divider-light);
+      }
+    }
+  }
+
   .dropdown-wrapper {
     height: 1.8rem;
 
