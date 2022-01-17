@@ -25,11 +25,15 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
       };
     },
 
-
     plugins: [
       ["@vuepress/active-header-links", options.activeHeaderLinks],
       [require.resolve("../plugins/copy-code/index.js"), true],
-      [require.resolve("../plugins/translate/index.js"), true],
+      [
+        require.resolve("../plugins/translate/index.js"),
+        {
+          transformTranslatedDocument: options.transformTranslatedDocument,
+        },
+      ],
       [require.resolve("../plugins/fulltext-search/index.js"), true],
       "@vuepress/plugin-nprogress",
       [
