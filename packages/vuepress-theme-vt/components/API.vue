@@ -18,22 +18,24 @@ export default {
 
         const apiConfigs = sidebarConfig[apiPath];
         if (apiConfigs[0].path === apiPath) {
-          return apiConfigs.map((group) => {
-            return {
-              text: group.title,
-              description: group.description,
-              items: group.children.map((item) => {
-                const page = this.$site.pages.find(
-                  (page) => page.regularPath === item + ".html"
-                );
-                return {
-                  text: page.title,
-                  link: page.path,
-                  headers: (page.headers || []).map((header) => header.title),
-                };
-              }),
-            };
-          });
+          return apiConfigs
+            .filter((group) => group.children)
+            .map((group) => {
+              return {
+                text: group.title,
+                description: group.description,
+                items: group.children.map((item) => {
+                  const page = this.$site.pages.find(
+                    (page) => page.regularPath === item + ".html"
+                  );
+                  return {
+                    text: page.title,
+                    link: page.path,
+                    headers: (page.headers || []).map((header) => header.title),
+                  };
+                }),
+              };
+            });
         }
       }
 
