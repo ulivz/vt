@@ -1,3 +1,18 @@
+## [0.2.1](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.6...v0.2.1) (2022-01-17)
+
+
+### Bug Fixes
+
+* **theme:** search box does not hidden (close: [#32](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/32)) ([aa99db0](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/aa99db0c4147b45a7a5c20aa50b4eaa792975282))
+
+
+### Features
+
+* **theme:** dark mode (close: [#11](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/11)) ([#31](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/31)) ([1d31038](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/1d310388c0a0d4c415956992666c8a3b4934be07))
+* **theme:** set default sidebar depth to 0 (close: [#30](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/30)) ([27d65ef](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/27d65ef06e5382b6d213f74b63ce96ae1812a9d3))
+
+
+
 # [0.2.0](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.6...v0.2.0) (2022-01-17)
 
 
