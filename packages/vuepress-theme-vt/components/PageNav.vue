@@ -133,7 +133,7 @@ function flatten(items, res) {
 
   .inner {
     padding-top: 1rem;
-    border-top: 1px solid $borderColor;
+    border-top: 1px solid var(--vp-c-divider-light);
     display: flex;
     justify-content: space-between;
   }

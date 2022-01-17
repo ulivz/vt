@@ -175,7 +175,7 @@ export default {
 
     a {
       display: block;
-      color: #2c3e50;
+      color: var(--vp-c-text-2);
       width: 100%;
       box-sizing: border-box;
       font-size: 12px;
@@ -188,17 +188,17 @@ export default {
     }
 
     &.active {
-      border-left-color: var(--c-brand);;
+      border-left-color: var(--c-brand);
 
       a {
-        color: var(--c-brand);;
+        color: var(--c-brand);
         font-weight: 500;
       }
     }
 
     &:hover {
       a {
-        color: var(--c-brand);;
+        color: var(--c-brand);
       }
     }
   }

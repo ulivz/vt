@@ -52,6 +52,7 @@ export = defineConfig(ctx => ({
     }
   },
   themeConfig: {
+    enableDarkMode: true,
     repo: 'vuejs/vuepress',
     editLinks: true,
     logo: '/hero.png',

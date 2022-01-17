@@ -28,3 +28,7 @@ div[class*="language-"]:hover .code-copy {
 .content pre[class*="language-"] {
   overflow-y: hidden;
 }
+
+.dark .code-copy {
+  filter: invert(1);
+}

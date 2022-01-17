@@ -113,7 +113,7 @@ export default {
       }
 
       .ds-suggestion {
-        border-bottom: 1px solid $borderColor;
+        border-bottom: 1px solid var(--vp-c-divider-light);
       }
     }
 
@@ -122,7 +122,7 @@ export default {
     }
 
     .algolia-docsearch-suggestion {
-      border-color: $borderColor;
+      border-color: var(--vp-c-divider-light);
       padding: 0;
 
       .algolia-docsearch-suggestion--category-header {
@@ -150,7 +150,7 @@ export default {
       .algolia-docsearch-suggestion--subcategory-column {
         vertical-align: top;
         padding: 5px 7px 5px 5px;
-        border-color: $borderColor;
+        border-color: var(--vp-c-divider-light);
         background: #f1f3f5;
 
         &:after {
@@ -164,7 +164,7 @@ export default {
     }
 
     .algolia-docsearch-footer {
-      border-color: $borderColor;
+      border-color: var(--vp-c-divider-light);
     }
 
     .ds-cursor .algolia-docsearch-suggestion--content {

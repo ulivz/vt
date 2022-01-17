@@ -5,6 +5,7 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
   theme: "vt",
   title: "VT",
   themeConfig: {
+    enableDarkMode: true,
     repo: "https://github.com/ulivz/vuepress-theme-vt",
     logo: "/logo.svg",
     nav: [
@@ -28,6 +29,7 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
             "/guide/configuration",
             "/guide/global-components",
             "/guide/migration",
+            "/guide/dark-mode",
             "/guide/documenting",
           ],
         },

@@ -10,10 +10,8 @@
       spellcheck="false"
       @input="query = $event.target.value"
       @focus="focused = true"
-      @blur="focused = false"
       @keyup.enter="go(focusIndex)"
       @keyup.up="onUp"
-      @keyup.down="onDown"
     />
     <IconSearch class="search-icon" @click.native="expandSearchInput" />
     <SearchCommand class="search-command" @onCommand="expandSearchInput" />
@@ -308,6 +306,7 @@ function highlight(str, strHighlight) {
 
   input {
     background-color: var(--vp-c-bg);
+    transition: background-color 0.5s;
     cursor: text;
     width: 10rem;
     height: 2rem;
@@ -327,7 +326,7 @@ function highlight(str, strHighlight) {
 
     &:focus {
       cursor: auto;
-      border-color: var(--c-brand);;
+      border-color: var(--c-brand);
 
       &::placeholder {
         color: var(--c-brand);
@@ -339,8 +338,8 @@ function highlight(str, strHighlight) {
     }
 
     &.focused {
-      // border-bottom: 1px solid darken($borderColor, 10%);
-      // border: 1px solid darken($borderColor, 10%);
+      // border-bottom: 1px solid darken(var(--vp-c-divider-light), 10%);
+      // border: 1px solid darken(var(--vp-c-divider-light), 10%);
       // border-radius: 1rem;
     }
   }
@@ -398,7 +397,7 @@ function highlight(str, strHighlight) {
       .parent-page-title {
         color: white;
         font-weight: 600;
-        background-color: var(--c-brand);;
+        background-color: var(--c-brand);
         padding: 5px;
       }
 
@@ -446,6 +445,10 @@ function highlight(str, strHighlight) {
       background-color: #f3f4f5;
     }
   }
+}
+
+.dark .search-box .suggestions {
+  background: #fff;
 }
 
 @media (max-width: $MQNarrow) {

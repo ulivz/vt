@@ -129,14 +129,15 @@ a.sidebar-link {
   line-height: 1.4;
   width: 100%;
   box-sizing: border-box;
+  transition: color 0.3s;
 
   &:hover {
-    color: var(--c-brand);;
+    color: var(--c-brand);
   }
 
   &.active {
     font-weight: 600;
-    color: var(--c-brand);;
+    color: var(--c-brand);
   }
 
   .sidebar-group & {

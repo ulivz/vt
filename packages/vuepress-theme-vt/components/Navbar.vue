@@ -132,7 +132,7 @@ function css(el, property) {
   .site-name {
     font-size: 22px;
     font-weight: 500;
-    color: #2c3e50;
+    color: var(--vp-c-text-1);
     position: relative;
   }
 
