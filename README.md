@@ -16,6 +16,7 @@ inspired by <code>@vue/theme</code> .
 <a href="https://www.npmjs.com/package/vuepress-theme-vt"><img src="https://img.shields.io/npm/v/vuepress-theme-vt?color=c95f8b&amp;label=" alt="NPM version"></a></p>
 
 <p align="center"><a target="_blank" href="https://vuepress-theme-vt.vercel.app">📖 Live Documentation</a></p>
+<p align="center"><a target="_blank" href="https://vuepress-docs.vercel.app/">📚 VuePress Docs With This Theme</a></p>
 
 <br>
 <br>
