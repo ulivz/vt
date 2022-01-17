@@ -1,3 +1,19 @@
+## [0.2.2](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.2.1...v0.2.2) (2022-01-17)
+
+
+### Bug Fixes
+
+* **theme:** gradient text at dark mode (close: [#33](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/33)) ([bf129e0](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/bf129e0f887c99b50106535d8b08fddbbc9efcfc))
+* **theme:** mobile layout issue under dark mode (close: [#34](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/34)) ([45c0726](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/45c07268bd3a49b058beb98e8442b77822fdd058))
+
+
+### Features
+
+* **theme:** adjust hero text at narrow screen (close: [#36](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/36)) ([7cf46c5](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/7cf46c5ea507b81c9401b841777af250fdbb3167))
+* **theme:** transformTranslatedDocument option (close: [#35](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/35)) ([86045ac](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/86045ac67241934425e0aec3a786418fa21460d3))
+
+
+
 ## [0.2.1](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.6...v0.2.1) (2022-01-17)
 
 
