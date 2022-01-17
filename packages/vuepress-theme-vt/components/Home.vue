@@ -277,10 +277,10 @@ section {
 
   #hero {
     padding: 64px 10px;
-  }
 
-  .heroText {
-    font-size: 38px;
+    .heroText {
+      font-size: 58px;
+    }
   }
 
   .description {
@@ -313,8 +313,10 @@ section {
 }
 
 @media (max-width: 370px) {
-  .heroText {
-    font-size: 36px;
+  #hero {
+    .heroText {
+      font-size: 36px;
+    }
   }
 }
 
