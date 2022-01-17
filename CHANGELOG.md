@@ -1,3 +1,13 @@
+# [0.2.0](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.6...v0.2.0) (2022-01-17)
+
+
+### Features
+
+* **theme:** dark mode (close: [#11](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/11)) ([3458a31](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/3458a3138910e30f18f3ad3f779e0ad54288dd19))
+* **theme:** set default sidebar depth to 0 (close: [#30](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/30)) ([27d65ef](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/27d65ef06e5382b6d213f74b63ce96ae1812a9d3))
+
+
+
 ## [0.1.6](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.1.4...v0.1.6) (2022-01-17)
 
 
