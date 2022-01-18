@@ -1,3 +1,12 @@
+## [0.2.3](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.2.2...v0.2.3) (2022-01-18)
+
+
+### Bug Fixes
+
+* **theme:** mobile sidebar group title color issue at dark mode (close: [#37](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/37)) ([2845325](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/2845325f778dcb53cbb0766ebd003611b66958c1))
+
+
+
 ## [0.2.2](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.2.1...v0.2.2) (2022-01-17)
 
 
