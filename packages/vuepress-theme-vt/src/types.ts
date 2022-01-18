@@ -14,9 +14,9 @@ export type ThemeConfig = DefaultThemeConfig & {
    * @param sourceFile
    * @param targetFile
    */
-  transformTranslatedDocument(
+  transformTranslatedDocument?: (
     content: string,
     sourceFile: string,
     targetFile: string
-  ): string;
+  ) => string;
 };
