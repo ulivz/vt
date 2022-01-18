@@ -1,3 +1,12 @@
+## [0.2.4](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.2.3...v0.2.4) (2022-01-18)
+
+
+### Bug Fixes
+
+* **theme:** transformTranslatedDocument should be optional (close: [#38](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/38)) ([ad44581](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/ad4458146b5129e5242e4845daa03e02d3aab55a))
+
+
+
 ## [0.2.3](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.2.2...v0.2.3) (2022-01-18)
 
 
