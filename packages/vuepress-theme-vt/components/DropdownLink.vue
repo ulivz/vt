@@ -137,8 +137,8 @@ export default {
     background: transparent;
     border: none;
     font-weight: 500;
+    color: var(--vp-c-text-1);
 
-    // color: $textColor;
     &:hover {
       border-color: transparent;
     }
