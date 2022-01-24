@@ -105,6 +105,7 @@ function css(el, property) {
 </script>
 
 <style lang="stylus">
+
 .navbar {
   .navbar-container {
     height: 100%;
@@ -117,6 +118,9 @@ function css(el, property) {
     height: 100%;
     display: flex;
     align-items: center;
+    z-index: 1;
+    background-color: var(--vp-c-bg);
+    padding-right: 1rem;
   }
 
   a, span, img {
@@ -156,6 +160,10 @@ function css(el, property) {
 
 @media (max-width: $MQMobile) {
   .navbar {
+    .navbar-container {
+      max-width: 100%;
+    }
+
     .can-hide {
       display: none;
     }

@@ -136,6 +136,8 @@ export default {
 </script>
 
 <style lang="stylus">
+@require '../styles/config';
+  
 .on-this-page {
   font-weight: 700;
   margin-bottom: 20px;
@@ -156,7 +158,6 @@ export default {
   position: fixed;
   display: none;
   max-height: 100vh;
-  max-width: 300px;
   overflow-y: auto;
   padding-top: $navbarHeight;
   padding-bottom: 150px;
@@ -210,8 +211,13 @@ export default {
   }
 }
 
+.vuepress-toc {
+  max-width: var(--vp-toc-width);
+  right: calc((100vw - var(--vp-screen-max-width)) / 4)
+}
+
 // for vuepress-toc
-@media (min-width: 1300px) {
+@media (min-width: $MQDesktop) {
   .vuepress-toc {
     display: block;
   }

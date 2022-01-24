@@ -204,7 +204,7 @@ table {
 @media (min-width: ($MQMobile + 1px)) {
   // TODO wide screen mode
   .page {
-    padding-left: 100px;
+    padding-left: calc((100vw - var(--vp-screen-max-width)) / 2 + var(--vp-sidebar-width));
 
     &.api {
       font-size: 20px;
@@ -218,7 +218,7 @@ table {
 
   .sidebar {
     left: 0;
-    padding-left: calc(((100% - var(--vp-screen-max-width)) / 2));
+    padding-left: calc((100vw - var(--vp-screen-max-width)) / 2);
     box-sizing: content-box;
   }
 

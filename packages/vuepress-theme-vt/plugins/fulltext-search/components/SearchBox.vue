@@ -354,7 +354,7 @@ function highlight(str, strHighlight) {
     height: 20px;
     position: relative;
     position: absolute;
-    top: 7px;
+    top: 5px;
     left: 3px;
     margin-right: 10px;
     cursor: pointer;

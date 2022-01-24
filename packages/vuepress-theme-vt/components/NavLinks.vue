@@ -127,6 +127,8 @@ export default {
 <style lang="stylus">
 .nav-links {
   display: inline-block;
+  max-width: calc(100vw - 260px);
+  overflow-x: scroll;
 
   a {
     line-height: 1.4rem;

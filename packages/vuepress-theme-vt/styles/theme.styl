@@ -114,10 +114,50 @@
 
 :root {
     --vp-navbar-height: 5rem;
-    --vp-sidebar-width: 260px;
-    --vp-screen-max-width: 1376px;
+    --vp-sidebar-width: 15vw;
+    --vp-toc-width: 16vw;
+    --vp-doc-max-width: 50vw;
+    --vp-doc-padding: 7vw;
+    --vp-screen-max-width: 78vw;
     --vp-font-family-base: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     --vp-font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@media screen and (max-width: $MQWiderDesktop) {
+    :root {
+        --vp-screen-max-width: 85vw;
+        --vp-doc-max-width: 55vw;
+        --vp-toc-width: 15vw;
+    }
+}
+
+@media screen and (max-width: $MQWideDesktop) {
+    :root {
+        --vp-screen-max-width: 90vw;
+        --vp-doc-max-width: 57vw;
+        --vp-doc-padding: 6vw;
+    }
+}
+
+@media screen and (max-width: $MQDesktop + 1px) {
+    :root {
+        --vp-sidebar-width: 17vw;
+        --vp-screen-max-width: 92vw;
+        --vp-doc-max-width: 72vw;
+    }
+}
+
+@media screen and (max-width: $MQNarrow + 1px) {
+    :root {
+        --vp-sidebar-width: 20vw;
+        --vp-doc-max-width: 100vw;
+    }
+}
+
+@media screen and (max-width: $MQMobile) {
+    :root {
+        --vp-sidebar-width: 260px;
+    }
 }
 
 :root {
