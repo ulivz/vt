@@ -1,3 +1,13 @@
+## [0.2.5](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.2.4...v0.2.5) (2022-01-24)
+
+
+### Bug Fixes
+
+* **theme:** header remove 'position: relative' ([#40](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/40)) ([224e9f6](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/224e9f6fd9b0a638637a6771e3d727a0db13a548))
+* **theme:** narrow screen layout issue (close: [#41](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/41)) ([#42](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/42)) ([96d48bb](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/96d48bbd70c586287dd6c9899b713f2d215c5e6f))
+
+
+
 ## [0.2.4](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.2.3...v0.2.4) (2022-01-18)
 
 
