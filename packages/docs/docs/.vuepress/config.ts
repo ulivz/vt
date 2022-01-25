@@ -30,6 +30,7 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
             "/guide/global-components",
             "/guide/migration",
             "/guide/dark-mode",
+            "/guide/page-layout",
             "/guide/documenting",
           ],
         },
