@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.3.0...v0.3.1) (2022-01-25)
+
+
+### Bug Fixes
+
+* **theme:** adjust page content layout when sidebar is disabled (close: [#47](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/47)) ([#48](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/48)) ([934a237](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/934a2370ba9c0b415a6340bf89ec67e8c41671e5))
+
+
+
 # [0.3.0](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.2.6...v0.3.0) (2022-01-25)
 
 
