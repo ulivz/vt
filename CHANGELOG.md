@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.2.6...v0.3.0) (2022-01-25)
+
+
+### Features
+
+* **theme:** support page layout (close: [#45](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/45)) ([#46](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/46)) ([ac1582e](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/ac1582e5f204c1851726a707f909e6f7a0da0be1))
+
+
+
 ## [0.2.6](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.2.5...v0.2.6) (2022-01-25)
 
 
