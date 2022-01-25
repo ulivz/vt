@@ -185,15 +185,13 @@ export default {
     },
 
     getPageLayout() {
-      if (this.$page.path) {
-        const layout = this.$page.frontmatter.pageLayout;
-        if (
-          layout &&
-          (this.$vuepress.getLayoutAsyncComponent(layout) ||
-            this.$vuepress.getVueComponent(layout))
-        ) {
-          return layout;
-        }
+      const layout = this.$page.frontmatter.pageLayout;
+      if (
+        layout &&
+        (this.$vuepress.getLayoutAsyncComponent(layout) ||
+          this.$vuepress.getVueComponent(layout))
+      ) {
+        return layout;
       }
     },
   },
