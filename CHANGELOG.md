@@ -1,3 +1,12 @@
+## [0.2.6](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.2.5...v0.2.6) (2022-01-25)
+
+
+### Bug Fixes
+
+* **vuepress-theme-vt:** remove overflow-x to fix dropdown (close: [#43](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/43)) ([#44](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/44)) ([6c276f6](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/6c276f603611d8cb905c59f020f8620e492cb1aa))
+
+
+
 ## [0.2.5](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.2.4...v0.2.5) (2022-01-24)
 
 
