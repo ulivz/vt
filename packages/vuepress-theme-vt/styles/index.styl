@@ -222,7 +222,7 @@ table {
 
   .sidebar {
     left: 0;
-    padding-left: calc((100vw - var(--vp-screen-max-width)) / 2);
+    padding-left: calc(((100vw - var(--vp-screen-max-width)) / 2));
     box-sizing: content-box;
   }
 
@@ -232,7 +232,18 @@ table {
     }
 
     .page {
-      padding-left: 0;
+      padding: 0 calc(((100vw - var(--vp-screen-max-width)) / 2));
+      margin: 0 auto;
+
+      .theme-default-content {
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      .page-edit, .page-nav {
+        margin: 0 auto;
+        padding: 0;
+      }
     }
   }
 }

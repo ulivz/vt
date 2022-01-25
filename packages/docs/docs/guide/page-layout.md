@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 # Page Layout
 
 ## Motivation
@@ -16,4 +20,4 @@ pageLayout: PageLayout1
 ---
 ```
 
-An example [here](./page-layout-example.md).
+An example [here](../examples/using-page-layout.md).

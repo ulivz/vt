@@ -56,6 +56,9 @@ sidebar: false
 ---
 ```
 
+See [live example](../../../docs/docs/examples/disable-sidebar.md).
+
+
 ## sidebarDepth
 
 - **Type**: `number`
