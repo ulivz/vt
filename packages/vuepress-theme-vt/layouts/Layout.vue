@@ -30,7 +30,11 @@
     <Home v-if="$page.frontmatter.home" />
 
     <API v-else-if="$page.frontmatter.api" />
-  
+
+    <div v-else-if="pageLayout" class="custom-page">
+      <component :is="pageLayout" />
+    </div>
+
     <Page
       v-else
       :sidebar-items="sidebarItems"
@@ -43,11 +47,12 @@
       </template>
     </Page>
 
-    <Toc />
+    <Toc v-if="shouldShowToc"/>
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
 import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
@@ -92,13 +97,29 @@ export default {
       )
     },
 
-    shouldShowSidebar () {
+    showShowSideSection() {
       const { frontmatter } = this.$page
       return (
         !frontmatter.home
         && !frontmatter.api
+        && !frontmatter.pageLayout
+      )
+    },
+
+    shouldShowSidebar() {
+      const { frontmatter } = this.$page
+      return (
+        this.showShowSideSection
         && frontmatter.sidebar !== false
         && this.sidebarItems.length
+      )
+    },
+
+    shouldShowToc() {
+      const { frontmatter } = this.$page
+      return (
+        this.showShowSideSection
+        && frontmatter.toc !== false
       )
     },
 
@@ -121,7 +142,14 @@ export default {
         },
         userPageClass
       ]
-    }
+    },
+
+    pageLayout() {
+      const layout = this.getPageLayout();
+      if (layout) {
+        return Vue.component(layout);
+      }
+    },
   },
 
   mounted () {
@@ -154,7 +182,20 @@ export default {
           this.toggleSidebar(false)
         }
       }
-    }
-  }
-}
+    },
+
+    getPageLayout() {
+      if (this.$page.path) {
+        const layout = this.$page.frontmatter.pageLayout;
+        if (
+          layout &&
+          (this.$vuepress.getLayoutAsyncComponent(layout) ||
+            this.$vuepress.getVueComponent(layout))
+        ) {
+          return layout;
+        }
+      }
+    },
+  },
+};
 </script>
