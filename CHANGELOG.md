@@ -1,3 +1,12 @@
+## [0.3.3](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.3.2...v0.3.3) (2022-01-26)
+
+
+### Bug Fixes
+
+* **theme:** no-sidebar page‘s h1 header is too narrow (close: [#50](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/50)) ([25defbc](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/25defbc5e192ef24662ba3d2f536e9b8ce31b289))
+
+
+
 ## [0.3.2](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.3.1...v0.3.2) (2022-01-26)
 
 
