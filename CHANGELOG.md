@@ -1,3 +1,12 @@
+## [0.3.2](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.3.1...v0.3.2) (2022-01-26)
+
+
+### Bug Fixes
+
+* **theme:** page nav style issue when sidebar is disabled (close: [#49](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/49)) ([b0a2421](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/b0a24219bbd2d41f023c98e866c2714674ccecee))
+
+
+
 ## [0.3.1](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.3.0...v0.3.1) (2022-01-25)
 
 
