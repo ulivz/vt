@@ -31,7 +31,9 @@ export default {
                   return {
                     text: page.title,
                     link: page.path,
-                    headers: (page.headers || []).map((header) => header.title),
+                    headers: (page.headers || []).filter(
+                      (header) => header.level === 2 || header.level === 3
+                    ),
                   };
                 }),
               };
@@ -43,14 +45,12 @@ export default {
     },
     filtered() {
       const q = this.query;
-      console.log("this.apiGroups", this.apiGroups);
-
       return this.apiGroups
         .map((section) => {
           const items = section.items
             .map(({ text, link, headers }) => {
               headers = headers.filter((h) => {
-                return h.toLowerCase().includes(q.toLowerCase());
+                return h.slug.toLowerCase().includes(q.toLowerCase());
               });
               return headers.length ? { text, link, headers } : null;
             })
@@ -65,23 +65,6 @@ export default {
             : null;
         })
         .filter((i) => i);
-    },
-  },
-  methods: {
-    slugify(text) {
-      return (
-        text
-          // Replace special characters
-          .replace(/[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'<>,.?/]+/g, "-")
-          // Remove continuous separators
-          .replace(/\-{2,}/g, "-")
-          // Remove prefixing and trailing separators
-          .replace(/^\-+|\-+$/g, "")
-          // ensure it doesn't start with a number (#121)
-          .replace(/^(\d)/, "_$1")
-          // lowercase
-          .toLowerCase()
-      );
     },
   },
 };
@@ -111,8 +94,18 @@ export default {
         <div v-for="item of section.items" class="api-group" :key="item.text">
           <h3>{{ item.text }}</h3>
           <ul class="api-group-ul">
-            <li v-for="h of item.headers" class="api-group-li" :key="h">
-              <VPLink :text="h" :link="item.link + '#' + slugify(h)" />
+            <li
+              v-for="h of item.headers"
+              :class="{
+                'api-group-li': true,
+                [`level-${h.level}`]: true,
+              }"
+              :key="h.slug"
+            >
+              <VPLink
+                :text="h.normalizedTitle"
+                :link="item.link + '#' + h.slug"
+              />
             </li>
           </ul>
         </div>
@@ -121,10 +114,8 @@ export default {
   </div>
 </template>
 
-<style scoped>
-*,
-::before,
-::after {
+<style lang="stylus" scoped>
+*, ::before, ::after {
   box-sizing: border-box;
 }
 
@@ -158,15 +149,12 @@ body {
   padding: 64px 32px;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-weight: 600;
   line-height: 1;
 }
 
-h1,
-h2 {
+h1, h2 {
   letter-spacing: -0.02em;
 }
 
@@ -196,18 +184,7 @@ h3:before {
   display: none;
 }
 
-h1:hover .header-anchor,
-h1:focus .header-anchor,
-h2:hover .header-anchor,
-h2:focus .header-anchor,
-h3:hover .header-anchor,
-h3:focus .header-anchor,
-h4:hover .header-anchor,
-h4:focus .header-anchor,
-h5:hover .header-anchor,
-h5:focus .header-anchor,
-h6:hover .header-anchor,
-h6:focus .header-anchor {
+h1:hover .header-anchor, h1:focus .header-anchor, h2:hover .header-anchor, h2:focus .header-anchor, h3:hover .header-anchor, h3:focus .header-anchor, h4:hover .header-anchor, h4:focus .header-anchor, h5:hover .header-anchor, h5:focus .header-anchor, h6:hover .header-anchor, h6:focus .header-anchor {
   opacity: 1;
 }
 
@@ -232,7 +209,7 @@ h6:focus .header-anchor {
 
 .api-section-description:before {
   color: var(--vp-c-brand);
-  content: "\24d8";
+  content: '\24d8';
   position: absolute;
   font-weight: 600;
   font-size: 15px;
@@ -265,10 +242,18 @@ h6:focus .header-anchor {
 
 .api-group-li {
   position: relative;
+
+  &.level-3 {
+    padding-left: 1rem;
+
+    &:before {
+      left: -0.25rem;
+    }
+  }
 }
 
 .api-group-li:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 5px;
   height: 5px;
@@ -317,18 +302,22 @@ h6:focus .header-anchor {
   #api-index {
     padding: 42px 24px;
   }
+
   h1 {
     font-size: 32px;
     margin-bottom: 24px;
   }
+
   h2 {
     font-size: 22px;
     margin: 42px 0 32px;
     padding-top: 32px;
   }
+
   .api-groups a {
     font-size: 14px;
   }
+
   .header {
     display: block;
   }
@@ -353,15 +342,13 @@ a.header-anchor {
   padding-right: 0.23em;
   font-size: 0.85em;
   opacity: 0;
-
   font-weight: 500;
   color: var(--vp-c-brand);
   transition: color 0.25s;
   text-decoration-style: dotted;
 }
 
-a.header-anchor:hover,
-a.header-anchor:focus {
+a.header-anchor:hover, a.header-anchor:focus {
   text-decoration: none;
 }
 </style>
