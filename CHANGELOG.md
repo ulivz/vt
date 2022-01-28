@@ -1,3 +1,12 @@
+## [0.3.4](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.3.3...v0.3.4) (2022-01-28)
+
+
+### Features
+
+* **theme:**  generate h3 with indent at API Page (close: [#52](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/52)) ([6521e5d](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/6521e5d53529eaad132111fa403257d44b384a2b))
+
+
+
 ## [0.3.3](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.3.2...v0.3.3) (2022-01-26)
 
 
