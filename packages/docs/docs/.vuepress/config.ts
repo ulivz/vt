@@ -31,6 +31,7 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
             "/guide/migration",
             "/guide/dark-mode",
             "/guide/page-layout",
+            "/guide/code-switcher",
             "/guide/documenting",
           ],
         },
@@ -55,5 +56,11 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
         },
       ],
     },
+    codeSwitcher: {
+      groups: {
+        default: { ts: 'TypeScript', js: 'JavaScript' },
+        'plugin-usage': { tuple: 'Tuple', object: 'Object' },
+      }
+    }
   },
 }));

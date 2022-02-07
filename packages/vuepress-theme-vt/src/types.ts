@@ -19,4 +19,10 @@ export type ThemeConfig = DefaultThemeConfig & {
     sourceFile: string,
     targetFile: string
   ) => string;
+  /**
+   * Options for code switcher.
+   */
+  codeSwitcher?: {
+    groups?: Record<string, Record<string, string>>;
+  };
 };

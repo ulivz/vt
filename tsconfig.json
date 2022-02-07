@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@speedy-js/*": ["packages/*/src", "node_modules/*"]
+      "vuepress-theme-vt": ["packages/vuepress-theme-vt"]
     }
   },
   "include": ["packages"],

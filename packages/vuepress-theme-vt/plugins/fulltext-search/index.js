@@ -8,7 +8,7 @@ let customTitles = null;
  * @type {import('@vuepress/types').Plugin}
  */
 module.exports = (options, ctx, globalCtx) => ({
-  name: "fulltext-search",
+  name: "@vt/fulltext-search",
 
   extendPageData($page) {
     try {
