@@ -194,7 +194,7 @@ export default {
         width: calc(100% + 30px);
         height: 1px;
         position: absolute;
-        bottom: -9px;
+        bottom: -8px;
         left: -15px;
         transition: background-color 0.2s;
       }
