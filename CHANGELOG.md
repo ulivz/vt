@@ -1,3 +1,18 @@
+# [0.4.0](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.3.4...v0.4.0) (2022-02-07)
+
+
+### Bug Fixes
+
+* **theme:** overflow line (close: [#54](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/54)) ([378cf34](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/378cf3464fcee45eabd0ba1cb0694d9820b7ede7))
+
+
+### Features
+
+* **theme:** add global component `<Details />` and `<Summary />` (close: [#51](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/51)) ([13f9692](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/13f9692212b3f52647a22f083ad73444e8d3bbfc))
+* **theme:** code switcher (close: [#53](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/53)) ([a3ddc14](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/a3ddc1456c006ac3f8c904eb7d4524f6204002e0))
+
+
+
 ## [0.3.4](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.3.3...v0.3.4) (2022-01-28)
 
 
