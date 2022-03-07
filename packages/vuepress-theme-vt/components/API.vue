@@ -103,7 +103,7 @@ export default {
               :key="h.slug"
             >
               <VPLink
-                :text="h.normalizedTitle"
+                :text="h.title"
                 :link="item.link + '#' + h.slug"
               />
             </li>
