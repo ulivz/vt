@@ -1,3 +1,7 @@
+---
+pageClass: 'config-frontmatter'
+---
+
 # Config: Frontmatter
 
 ## home
