@@ -1,3 +1,18 @@
+## [0.4.1](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.4.0...v0.4.1) (2022-03-07)
+
+
+### Bug Fixes
+
+* **theme:** api title should not be lower cased (close: [#59](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/59)) ([#60](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/60)) ([6aee3ca](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/6aee3ca3c66e7fd041869a24183487076f214a06))
+* **theme:** code highlighting is hard to read (close: [#57](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/57)) ([#58](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/58)) ([f5a403f](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/f5a403f52936f9ca030555d9d9ffa2996b6cb97c))
+
+
+### Features
+
+* **theme:** generate pageClass at API section ([0ce078d](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/0ce078d522fa3c26ded143c0bf4c94c703e6f1d3))
+
+
+
 # [0.4.0](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.3.4...v0.4.0) (2022-02-07)
 
 
