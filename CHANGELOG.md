@@ -1,3 +1,12 @@
+## [0.4.2](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.4.1...v0.4.2) (2022-03-07)
+
+
+### Bug Fixes
+
+* **theme:** do not use es6 syntax ([4c03d74](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/4c03d74f624c91768b4319f2ece81ef50d5a8579))
+
+
+
 ## [0.4.1](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.4.0...v0.4.1) (2022-03-07)
 
 
