@@ -29,7 +29,7 @@ export default {
                     (page) => page.regularPath === item + ".html"
                   );
                   return {
-                    pageClass: page.frontmatter?.pageClass,
+                    pageClass: page.frontmatter && page.frontmatter.pageClass,
                     text: page.title,
                     link: page.path,
                     headers: (page.headers || []).filter(
