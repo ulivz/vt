@@ -251,3 +251,20 @@ Detail
 <Badge text="TIP"/>
 <Badge text="WARNING" type="warning"/>
 <Badge text="ERROR" type="error"/>
+
+
+## Code Highlighting
+
+```sh{4}
+  asset-demo
+  |- package.json
+  |- package-lock.json
+  |- speedy.config.ts
+  |- /dist
+    |- bundle.js
+    |- index.html
+  |- /src
++   |- style.css
+    |- index.js
+  |- /node_modules
+```
