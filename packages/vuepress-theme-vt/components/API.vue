@@ -29,6 +29,7 @@ export default {
                     (page) => page.regularPath === item + ".html"
                   );
                   return {
+                    pageClass: page.frontmatter?.pageClass,
                     text: page.title,
                     link: page.path,
                     headers: (page.headers || []).filter(
@@ -48,11 +49,11 @@ export default {
       return this.apiGroups
         .map((section) => {
           const items = section.items
-            .map(({ text, link, headers }) => {
+            .map(({ text, link, headers, pageClass }) => {
               headers = headers.filter((h) => {
                 return h.slug.toLowerCase().includes(q.toLowerCase());
               });
-              return headers.length ? { text, link, headers } : null;
+              return headers.length ? { text, link, headers, pageClass } : null;
             })
             .filter((i) => i);
           return items.length
@@ -60,6 +61,7 @@ export default {
                 text: section.text,
                 id: section.text.replace(/\s+/g, "-"),
                 description: section.description,
+                pageClass: section.pageClass,
                 items,
               }
             : null;
@@ -93,7 +95,12 @@ export default {
       <div class="api-groups">
         <div v-for="item of section.items" class="api-group" :key="item.text">
           <h3>{{ item.text }}</h3>
-          <ul class="api-group-ul">
+          <ul
+            :class="{
+              'api-group-ul': true,
+              [item.pageClass]: !!item.pageClass,
+            }"
+          >
             <li
               v-for="h of item.headers"
               :class="{
@@ -102,10 +109,7 @@ export default {
               }"
               :key="h.slug"
             >
-              <VPLink
-                :text="h.title"
-                :link="item.link + '#' + h.slug"
-              />
+              <VPLink :text="h.title" :link="item.link + '#' + h.slug" />
             </li>
           </ul>
         </div>
