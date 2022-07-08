@@ -5,8 +5,13 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
   >
+    <StatusBar
+      v-if="shouldShowStatusBar"
+    ></StatusBar>
+
     <Navbar
       v-if="shouldShowNavbar"
+      :shouldShowStatusBar="shouldShowStatusBar"
       @toggle-sidebar="toggleSidebar"
     />
 
@@ -54,6 +59,7 @@
 <script>
 import Vue from 'vue'
 import Home from '@theme/components/Home.vue'
+import StatusBar from '@theme/components/StatusBar.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
@@ -68,6 +74,7 @@ export default {
     Home,
     Page,
     Sidebar,
+    StatusBar,
     Navbar,
     Toc,
     API,
@@ -80,6 +87,10 @@ export default {
   },
 
   computed: {
+    shouldShowStatusBar(){
+      return this.$route.path=== this.$localePath && this.$themeConfig.statusText;
+    },
+    
     shouldShowNavbar () {
       const { themeConfig } = this.$site
       const { frontmatter } = this.$page
