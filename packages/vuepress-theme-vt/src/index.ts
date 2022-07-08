@@ -7,7 +7,6 @@ import { ThemeConfig } from "./types";
 export { ThemeConfig };
 
 export default defineTheme<ThemeConfig>((options, ctx) => {
-  console.log(options, ctx);
   const { themeConfig, siteConfig } = ctx;
 
   // resolve algolia
