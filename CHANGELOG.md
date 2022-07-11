@@ -1,3 +1,13 @@
+# [0.5.0](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.4.2...v0.5.0) (2022-07-11)
+
+
+### Features
+
+* **theme:** refine status (close: [#65](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/65)) ([#66](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/66)) ([8e50570](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/8e50570a14413c5dd3e31bbd8f06c971d13bbfdd))
+* **vt:** add status for vt ([#64](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/64)) ([f1a95f9](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/f1a95f90f89b23b42bdc7cfcee701d5b984ba7a6))
+
+
+
 ## [0.4.2](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.4.1...v0.4.2) (2022-03-07)
 
 
