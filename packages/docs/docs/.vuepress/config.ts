@@ -1,7 +1,7 @@
 import { ThemeConfig } from "vuepress-theme-vt";
 import { defineConfig4CustomTheme } from "vuepress/config";
 
-export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
+export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
   theme: "vt",
   title: "VT",
   themeConfig: {
@@ -32,6 +32,7 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
             "/guide/dark-mode",
             "/guide/page-layout",
             "/guide/code-switcher",
+            "/guide/status",
             "/guide/documenting",
           ],
         },

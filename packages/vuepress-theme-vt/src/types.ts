@@ -5,9 +5,8 @@ import type { DefaultThemeConfig } from "@vuepress/types";
 export type ThemeConfig = DefaultThemeConfig & {
   /**
    * Text in status bar
-   *
    */
-  statusText?: string;
+  status?: string;
 
   /**
    * Enable dark mode

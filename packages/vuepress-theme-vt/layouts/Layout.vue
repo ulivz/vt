@@ -87,10 +87,16 @@ export default {
   },
 
   computed: {
-    shouldShowStatusBar(){
-      return this.$route.path=== this.$localePath && this.$themeConfig.statusText;
+    shouldShowStatusBar() {
+      if (this.$frontmatter && this.$frontmatter.status) {
+        return true;
+      }
+      if (this.$themeLocaleConfig.status) {
+        return true;
+      }
+      return false;
     },
-    
+
     shouldShowNavbar () {
       const { themeConfig } = this.$site
       const { frontmatter } = this.$page
