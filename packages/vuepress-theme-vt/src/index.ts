@@ -1,3 +1,5 @@
+/** @format */
+
 import path from "path";
 import { defineTheme } from "@vuepress/types";
 import { ThemeConfig } from "./types";
@@ -11,7 +13,7 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
   const isAlgoliaSearch =
     themeConfig.algolia ||
     Object.keys((siteConfig.locales && themeConfig.locales) || {}).some(
-      (base) => themeConfig.locales[base].algolia
+      base => themeConfig.locales[base].algolia,
     );
 
   const enableSmoothScroll = themeConfig.smoothScroll === true;
@@ -28,7 +30,10 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
     plugins: [
       ["@vuepress/active-header-links", options.activeHeaderLinks],
       [require.resolve("../plugins/copy-code/index.js"), true],
-      [require.resolve("../plugins/code-switcher/index.js"), options.codeSwitcher],
+      [
+        require.resolve("../plugins/code-switcher/index.js"),
+        options.codeSwitcher,
+      ],
       [
         require.resolve("../plugins/translate/index.js"),
         {
@@ -81,7 +86,7 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
       ["smooth-scroll", enableSmoothScroll],
     ],
 
-    extendMarkdown: (md) => {
+    extendMarkdown: md => {
       const markdownItAttrs = require("markdown-it-attrs");
 
       md.use(markdownItAttrs, {

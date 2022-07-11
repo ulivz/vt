@@ -1,6 +1,14 @@
+/** @format */
+
 import type { DefaultThemeConfig } from "@vuepress/types";
 
 export type ThemeConfig = DefaultThemeConfig & {
+  /**
+   * Text in status bar
+   *
+   */
+  statusText?: string;
+
   /**
    * Enable dark mode
    *
@@ -17,7 +25,7 @@ export type ThemeConfig = DefaultThemeConfig & {
   transformTranslatedDocument?: (
     content: string,
     sourceFile: string,
-    targetFile: string
+    targetFile: string,
   ) => string;
   /**
    * Options for code switcher.

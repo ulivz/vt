@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar">
+  <header class="navbar" :class="{'navbar-down': shouldShowStatusBar}">
     <div class="navbar-container">
       <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
 
@@ -58,6 +58,8 @@ export default {
     AlgoliaSearchBox,
   },
 
+  props:['shouldShowStatusBar'],
+
   data() {
     return {
       linksWrapMaxWidth: null,
@@ -107,6 +109,17 @@ function css(el, property) {
 <style lang="stylus">
 
 .navbar {
+  background-color: var(--vp-c-bg);
+  transition: background-color 0.5s;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $navbarHeight;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--vp-c-divider-light);
+
   .navbar-container {
     height: 100%;
     max-width: var(--vp-screen-max-width);
@@ -179,5 +192,10 @@ function css(el, property) {
       text-overflow: ellipsis;
     }
   }
+}
+
+.navbar-down{
+  top: var(--vp-statusbar-height);
+  border-top: 1px solid var(--vp-c-divider-light);
 }
 </style>
