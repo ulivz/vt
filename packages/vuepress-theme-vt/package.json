@@ -37,7 +37,8 @@
     "vue": "^2",
     "vue-router": "^3.4.5",
     "vuepress-plugin-container": "^2.0.2",
-    "vuepress-plugin-smooth-scroll": "^0.0.3"
+    "vuepress-plugin-smooth-scroll": "^0.0.3",
+    "inquirer": "7.3.3"
   },
   "files": [
     "components",
