@@ -1,3 +1,12 @@
+## [0.5.1](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.5.0...v0.5.1) (2022-09-04)
+
+
+### Bug Fixes
+
+* **theme:** Error: Cannot find module 'inquirer' (close: [#68](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/68)) ([#69](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/69)) ([d4bbe6d](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/d4bbe6d71e9ac6e778309511f96d921c2b0f0c36))
+
+
+
 # [0.5.0](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.4.2...v0.5.0) (2022-07-11)
 
 
