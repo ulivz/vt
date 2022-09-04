@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-vt",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "A VuePress theme inspired by `@vue/theme`, fully compatible with VuePress default theme.",
   "keywords": [
     "documentation",
@@ -28,6 +28,7 @@
     "docsearch.js": "^2.5.2",
     "flexsearch": "^0.6.32",
     "html-to-text": "^7.0.0",
+    "inquirer": "7.3.3",
     "lodash": "^4.17.15",
     "markdown-it-attrs": "^2",
     "node-google-translate-skidz": "1.1.2",
@@ -37,8 +38,7 @@
     "vue": "^2",
     "vue-router": "^3.4.5",
     "vuepress-plugin-container": "^2.0.2",
-    "vuepress-plugin-smooth-scroll": "^0.0.3",
-    "inquirer": "7.3.3"
+    "vuepress-plugin-smooth-scroll": "^0.0.3"
   },
   "files": [
     "components",
