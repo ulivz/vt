@@ -1,3 +1,12 @@
+## [0.5.2](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.5.1...v0.5.2) (2022-09-06)
+
+
+### Bug Fixes
+
+* **theme:** status bar should have background at dark mode (close: [#70](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/70)) ([4f09927](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/4f09927431a9f3f0d0954338306538dde7ba55f4))
+
+
+
 ## [0.5.1](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.5.0...v0.5.1) (2022-09-04)
 
 
