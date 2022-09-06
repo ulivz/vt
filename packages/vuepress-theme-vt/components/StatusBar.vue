@@ -50,7 +50,7 @@ export default {
 
 .dark {
   .statusbar {
-    background: transparent;
+    background-color: var(--vp-c-bg);
 
     span {
       color: var(--c-brand);
