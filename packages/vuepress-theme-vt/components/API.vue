@@ -25,6 +25,7 @@ export default {
                 text: group.title,
                 description: group.description,
                 items: group.children.map((item) => {
+                  const { extractApiHeaders = [2, 3] } = page.frontmatter;
                   const page = this.$site.pages.find(
                     (page) => page.regularPath === item + ".html"
                   );
@@ -32,8 +33,8 @@ export default {
                     pageClass: page.frontmatter && page.frontmatter.pageClass,
                     text: page.title,
                     link: page.path,
-                    headers: (page.headers || []).filter(
-                      (header) => header.level === 2 || header.level === 3
+                    headers: (page.headers || []).filter((header) =>
+                      extractApiHeaders.includes(header.level)
                     ),
                   };
                 }),
