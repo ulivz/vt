@@ -1,3 +1,12 @@
+## [0.5.3](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.5.2...v0.5.3) (2022-09-20)
+
+
+### Features
+
+* **theme:** support custom extracted headers in api page ([#71](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/71)) ([63674bd](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/63674bd68aee08ef6d26483d5324c4be32a15bde))
+
+
+
 ## [0.5.2](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.5.1...v0.5.2) (2022-09-06)
 
 
