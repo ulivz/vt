@@ -25,10 +25,10 @@ export default {
                 text: group.title,
                 description: group.description,
                 items: group.children.map((item) => {
-                  const { extractApiHeaders = [2, 3] } = page.frontmatter;
                   const page = this.$site.pages.find(
                     (page) => page.regularPath === item + ".html"
                   );
+                  const { extractApiHeaders = [2, 3] } = page.frontmatter;
                   return {
                     pageClass: page.frontmatter && page.frontmatter.pageClass,
                     text: page.title,
