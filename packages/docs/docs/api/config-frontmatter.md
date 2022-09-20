@@ -62,7 +62,6 @@ sidebar: false
 
 See [live example](../../../docs/docs/examples/disable-sidebar.md).
 
-
 ## sidebarDepth
 
 - **Type**: `number`
@@ -94,5 +93,18 @@ Display page edit at the bottom, set `false` to hidden it:
 ```md
 ---
 pageEdit: false
+---
+```
+
+## extractApiHeaders
+
+- **Type**: `number[]`
+- **Default**: [2, 3]
+
+Extract headers of target levels from api page, by default it will extract `h2` and `h3` headers:
+
+```md
+---
+extractApiHeaders: [2]
 ---
 ```
