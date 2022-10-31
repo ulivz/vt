@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar" :class="{'navbar-down': shouldShowStatusBar}">
+  <header class="navbar">
     <div class="navbar-container">
       <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
 
@@ -57,8 +57,6 @@ export default {
     SearchBox,
     AlgoliaSearchBox,
   },
-
-  props:['shouldShowStatusBar'],
 
   data() {
     return {
@@ -194,8 +192,4 @@ function css(el, property) {
   }
 }
 
-.navbar-down{
-  top: var(--vp-statusbar-height);
-  border-top: 1px solid var(--vp-c-divider-light);
-}
 </style>
