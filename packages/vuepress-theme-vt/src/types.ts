@@ -5,17 +5,22 @@ import type { DefaultThemeConfig, NavItem } from "@vuepress/types";
 export type EnhancedNavItem = NavItem & {
   /**
    * Specify the position of navbar item.
-   * 
+   *
    * @default "right"
    */
   position?: "left" | "right";
 };
 
-export type ThemeConfig = Omit<DefaultThemeConfig, "nav"> & {
+export type ThemeConfig = Omit<DefaultThemeConfig, "nav" | "locales"> & {
+  /**
+   * Locales config.
+   */
+  locales?: Record<string, Omit<ThemeConfig, "locales">>;
+
   /**
    * Navbar Links.
    */
-  nav: EnhancedNavItem[];
+  nav?: EnhancedNavItem[];
 
   /**
    * Text in status bar
