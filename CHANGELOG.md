@@ -1,3 +1,17 @@
+# [0.6.0](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.5.3...v0.6.0) (2022-10-31)
+
+
+### Bug Fixes
+
+* **theme:** wrong sidebar layout when status is enabled (close: [#67](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/67)) ([#72](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/72)) ([b449931](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/b449931e7ff2fd23be7ff6072c5c9d63cff7893c))
+
+
+### Features
+
+* **theme:** nav links on the left (close: 73) ([#74](https://github.com/aamayamaa/vuepress-theme-vuejs/issues/74)) ([4f077ff](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/4f077ffeab52cd109210f2426926477087ec6f2d))
+
+
+
 ## [0.5.3](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.5.2...v0.5.3) (2022-09-20)
 
 
