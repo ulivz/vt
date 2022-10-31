@@ -11,7 +11,6 @@
 
     <Navbar
       v-if="shouldShowNavbar"
-      :shouldShowStatusBar="shouldShowStatusBar"
       @toggle-sidebar="toggleSidebar"
     />
 
@@ -155,7 +154,8 @@ export default {
         {
           'no-navbar': !this.shouldShowNavbar,
           'sidebar-open': this.isSidebarOpen,
-          'no-sidebar': !this.shouldShowSidebar
+          'no-sidebar': !this.shouldShowSidebar,
+          'statusbar-enabled': this.shouldShowStatusBar,
         },
         userPageClass
       ]
@@ -214,3 +214,15 @@ export default {
   },
 };
 </script>
+
+<style lang="stylus">
+.theme-container.statusbar-enabled {
+  .navbar {
+    top: var(--vp-statusbar-height);
+    border-top: 1px solid var(--vp-c-divider-light);
+  }
+  .sidebar {
+    top: calc(var(--vp-navbar-height) + var(--vp-statusbar-height));
+  }
+}
+</style>
