@@ -52,5 +52,9 @@
     "types",
     "*.d.ts"
   ],
-  "author": "ULIVZ <chl814@foxmail.com>"
+  "author": "ULIVZ <chl814@foxmail.com>",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
 }

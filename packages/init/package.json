@@ -31,5 +31,9 @@
     "types",
     "*.d.ts",
     "generator"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
 }
