@@ -1,6 +1,6 @@
 <template>
   <aside class="sidebar">
-    <NavLinks />
+    <NavLinks :showSearchBox="false"/>
 
     <slot name="top" />
 
@@ -34,7 +34,7 @@ export default {
     display: inline-block;
   }
 
-  .nav-links {
+  .links {
     display: none;
     border-bottom: 1px solid var(--vp-c-divider-light);
     padding: 0.5rem 0 0.75rem 0;
@@ -71,8 +71,9 @@ export default {
   .sidebar {
     padding-left: 1rem;
 
-    .nav-links {
+    .links {
       display: block;
+      padding-left: 0;
 
       .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after {
         top: calc(1rem - 2px);

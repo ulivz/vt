@@ -1,8 +1,22 @@
 /** @format */
 
-import type { DefaultThemeConfig } from "@vuepress/types";
+import type { DefaultThemeConfig, NavItem } from "@vuepress/types";
 
-export type ThemeConfig = DefaultThemeConfig & {
+export type EnhancedNavItem = NavItem & {
+  /**
+   * Specify the position of navbar item.
+   * 
+   * @default "right"
+   */
+  position?: "left" | "right";
+};
+
+export type ThemeConfig = Omit<DefaultThemeConfig, "nav"> & {
+  /**
+   * Navbar Links.
+   */
+  nav: EnhancedNavItem[];
+
   /**
    * Text in status bar
    */
@@ -24,7 +38,7 @@ export type ThemeConfig = DefaultThemeConfig & {
   transformTranslatedDocument?: (
     content: string,
     sourceFile: string,
-    targetFile: string,
+    targetFile: string
   ) => string;
   /**
    * Options for code switcher.
