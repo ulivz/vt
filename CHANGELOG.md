@@ -1,3 +1,12 @@
+## [0.6.1](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.6.0...v0.6.1) (2022-10-31)
+
+
+### Bug Fixes
+
+* **theme:** nav types ([44d32ff](https://github.com/aamayamaa/vuepress-theme-vuejs/commit/44d32ffcc6f433cebbe8663cdb398d8dc130fb65))
+
+
+
 # [0.6.0](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.5.3...v0.6.0) (2022-10-31)
 
 
