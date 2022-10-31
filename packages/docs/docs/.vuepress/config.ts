@@ -11,6 +11,11 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
     nav: [
       { text: "Guide", link: "/guide/" },
       { text: "API", link: "/api/" },
+      { 
+        text: "Nav Links on the left", 
+        link: "/guide/navbar.html#nav-links-on-the-left",
+        position: "left"
+      },
     ],
     sidebar: {
       "/guide/": [
@@ -33,6 +38,7 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
             "/guide/page-layout",
             "/guide/code-switcher",
             "/guide/status",
+            "/guide/navbar",
             "/guide/documenting",
           ],
         },

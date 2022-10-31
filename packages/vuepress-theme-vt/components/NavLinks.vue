@@ -1,29 +1,61 @@
 <template>
-  <nav v-if="userLinks.length || repoLink" class="nav-links">
-    <!-- user links -->
-    <div v-for="item in userLinks" :key="item.link" class="nav-item">
-      <DropdownLink v-if="item.type === 'links'" :item="item" />
-      <NavLink v-else :item="item" />
-    </div>
+  <div
+    class="links"
+    :style="
+      linksWrapMaxWidth
+        ? {
+            'max-width': linksWrapMaxWidth + 'px',
+          }
+        : {}
+    "
+  >
+    <nav v-if="userLinks.length || repoLink" class="nav-left-links">
+      <div v-for="item in userLeftLinks" :key="item.link" class="nav-item">
+        <DropdownLink v-if="item.type === 'links'" :item="item" />
+        <NavLink v-else :item="item" />
+      </div>
+    </nav>
 
-    <VPNavBarAppearance v-if="enableDarkMode" class="appearance" />
+    <AlgoliaSearchBox
+      v-if="showSearchBox && isAlgoliaSearch"
+      :options="algolia"
+    />
+    <SearchBox
+      v-else-if="
+        showSearchBox &&
+        $site.themeConfig.search !== false &&
+        $page.frontmatter.search !== false
+      "
+    />
 
-    <!-- repo link -->
-    <a
-      v-if="repoLink"
-      :href="repoLink"
-      class="repo-link"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <VPIconGithub v-if="repoLabel === 'GitHub'" />
-      <VPIconGitlab v-else-if="repoLabel === 'Gitlab'" />
-      <template v-else{{ repoLabel }}></template>
-    </a>
-  </nav>
+    <nav v-if="userLinks.length || repoLink" class="nav-links">
+      <!-- user links -->
+      <div v-for="item in userLinks" :key="item.link" class="nav-item">
+        <DropdownLink v-if="item.type === 'links'" :item="item" />
+        <NavLink v-else :item="item" />
+      </div>
+
+      <VPNavBarAppearance v-if="enableDarkMode" class="appearance" />
+
+      <!-- repo link -->
+      <a
+        v-if="repoLink"
+        :href="repoLink"
+        class="repo-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <VPIconGithub v-if="repoLabel === 'GitHub'" />
+        <VPIconGitlab v-else-if="repoLabel === 'Gitlab'" />
+        <template v-else{{ repoLabel }}></template>
+      </a>
+    </nav>
+  </div>
 </template>
 
 <script>
+import AlgoliaSearchBox from "@AlgoliaSearchBox";
+import SearchBox from "@SearchBox";
 import DropdownLink from "@theme/components/DropdownLink.vue";
 import { resolveNavLinkItem } from "../lib/util";
 import NavLink from "@theme/components/NavLink.vue";
@@ -35,11 +67,45 @@ export default {
   name: "NavLinks",
 
   components: {
+    SearchBox,
+    AlgoliaSearchBox,
     NavLink,
     DropdownLink,
     VPIconGitlab,
     VPIconGithub,
     VPNavBarAppearance,
+  },
+
+  props: {
+    showSearchBox: {
+      type: Boolean,
+      default: true,
+    },
+  },
+
+  data() {
+    return {
+      linksWrapMaxWidth: null,
+    };
+  },
+
+  mounted() {
+    const MOBILE_DESKTOP_BREAKPOINT = 719; // refer to config.styl
+    const NAVBAR_VERTICAL_PADDING =
+      parseInt(css(this.$el, "paddingLeft")) +
+      parseInt(css(this.$el, "paddingRight"));
+    const handleLinksWrapWidth = () => {
+      if (document.documentElement.clientWidth < MOBILE_DESKTOP_BREAKPOINT) {
+        this.linksWrapMaxWidth = null;
+      } else {
+        this.linksWrapMaxWidth =
+          this.$el.offsetWidth -
+          NAVBAR_VERTICAL_PADDING -
+          ((this.$refs.siteName && this.$refs.siteName.offsetWidth) || 0);
+      }
+    };
+    handleLinksWrapWidth();
+    window.addEventListener("resize", handleLinksWrapWidth, false);
   },
 
   computed: {
@@ -52,6 +118,14 @@ export default {
 
     userNav() {
       return this.$themeLocaleConfig.nav || this.$site.themeConfig.nav || [];
+    },
+
+    userLeftNav() {
+      return this.userNav.filter((nav) => nav.position === "left");
+    },
+
+    userRightNav() {
+      return this.userNav.filter((nav) => nav.position !== "left");
     },
 
     nav() {
@@ -82,13 +156,21 @@ export default {
             return { text, link };
           }),
         };
-        return [...this.userNav, languageDropdown];
+        return [...this.userRightNav, languageDropdown];
       }
-      return this.userNav;
+      return this.userRightNav;
     },
 
     userLinks() {
       return (this.nav || []).map((link) => {
+        return Object.assign(resolveNavLinkItem(link), {
+          items: (link.items || []).map(resolveNavLinkItem),
+        });
+      });
+    },
+
+    userLeftLinks() {
+      return (this.userLeftNav || []).map((link) => {
         return Object.assign(resolveNavLinkItem(link), {
           items: (link.items || []).map(resolveNavLinkItem),
         });
@@ -120,12 +202,52 @@ export default {
 
       return "Source";
     },
+
+    algolia() {
+      return (
+        this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {}
+      );
+    },
+
+    isAlgoliaSearch() {
+      return this.algolia && this.algolia.apiKey && this.algolia.indexName;
+    },
   },
 };
+
+function css(el, property) {
+  // NOTE: Known bug, will return 'auto' if style value is 'auto'
+  const win = el.ownerDocument.defaultView;
+  // null means not to return pseudo styles
+  return win.getComputedStyle(el, null)[property];
+}
 </script>
 
 <style lang="stylus">
-.nav-links {
+.links {
+  height: 100%;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+  white-space: nowrap;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+
+  .search-box {
+    flex: 0 0 auto;
+    vertical-align: top;
+  }
+}
+
+@media (max-width: $MQMobile) {
+  .links {
+    padding-left: 1.5rem;
+  }
+}
+
+.nav-links, .nav-left-links {
   display: inline-block;
   max-width: calc(100vw - 260px);
 
@@ -148,7 +270,9 @@ export default {
       margin-left: 0;
     }
   }
+}
 
+.nav-links {
   .repo-link {
     // display: flex;
     // align-items: center;
@@ -171,8 +295,17 @@ export default {
   }
 }
 
+.nav-left-links {
+  flex: 1;
+}
+
 @media (max-width: $MQMobile) {
-  .nav-links {
+  .nav-left-links {
+    display: block;
+    position: relative;
+  }
+
+  .nav-links, .nav-left-links {
     .nav-item, .repo-link {
       margin-left: 0;
     }
