@@ -19,7 +19,7 @@ export default {
     );
     const indexSettings = {
       encode: options.encode || "simple",
-      tokenize: options.tokenize || "forward",
+      tokenize: options.tokenize || "reverse",
       split: options.split || /\W+/,
       async: true,
       doc: {
