@@ -161,7 +161,7 @@ export default {
   overflow-y: auto;
   padding-top: var(--vp-navbar-height);
   padding-bottom: 150px;
-  top: 100px;
+  top: 50px;
   right: 100px;
   box-sizing: border-box;
   /* background: #fff; */
