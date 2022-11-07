@@ -213,7 +213,7 @@ export default {
 
 .vuepress-toc {
   max-width: var(--vp-toc-width);
-  right: calc((100vw - var(--vp-screen-max-width)) / 4)
+  right: calc((100vw - var(--vp-screen-max-width)) / 2)
 }
 
 // for vuepress-toc
