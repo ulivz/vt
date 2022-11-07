@@ -52,7 +52,7 @@ export default {
   }
 
   & > .sidebar-links {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
 
     & > li > a.sidebar-link {
       line-height: 1.7;
