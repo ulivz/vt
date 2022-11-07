@@ -120,38 +120,10 @@ export default {
 </template>
 
 <style lang="stylus" scoped>
-*, ::before, ::after {
-  box-sizing: border-box;
-}
-
-html {
-  line-height: 1.4;
-  font-size: 16px;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-  width: 100%;
-  min-width: 320px;
-  min-height: 100vh;
-  line-height: 1.4;
-  font-family: var(--font-family-base);
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--c-text);
-  background-color: var(--c-bg);
-  direction: ltr;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 #api-index {
   max-width: 1024px;
   margin: 0px auto;
-  padding: 64px 32px;
+  padding 96px 32px;
 }
 
 h1, h2, h3 {
@@ -304,7 +276,7 @@ h1:hover .header-anchor, h1:focus .header-anchor, h2:hover .header-anchor, h2:fo
 
 @media (max-width: 768px) {
   #api-index {
-    padding: 42px 24px;
+    padding: 72px 24px;
   }
 
   h1 {
