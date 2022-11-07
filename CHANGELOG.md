@@ -1,3 +1,12 @@
+## [0.6.3](https://github.com/ins-x/vt/compare/v0.6.2...v0.6.3) (2022-11-07)
+
+
+### Bug Fixes
+
+* **theme:** full text search doesn't support partial search (close: [#77](https://github.com/ins-x/vt/issues/77)) ([#78](https://github.com/ins-x/vt/issues/78)) ([88ba7ef](https://github.com/ins-x/vt/commit/88ba7efe57e04f4ac08192d35ebc10bb40261d2c))
+
+
+
 ## [0.6.2](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.6.1...v0.6.2) (2022-10-31)
 
 
