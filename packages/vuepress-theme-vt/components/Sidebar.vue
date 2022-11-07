@@ -1,6 +1,6 @@
 <template>
   <aside class="sidebar">
-    <NavLinks :showSearchBox="false"/>
+    <NavLinks :showSearchBox="false" />
 
     <slot name="top" />
 
@@ -24,6 +24,9 @@ export default {
 
 <style lang="stylus">
 .sidebar {
+  display: flex;
+  flex-direction: column;
+
   ul {
     padding: 0;
     margin: 0;
@@ -70,6 +73,7 @@ export default {
 @media (max-width: $MQMobile) {
   .sidebar {
     padding-left: 1rem;
+    padding-right: 1rem;
 
     .links {
       display: block;
