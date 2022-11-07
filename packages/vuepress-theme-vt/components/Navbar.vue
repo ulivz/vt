@@ -54,7 +54,6 @@ export default {
   .navbar-container {
     height: 100%;
     max-width: var(--vp-screen-max-width);
-    // margin: 0 auto;
     display: flex;
   }
 
@@ -68,6 +67,7 @@ export default {
     padding-left: calc(((100vw - var(--vp-screen-max-width)) / 2));
     box-sizing: content-box;
     background-color: var(--vp-c-bg-soft);
+    flex: 0;
   }
 
   a, span, img {
