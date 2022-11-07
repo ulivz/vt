@@ -16,6 +16,10 @@ $mobileSidebarWidth = $sidebarWidth * 0.82;
 
 // wide mobile
 @media (max-width: $MQMobile) {
+  .navbar {
+    border-bottom: 1px solid var(--vp-c-divider-light);
+  }
+
   .sidebar {
     top: 0;
     padding-top: var(--vp-navbar-height);
@@ -30,6 +34,7 @@ $mobileSidebarWidth = $sidebarWidth * 0.82;
   .theme-container {
     &.sidebar-open {
       .sidebar {
+        border-right: 1px solid var(--vp-c-divider-light);
         transform: translateX(0);
       }
     }
