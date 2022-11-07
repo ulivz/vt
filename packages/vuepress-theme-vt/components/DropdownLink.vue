@@ -136,7 +136,6 @@ export default {
     line-height: 1.4rem;
     background: transparent;
     border: none;
-    font-weight: 500;
     color: var(--vp-c-text-1);
 
     &:hover {

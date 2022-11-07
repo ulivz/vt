@@ -11,10 +11,17 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
     nav: [
       { text: "Guide", link: "/guide/" },
       { text: "API", link: "/api/" },
-      { 
-        text: "Nav Links on the left", 
+      {
+        text: "Nav Links on the left",
         link: "/guide/navbar.html#nav-links-on-the-left",
-        position: "left"
+        position: "left",
+      },
+      {
+        text: "More",
+        items: [
+          { text: "Guide", link: "/guide/" },
+          { text: "API", link: "/api/" },
+        ],
       },
     ],
     sidebar: {
@@ -69,5 +76,6 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
         'plugin-usage': { tuple: 'Tuple', object: 'Object' },
       }
     }
+    },
   },
 }));
