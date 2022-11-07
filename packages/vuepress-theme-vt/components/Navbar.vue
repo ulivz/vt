@@ -53,8 +53,9 @@ export default {
 
   .navbar-container {
     height: 100%;
-    max-width: var(--vp-screen-max-width);
     display: flex;
+    box-sizing: border-box;
+    padding-right: calc(((100vw - var(--vp-screen-max-width)) / 2));
   }
 
   .home-link {
