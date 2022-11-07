@@ -10,7 +10,6 @@
       spellcheck="false"
       @input="query = $event.target.value"
       @focus="focused = true"
-      @blur="focused = false"
       @keyup.enter="go(focusIndex)"
       @keyup.up="onUp"
       @keyup.down="onDown"
@@ -304,26 +303,35 @@ function highlight(str, strHighlight) {
 .search-box {
   display: inline-block;
   position: relative;
-  margin-right: 1rem;
+  top: 5 px;
+  margin-right: 2rem;
 
   input {
-    background-color: var(--vp-c-bg);
+    background-color: var(--vp-c-bg-soft);
     transition: background-color 0.5s;
     cursor: text;
-    width: 10rem;
-    height: 2rem;
+    width: 12rem;
+    height: 2.5rem;
     color: lighten($textColor, 25%);
     display: inline-block;
-    border: none;
     font-size: 0.9rem;
     line-height: 2rem;
-    padding: 0 0.5rem 0 2rem;
+    padding: 0 0.5rem 0 2.5rem;
     outline: none;
     transition: all 0.2s ease;
     background-size: 1.2rem;
+    border: 1px solid transparent;
+    transition: border 0.5s;
+    border-radius: 8px;
 
     &::placeholder {
       transition: color 0.2s ease;
+    }
+
+    &:focus, &:hover {
+      // border: 1px solid var(--c-brand);
+      border-color: var(--c-brand);
+      transition: border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
 
     &:focus {
@@ -352,16 +360,17 @@ function highlight(str, strHighlight) {
     fill: currentColor;
     width: 20px;
     height: 20px;
-    position: relative;
     position: absolute;
-    top: 5px;
-    left: 3px;
+    top: 10px;
+    left: 10px;
     margin-right: 10px;
     cursor: pointer;
   }
 
   .search-command {
-    margin-right: 1rem;
+    position: absolute;
+    top: 8px;
+    right: 10px;
   }
 
   .suggestions {
@@ -398,7 +407,7 @@ function highlight(str, strHighlight) {
 
       .parent-page-title {
         color: white;
-        font-weight: 600;
+        font-weight: 500;
         background-color: var(--c-brand);
         padding: 5px;
       }
@@ -437,7 +446,7 @@ function highlight(str, strHighlight) {
           padding: 10px;
 
           .header {
-            font-weight: 600;
+            font-weight: 500;
           }
         }
       }

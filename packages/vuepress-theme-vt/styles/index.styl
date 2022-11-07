@@ -14,7 +14,6 @@ html, body {
   padding: 0;
   margin: 0;
   background-color: var(--vp-c-bg);
-  transition: background-color 0.5s;
 }
 
 html.dark {
@@ -34,7 +33,6 @@ body {
   // padding-left: calc(calc((100% - var(--vp-screen-max-width)) / 2) + var(--vp-sidebar-width));
 }
 
-
 .sidebar-mask {
   position: fixed;
   z-index: 9;
@@ -47,17 +45,15 @@ body {
 
 .sidebar {
   font-size: 14px;
-  background-color: var(--vp-c-bg);
-  transition: background-color 0.5s;
+  background-color: var(--vp-c-bg-soft);
   width: var(--vp-sidebar-width);
   position: fixed;
   z-index: 10;
   margin: 0;
-  top: $navbarHeight;
+  top: var(--vp-navbar-height);
   left: 0;
   bottom: 0;
   box-sizing: border-box;
-  border-right: 1px solid var(--vp-c-divider-light);
   overflow-y: auto;
 }
 
@@ -65,7 +61,7 @@ body {
   @extend $wrapper;
 
   > *:first-child {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 
   a:hover {
@@ -93,7 +89,6 @@ body {
 }
 
 a {
-  font-weight: 500;
   color: var(--c-brand);
   text-decoration: none;
 }
@@ -128,7 +123,7 @@ ul, ol {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 tr {
@@ -182,6 +177,15 @@ table {
       top: 0;
     }
   }
+
+  &.no-sidebar {
+    .navbar {
+      .home-link {
+        min-width: initial;
+        background-color: initial;
+      }
+    }
+  }
 }
 
 .icon.outbound {
@@ -204,7 +208,7 @@ table {
   }
 
   .custom-page {
-    padding-top: $navbarHeight;
+    padding-top: var(--vp-navbar-height);
   }
 
   .sidebar {
@@ -231,6 +235,12 @@ table {
         margin: 0 auto;
         padding-left: 0;
       }
+    }
+  }
+
+  .theme-container:not(.no-sidebar) {
+    .nav-left-links {
+      padding: 2rem 0rem 2rem calc(var(--vp-doc-padding) - 1.5rem) ;
     }
   }
 }

@@ -1,14 +1,5 @@
 <template>
-  <div
-    class="links"
-    :style="
-      linksWrapMaxWidth
-        ? {
-            'max-width': linksWrapMaxWidth + 'px',
-          }
-        : {}
-    "
-  >
+  <div class="links">
     <nav v-if="userLinks.length || repoLink" class="nav-left-links">
       <div v-for="item in userLeftLinks" :key="item.link" class="nav-item">
         <DropdownLink v-if="item.type === 'links'" :item="item" />
@@ -81,31 +72,6 @@ export default {
       type: Boolean,
       default: true,
     },
-  },
-
-  data() {
-    return {
-      linksWrapMaxWidth: null,
-    };
-  },
-
-  mounted() {
-    const MOBILE_DESKTOP_BREAKPOINT = 719; // refer to config.styl
-    const NAVBAR_VERTICAL_PADDING =
-      parseInt(css(this.$el, "paddingLeft")) +
-      parseInt(css(this.$el, "paddingRight"));
-    const handleLinksWrapWidth = () => {
-      if (document.documentElement.clientWidth < MOBILE_DESKTOP_BREAKPOINT) {
-        this.linksWrapMaxWidth = null;
-      } else {
-        this.linksWrapMaxWidth =
-          this.$el.offsetWidth -
-          NAVBAR_VERTICAL_PADDING -
-          ((this.$refs.siteName && this.$refs.siteName.offsetWidth) || 0);
-      }
-    };
-    handleLinksWrapWidth();
-    window.addEventListener("resize", handleLinksWrapWidth, false);
   },
 
   computed: {
@@ -327,7 +293,7 @@ function css(el, property) {
         width: calc(100% + 30px);
         height: 1px;
         position: absolute;
-        bottom: -8px;
+        bottom: -3px;
         left: -15px;
         transition: background-color 0.2s;
       }

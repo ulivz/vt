@@ -141,7 +141,7 @@ export default {
 
   &.clickable {
     &.active {
-      font-weight: 600;
+      font-weight: 500;
       color: var(--c-brand);;
       border-left-color: var(--c-brand);;
     }

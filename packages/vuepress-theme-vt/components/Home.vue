@@ -160,7 +160,7 @@ section {
 }
 
 .actions .action-link {
-  font-weight: 600;
+  font-weight: 500;
   background-color: var(--c-brand);
   color: #fff;
   margin-right: 18px;
@@ -241,7 +241,7 @@ section {
 }
 
 #highlights h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   letter-spacing: -0.4px;
   color: var(--vp-c-text-1);

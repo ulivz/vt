@@ -158,10 +158,11 @@ export default {
   position: fixed;
   display: none;
   max-height: 100vh;
-  overflow-y: auto;
-  padding-top: $navbarHeight;
+  width: 15rem;
+  overflow: visible;
+  padding-top: var(--vp-navbar-height);
   padding-bottom: 150px;
-  top: 100px;
+  top: 50px;
   right: 100px;
   box-sizing: border-box;
   /* background: #fff; */
@@ -179,8 +180,7 @@ export default {
       color: var(--vp-c-text-2);
       width: 100%;
       box-sizing: border-box;
-      font-size: 12px;
-      font-weight: 400;
+      font-size: 13px;
       text-decoration: none;
       transition: color 0.3s;
       overflow: hidden;
@@ -212,8 +212,7 @@ export default {
 }
 
 .vuepress-toc {
-  max-width: var(--vp-toc-width);
-  right: calc((100vw - var(--vp-screen-max-width)) / 4)
+  right: calc((100vw - var(--vp-screen-max-width)) / 2 - 5rem)
 }
 
 // for vuepress-toc
