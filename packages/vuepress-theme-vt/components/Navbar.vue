@@ -48,7 +48,7 @@ export default {
   top: 0;
   left: 0;
   right: 0;
-  height: $navbarHeight;
+  height: var(--vp-navbar-height);
   box-sizing: border-box;
 
   .navbar-container {

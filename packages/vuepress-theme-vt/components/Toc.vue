@@ -159,7 +159,7 @@ export default {
   display: none;
   max-height: 100vh;
   overflow-y: auto;
-  padding-top: $navbarHeight;
+  padding-top: var(--vp-navbar-height);
   padding-bottom: 150px;
   top: 100px;
   right: 100px;
