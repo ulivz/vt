@@ -39,9 +39,9 @@ export default {
 </script>
 
 <style lang="stylus">
-
 .navbar {
-  background-color: var(--vp-c-bg);
+  backdrop-filter: saturate(50%) blur(8px);
+  background: var(--vp-c-bg-header);
   transition: background-color 0.5s;
   position: fixed;
   z-index: 20;
@@ -50,12 +50,11 @@ export default {
   right: 0;
   height: $navbarHeight;
   box-sizing: border-box;
-  border-bottom: 1px solid var(--vp-c-divider-light);
 
   .navbar-container {
     height: 100%;
     max-width: var(--vp-screen-max-width);
-    margin: 0 auto;
+    // margin: 0 auto;
     display: flex;
   }
 
@@ -65,7 +64,10 @@ export default {
     align-items: center;
     z-index: 1;
     background-color: var(--vp-c-bg);
-    padding-right: 1rem;
+    min-width: var(--vp-sidebar-width);
+    padding-left: calc(((100vw - var(--vp-screen-max-width)) / 2));
+    box-sizing: content-box;
+    background-color: var(--vp-c-bg-soft);
   }
 
   a, span, img {
@@ -84,7 +86,6 @@ export default {
     color: var(--vp-c-text-1);
     position: relative;
   }
-
 }
 
 @media (max-width: $MQMobile) {
@@ -105,5 +106,4 @@ export default {
     }
   }
 }
-
 </style>

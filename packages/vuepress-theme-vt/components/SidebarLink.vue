@@ -121,8 +121,8 @@ function renderExternal(h, to, text) {
 }
 
 a.sidebar-link {
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 14px;
+  // font-weight: 500;
   display: inline-block;
   color: var(--vp-c-text-2);
   padding: 0.35rem 1rem 0.35rem 0rem;
@@ -136,7 +136,6 @@ a.sidebar-link {
   }
 
   &.active {
-    font-weight: 600;
     color: var(--c-brand);
   }
 

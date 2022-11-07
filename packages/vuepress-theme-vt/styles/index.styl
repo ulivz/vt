@@ -34,7 +34,6 @@ body {
   // padding-left: calc(calc((100% - var(--vp-screen-max-width)) / 2) + var(--vp-sidebar-width));
 }
 
-
 .sidebar-mask {
   position: fixed;
   z-index: 9;
@@ -47,7 +46,7 @@ body {
 
 .sidebar {
   font-size: 14px;
-  background-color: var(--vp-c-bg);
+  background-color: var(--vp-c-bg-soft);
   transition: background-color 0.5s;
   width: var(--vp-sidebar-width);
   position: fixed;
@@ -57,7 +56,6 @@ body {
   left: 0;
   bottom: 0;
   box-sizing: border-box;
-  border-right: 1px solid var(--vp-c-divider-light);
   overflow-y: auto;
 }
 
@@ -65,7 +63,7 @@ body {
   @extend $wrapper;
 
   > *:first-child {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 
   a:hover {
@@ -93,7 +91,6 @@ body {
 }
 
 a {
-  font-weight: 500;
   color: var(--c-brand);
   text-decoration: none;
 }
@@ -180,6 +177,15 @@ table {
 
     .sidebar {
       top: 0;
+    }
+  }
+
+  &.no-sidebar {
+    .navbar {
+      .home-link {
+        min-width: initial;
+        background-color: initial;
+      }
     }
   }
 }
