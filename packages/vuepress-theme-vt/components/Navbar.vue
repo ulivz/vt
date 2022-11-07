@@ -105,6 +105,10 @@ export default {
       white-space: nowrap;
       text-overflow: ellipsis;
     }
+
+    .home-link {
+      background-color: transparent;
+    }
   }
 }
 </style>
