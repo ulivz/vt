@@ -1,3 +1,12 @@
+# [0.7.0](https://github.com/ins-x/vt/compare/v0.6.3...v0.7.0) (2022-11-07)
+
+
+### Features
+
+* staged modern style ([#76](https://github.com/ins-x/vt/issues/76)) ([65e6ebf](https://github.com/ins-x/vt/commit/65e6ebfc6805a3641c88e69a97cf05744577e0bc))
+
+
+
 ## [0.6.3](https://github.com/ins-x/vt/compare/v0.6.2...v0.6.3) (2022-11-07)
 
 
