@@ -179,8 +179,7 @@ export default {
       color: var(--vp-c-text-2);
       width: 100%;
       box-sizing: border-box;
-      font-size: 12px;
-      font-weight: 400;
+      font-size: 13px;
       text-decoration: none;
       transition: color 0.3s;
       overflow: hidden;

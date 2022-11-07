@@ -116,7 +116,7 @@ export default {
   font-size: 0.85em;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.9);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .theme-code-group__nav-tab-active {

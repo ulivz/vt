@@ -155,7 +155,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
 }
 
@@ -216,7 +216,7 @@ h1:hover .header-anchor, h1:focus .header-anchor, h2:hover .header-anchor, h2:fo
   color: var(--vp-c-brand);
   content: '\24d8';
   position: absolute;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   top: 20px;
   left: 17px;
@@ -235,7 +235,6 @@ h1:hover .header-anchor, h1:focus .header-anchor, h2:hover .header-anchor, h2:fo
 
 .api-groups a {
   font-size: 15px;
-  font-weight: 500;
   line-height: 2;
   color: var(--vp-c-text-code);
   transition: color 0.5s;

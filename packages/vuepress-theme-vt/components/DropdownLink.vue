@@ -159,7 +159,7 @@ export default {
 
   .mobile-dropdown-title {
     display: none;
-    font-weight: 600;
+    font-weight: 500;
 
     font-size inherit {
       &:hover {

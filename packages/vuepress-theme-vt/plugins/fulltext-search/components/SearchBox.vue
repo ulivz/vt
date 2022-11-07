@@ -310,7 +310,7 @@ function highlight(str, strHighlight) {
     background-color: var(--vp-c-bg-soft);
     transition: background-color 0.5s;
     cursor: text;
-    width: 10rem;
+    width: 12rem;
     height: 2.5rem;
     color: lighten($textColor, 25%);
     display: inline-block;
@@ -407,7 +407,7 @@ function highlight(str, strHighlight) {
 
       .parent-page-title {
         color: white;
-        font-weight: 600;
+        font-weight: 500;
         background-color: var(--c-brand);
         padding: 5px;
       }
@@ -446,7 +446,7 @@ function highlight(str, strHighlight) {
           padding: 10px;
 
           .header {
-            font-weight: 600;
+            font-weight: 500;
           }
         }
       }

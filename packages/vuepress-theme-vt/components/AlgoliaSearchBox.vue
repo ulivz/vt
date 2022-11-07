@@ -130,7 +130,7 @@ export default {
         margin-top: 0;
         background: var(--c-brand);;
         color: #fff;
-        font-weight: 600;
+        font-weight: 500;
 
         .algolia-docsearch-suggestion--highlight {
           background: rgba(255, 255, 255, 0.6);
@@ -142,7 +142,7 @@ export default {
       }
 
       .algolia-docsearch-suggestion--title {
-        font-weight: 600;
+        font-weight: 500;
         margin-bottom: 0;
         color: $textColor;
       }

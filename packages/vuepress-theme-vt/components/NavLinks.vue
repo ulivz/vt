@@ -293,7 +293,7 @@ function css(el, property) {
         width: calc(100% + 30px);
         height: 1px;
         position: absolute;
-        bottom: -8px;
+        bottom: -3px;
         left: -15px;
         transition: background-color 0.2s;
       }
