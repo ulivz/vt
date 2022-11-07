@@ -1,6 +1,10 @@
 name: deploy-docs
 
-on: [push]
+on:
+  pull_request:
+  push:
+    branches:
+      - master
 
 jobs:
   deploy-docs:
@@ -38,11 +42,12 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Deploy Github Pages
-        uses: jenkey2011/vuepress-deploy@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: ins-x/vt
-          TARGET_BRANCH: master
-          BUILD_SCRIPT: npm run build:docs
-          BUILD_DIR: packages/docs/docs/.vuepress/dist
+      - name: Build
+        run: pnpm run build:docs
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'master' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: packages/docs/docs/.vuepress/dist
