@@ -53,7 +53,10 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
           title: "Reference",
           collapsable: false,
           children: [
-            ['https://vuepress.vuejs.org/theme/default-theme-config.html', 'Default Theme Config'],
+            [
+              "https://vuepress.vuejs.org/theme/default-theme-config.html",
+              "Default Theme Config",
+            ],
           ],
         },
       ],
@@ -72,10 +75,9 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
     },
     codeSwitcher: {
       groups: {
-        default: { ts: 'TypeScript', js: 'JavaScript' },
-        'plugin-usage': { tuple: 'Tuple', object: 'Object' },
-      }
-    }
+        default: { ts: "TypeScript", js: "JavaScript" },
+        "plugin-usage": { tuple: "Tuple", object: "Object" },
+      },
     },
   },
 }));
