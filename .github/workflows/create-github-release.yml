@@ -3,7 +3,7 @@ name: Create Github Release
 on: push
 
 jobs:
-  build:
+  create-github-release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
