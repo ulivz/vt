@@ -158,7 +158,8 @@ export default {
   position: fixed;
   display: none;
   max-height: 100vh;
-  overflow-y: auto;
+  width: 15rem;
+  overflow: visible;
   padding-top: var(--vp-navbar-height);
   padding-bottom: 150px;
   top: 50px;
@@ -211,8 +212,7 @@ export default {
 }
 
 .vuepress-toc {
-  max-width: var(--vp-toc-width);
-  right: calc((100vw - var(--vp-screen-max-width)) / 2)
+  right: calc((100vw - var(--vp-screen-max-width)) / 2 - 5rem)
 }
 
 // for vuepress-toc
