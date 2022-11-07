@@ -44,5 +44,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: ins-x/vt
           TARGET_BRANCH: master
-          BUILD_SCRIPT: pnpm run build:docs
+          BUILD_SCRIPT: npm run build:docs
           BUILD_DIR: packages/docs/docs/.vuepress/dist
