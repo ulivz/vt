@@ -235,7 +235,6 @@ h1:hover .header-anchor, h1:focus .header-anchor, h2:hover .header-anchor, h2:fo
   height: 5px;
   border-radius: 50%;
   background-color: rgba(60, 60, 60, 0.33);
-  transition: background-color 0.5s;
   left: -1.25rem;
   top: 0.9rem;
 }
@@ -255,7 +254,6 @@ h1:hover .header-anchor, h1:focus .header-anchor, h2:hover .header-anchor, h2:fo
   background-color: var(--vp-c-bg-soft);
   border-radius: 8px;
   padding: 28px 32px;
-  transition: background-color 0.5s;
 }
 
 .header {

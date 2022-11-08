@@ -146,7 +146,7 @@ function flatten(items, res) {
     max-width: 300px;
     padding-top: 1rem;
     background-color: var(--vp-c-bg-soft);
-    transition: color 0.5s, background-color 0.5s;
+    transition: color 0.5s;
     padding: 16px 20px;
     border-radius: 8px;
     font-size: 18px;

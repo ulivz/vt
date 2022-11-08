@@ -42,7 +42,6 @@ export default {
 .navbar {
   backdrop-filter: saturate(50%) blur(8px);
   background: var(--vp-c-bg-header);
-  transition: background-color 0.5s;
   position: fixed;
   z-index: 20;
   top: 0;
