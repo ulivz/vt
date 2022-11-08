@@ -1,3 +1,26 @@
+## [0.7.1](https://github.com/ins-x/vt/compare/v0.7.0...v0.7.1) (2022-11-08)
+
+
+### Bug Fixes
+
+* **theme:** api page's header overlaps at mobile side ([2d20aaf](https://github.com/ins-x/vt/commit/2d20aaf837e5141325664af8dd5407840dd03d9f))
+* **theme:** overlap between navbar links and log (close: [#79](https://github.com/ins-x/vt/issues/79)) ([86d0d89](https://github.com/ins-x/vt/commit/86d0d8946cf6c89c02d797518afe07e2281bdf55))
+* **theme:** refactor heading padding ([19d1ea5](https://github.com/ins-x/vt/commit/19d1ea5e3039539ab5ea7d949deaf181784246e4))
+* **theme:** sidebar doesn't exist at mobile side ([0c914f3](https://github.com/ins-x/vt/commit/0c914f34ee9daa1855a5aa7ed2ec4c22a0ee2a74))
+* **theme:** unexpected navbar drapdown links font weight ([36b7345](https://github.com/ins-x/vt/commit/36b7345896ae4f550858d7a64f3e727a84e98780))
+
+
+### Features
+
+* **theme:** remove flashing transition when switching dark mode ([331362f](https://github.com/ins-x/vt/commit/331362f81e12df983a987102ea3d39ea78162ba2))
+
+
+### Reverts
+
+* Revert "chore(docs): remove cname" ([6a76e1a](https://github.com/ins-x/vt/commit/6a76e1a67a13eee6a40f453025998595fccb2777))
+
+
+
 # [0.7.0](https://github.com/ins-x/vt/compare/v0.6.3...v0.7.0) (2022-11-07)
 
 
