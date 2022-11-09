@@ -1,3 +1,12 @@
+## [0.7.2](https://github.com/ins-x/vt/compare/v0.7.1...v0.7.2) (2022-11-09)
+
+
+### Features
+
+* **theme:** animated transition and height for statusbar ([#80](https://github.com/ins-x/vt/issues/80)) ([5aee84b](https://github.com/ins-x/vt/commit/5aee84bc16de0e076c6b69323abe5dbac7a36881))
+
+
+
 ## [0.7.1](https://github.com/ins-x/vt/compare/v0.7.0...v0.7.1) (2022-11-08)
 
 
