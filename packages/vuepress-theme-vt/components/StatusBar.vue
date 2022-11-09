@@ -24,17 +24,27 @@ export default {
 
 <style lang="stylus">
 .statusbar {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: bolder;
   position: fixed;
   top: 0;
-  height: var(--vp-statusbar-height);
+  height: 0px;
   line-height: var(--vp-statusbar-height);
   text-align: center;
+  overflow: hidden;
   width: 100%;
   color: white;
-  transition: background-color 0.5s;
-  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+  background: linear-gradient(
+    45deg,
+    #f17c58,
+    #e94584,
+    #24aadb,
+    #27dbb1,
+    #ffdc18,
+    #ff3706
+  );
+  background-size: 600% 100%;
+  animation: status-gradient 16s linear 0s infinite alternate, status-height 1.5s linear 0.5s 1 normal forwards;
   z-index: 20;
 
   span {
@@ -48,16 +58,23 @@ export default {
   }
 }
 
-.dark {
-  .statusbar {
-    background-color: var(--vp-c-bg);
+@keyframes status-gradient {
+  0% {
+    background-position: 0%;
+  }
 
-    span {
-      color: var(--c-brand);
-      background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes status-height {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: var(--vp-statusbar-height);
   }
 }
 </style>

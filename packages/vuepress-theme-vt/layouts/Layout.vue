@@ -218,10 +218,30 @@ export default {
 <style lang="stylus">
 .theme-container.statusbar-enabled {
   .navbar {
-    top: var(--vp-statusbar-height);
-    border-top: 1px solid var(--vp-c-divider-light);
+    animation: navbar-top 1.5s linear 0.5s 1 normal forwards;
   }
+
   .sidebar {
+    animation: sidebar-top 1.5s linear 0.5s 1 normal forwards;
+  }
+}
+
+@keyframes navbar-top {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: var(--vp-statusbar-height);
+  }
+}
+
+@keyframes sidebar-top {
+  0% {
+    top: var(--vp-navbar-height);
+  }
+
+  100% {
     top: calc(var(--vp-navbar-height) + var(--vp-statusbar-height));
   }
 }
