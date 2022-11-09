@@ -43,10 +43,10 @@ status: $status
 ---
 
 ::: status
-This is page status, [jump to home page](/)
+THIS IS PAGE STATUS, [JUMP TO HOME PAGE](/)
 :::
 ```
 
 ::: slot status
-This is page status, [jump to home page](/)
+THIS IS PAGE STATUS, [JUMP TO HOME PAGE](/)
 :::
