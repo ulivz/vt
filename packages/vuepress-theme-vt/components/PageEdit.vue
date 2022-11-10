@@ -7,7 +7,7 @@
       }}</a>
     </div>
 
-    <div v-if="lastUpdated" class="last-updated">
+    <div v-if="enableLastUpdated" class="last-updated">
       <VPIconLastUpdated class="last-updated-icon" />
       <span class="prefix">{{ lastUpdatedText }}:&nbsp;</span>
       <span class="time">{{ lastUpdated }}</span>
@@ -30,6 +30,13 @@ export default {
   },
 
   computed: {
+    enableLastUpdated() {
+      if (this.$frontmatter && this.$frontmatter.lastUpdated === false) {
+        return false;
+      }
+      return !!this.$page.lastUpdated;
+    },
+
     lastUpdated() {
       return this.$page.lastUpdated;
     },
