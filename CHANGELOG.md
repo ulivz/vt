@@ -1,3 +1,12 @@
+## [0.7.3](https://github.com/ins-x/vt/compare/v0.7.2...v0.7.3) (2022-11-10)
+
+
+### Features
+
+* **theme:** disable `lastUpdated` via frontmatter (close: [#82](https://github.com/ins-x/vt/issues/82)) ([#81](https://github.com/ins-x/vt/issues/81)) ([696f0c3](https://github.com/ins-x/vt/commit/696f0c3adbb792425c66adcb759b845d695e85cd))
+
+
+
 ## [0.7.2](https://github.com/ins-x/vt/compare/v0.7.1...v0.7.2) (2022-11-09)
 
 
