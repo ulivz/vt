@@ -8,6 +8,7 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
     enableDarkMode: true,
     repo: "https://github.com/ulivz/vuepress-theme-vt",
     logo: "/logo.svg",
+    lastUpdated: "Last Updated",
     nav: [
       { text: "Guide", link: "/guide/" },
       { text: "API", link: "/api/" },

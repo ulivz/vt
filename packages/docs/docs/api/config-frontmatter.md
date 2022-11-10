@@ -1,5 +1,6 @@
 ---
 pageClass: 'config-frontmatter'
+lastUpdated: false
 ---
 
 # Config: Frontmatter
@@ -93,6 +94,16 @@ Display page edit at the bottom, set `false` to hidden it:
 ```md
 ---
 pageEdit: false
+---
+```
+
+## lastUpdated
+
+Display last edit at the bottom, set `false` to hidden it:
+
+```md
+---
+lastUpdated: false
 ---
 ```
 
