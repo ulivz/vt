@@ -1,3 +1,12 @@
+## [0.7.4](https://github.com/ins-x/vt/compare/v0.7.3...v0.7.4) (2022-11-10)
+
+
+### Features
+
+* **theme:** remove disturbing hover color ([96b920a](https://github.com/ins-x/vt/commit/96b920adf39fdd3f00c75f484df1f5d8fb9604a2))
+
+
+
 ## [0.7.3](https://github.com/ins-x/vt/compare/v0.7.2...v0.7.3) (2022-11-10)
 
 
