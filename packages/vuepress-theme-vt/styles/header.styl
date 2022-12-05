@@ -7,8 +7,8 @@
         &::before {
             display: block;
             content: ' ';
-            margin-top: -70px;
-            height: 70px;
+            margin-top: calc(-1 * (var(--vp-navbar-height) + var(--vp-statusbar-height) + 0.75rem));
+            height: calc(var(--vp-navbar-height) + var(--vp-statusbar-height) + 0.75rem);
             visibility: hidden;
             pointer-events: none;
         }
