@@ -1,3 +1,12 @@
+## [0.7.5](https://github.com/ins-x/vt/compare/v0.7.4...v0.7.5) (2023-01-16)
+
+
+### Bug Fixes
+
+* **theme:** wrong layout of API page (close: [#86](https://github.com/ins-x/vt/issues/86)) ([e02981d](https://github.com/ins-x/vt/commit/e02981dce21c9324ed36987b9ac962191eab58fb))
+
+
+
 ## [0.7.4](https://github.com/ins-x/vt/compare/v0.7.3...v0.7.4) (2022-11-10)
 
 
