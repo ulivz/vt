@@ -1,3 +1,12 @@
+## [0.7.6](https://github.com/ins-x/vt/compare/v0.7.5...v0.7.6) (2023-01-16)
+
+
+### Features
+
+* enhance the padding between headers ([c8dbc5f](https://github.com/ins-x/vt/commit/c8dbc5f10a6376202a11f3beb06999e5d0bcf113))
+
+
+
 ## [0.7.5](https://github.com/ins-x/vt/compare/v0.7.4...v0.7.5) (2023-01-16)
 
 
