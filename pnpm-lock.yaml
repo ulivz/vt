@@ -1,4 +1,4 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 importers:
 
@@ -20,12 +20,12 @@ importers:
       jest-cli: 27.3.1
       jest-serializer-path: 0.1.15
       lerna: 4.0.0
-      ts-jest: 27.0.7_drgbl6usjogxnjhdw42vd22ndu
+      ts-jest: 27.0.7_@types+jest@27.0.0+jest@27.3.1
 
   packages/docs:
     specifiers:
       vuepress: 1.9.7
-      vuepress-theme-vt: 0.7.4
+      vuepress-theme-vt: 0.7.6
     devDependencies:
       vuepress: 1.9.7
       vuepress-theme-vt: link:../vuepress-theme-vt
@@ -67,7 +67,7 @@ importers:
       vue-toasted: ^1.1.25
       vuepress: 1.9.7
       vuepress-plugin-flowchart: ^1.4.2
-      vuepress-theme-vt: 0.7.4
+      vuepress-theme-vt: 0.7.6
     devDependencies:
       '@vuepress/plugin-back-to-top': 1.9.7
       '@vuepress/plugin-google-analytics': 1.9.7
@@ -92,6 +92,7 @@ importers:
       inquirer: 7.3.3
       lodash: ^4.17.15
       markdown-it-attrs: ^2
+      markdown-it-link-attributes: '2'
       node-google-translate-skidz: 1.1.2
       prism-themes: 1.9.0
       stylus: ^0.54.8
@@ -113,12 +114,13 @@ importers:
       inquirer: 7.3.3
       lodash: 4.17.21
       markdown-it-attrs: 2.4.1
+      markdown-it-link-attributes: 2.1.0
       node-google-translate-skidz: 1.1.2
       prism-themes: 1.9.0
       stylus: 0.54.8
       stylus-loader: 3.0.2_stylus@0.54.8
       vue: 2.6.14
-      vue-router: 3.5.3_vue@2.6.14
+      vue-router: 3.5.3
       vuepress-plugin-container: 2.1.5
       vuepress-plugin-smooth-scroll: 0.0.3
     devDependencies:
@@ -3021,7 +3023,7 @@ packages:
       '@vuepress/shared-utils': 1.9.7
       '@vuepress/types': 1.9.7
       autoprefixer: 9.8.8
-      babel-loader: 8.2.3_c5cihxqta4yrmitykip7so3rqm
+      babel-loader: 8.2.3_174483de130731162278521ff93b7183
       bundle-require: 2.1.8_esbuild@0.14.7
       cache-loader: 3.0.1_webpack@4.46.0
       chokidar: 2.1.8
@@ -3042,8 +3044,8 @@ packages:
       toml: 3.0.0
       url-loader: 1.1.2_webpack@4.46.0
       vue: 2.6.14
-      vue-loader: 15.9.8_uaqtbhcjkszohy5wyotocmr54i
-      vue-router: 3.5.3_vue@2.6.14
+      vue-loader: 15.9.8_a021309c4954b2e3e3b6c3a6e1323de2
+      vue-router: 3.5.3
       vue-server-renderer: 2.6.14
       vue-template-compiler: 2.6.14
       vuepress-html-webpack-plugin: 3.2.0_webpack@4.46.0
@@ -3832,7 +3834,7 @@ packages:
       - supports-color
     dev: true
 
-  /babel-loader/8.2.3_c5cihxqta4yrmitykip7so3rqm:
+  /babel-loader/8.2.3_174483de130731162278521ff93b7183:
     resolution: {integrity: sha512-n4Zeta8NC3QAsuyiizu0GkmRcQ6clkV9WFUnUf1iXP//IeSKbWjofW3UHyZVwlOB4y039YQKefawyTn64Zwbuw==}
     engines: {node: '>= 8.9'}
     peerDependencies:
@@ -4875,7 +4877,7 @@ packages:
       lodash: ^4.17.20
       marko: ^3.14.4
       mote: ^0.2.0
-      mustache: ^3.0.0
+      mustache: ^4.0.1
       nunjucks: ^3.2.2
       plates: ~0.4.11
       pug: ^3.0.0
@@ -5178,8 +5180,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      JSONStream: 1.3.5
       is-text-path: 1.0.1
+      JSONStream: 1.3.5
       lodash: 4.17.21
       meow: 8.1.2
       split2: 3.2.2
@@ -7476,7 +7478,7 @@ packages:
       - supports-color
     dev: true
 
-  /http-proxy-middleware/0.19.1_ww346azdyxua6tt4dpauz7tfuu:
+  /http-proxy-middleware/0.19.1_debug@4.3.3+supports-color@6.1.0:
     resolution: {integrity: sha512-yHYTgWMQO8VvwNS22eLLloAkvungsKdKTLO8AJlftYIKNfJr3GK3zK0ZCfzDDGUBttdGc8xFy1mCitvNKQtC3Q==}
     engines: {node: '>=4.0.0'}
     dependencies:
@@ -9275,6 +9277,10 @@ packages:
   /markdown-it-emoji/1.4.0:
     resolution: {integrity: sha1-m+4OmpkKljupbfaYDE/dsF37Tcw=}
     dev: true
+
+  /markdown-it-link-attributes/2.1.0:
+    resolution: {integrity: sha512-NclmOF52k57idAZI93PREbPKbKPFyafwoJncWW9dKpkYGbO26oJGHa4bUoU27Lk8TeWLbPEzuKFyQGwuB2NbdA==}
+    dev: false
 
   /markdown-it-table-of-contents/0.4.4:
     resolution: {integrity: sha512-TAIHTHPwa9+ltKvKPWulm/beozQU41Ab+FIefRaQV1NRnpzwcV9QOe6wXQS5WLivm5Q/nlo0rl6laGkMDZE7Gw==}
@@ -12839,7 +12845,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-jest/27.0.7_drgbl6usjogxnjhdw42vd22ndu:
+  /ts-jest/27.0.7_@types+jest@27.0.0+jest@27.3.1:
     resolution: {integrity: sha512-O41shibMqzdafpuP+CkrOL7ykbmLh+FqQrXEmV9CydQ5JBk0Sj0uAEF5TNNe94fZWKm3yYvWa/IbyV4Yg1zK2Q==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
@@ -13259,7 +13265,7 @@ packages:
     resolution: {integrity: sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==}
     dev: true
 
-  /vue-loader/15.9.8_uaqtbhcjkszohy5wyotocmr54i:
+  /vue-loader/15.9.8_a021309c4954b2e3e3b6c3a6e1323de2:
     resolution: {integrity: sha512-GwSkxPrihfLR69/dSV3+5CdMQ0D+jXg8Ma1S4nQXKJAznYFX14vHdc/NetQc34Dw+rBbIJyP7JOuVb9Fhprvog==}
     peerDependencies:
       '@vue/compiler-sfc': ^3.0.8
@@ -13340,12 +13346,8 @@ packages:
       - whiskers
     dev: true
 
-  /vue-router/3.5.3_vue@2.6.14:
+  /vue-router/3.5.3:
     resolution: {integrity: sha512-FUlILrW3DGitS2h+Xaw8aRNvGTwtuaxrRkNSHWTizOfLUie7wuYwezeZ50iflRn8YPV5kxmU2LQuu3nM/b3Zsg==}
-    peerDependencies:
-      vue: ^2
-    dependencies:
-      vue: 2.6.14
 
   /vue-server-renderer/2.6.14:
     resolution: {integrity: sha512-HifYRa/LW7cKywg9gd4ZtvtRuBlstQBao5ZCWlg40fyB4OPoGfEXAzxb0emSLv4pBDOHYx0UjpqvxpiQFEuoLA==}
@@ -13611,7 +13613,7 @@ packages:
       del: 4.1.1
       express: 4.17.2_supports-color@6.1.0
       html-entities: 1.4.0
-      http-proxy-middleware: 0.19.1_ww346azdyxua6tt4dpauz7tfuu
+      http-proxy-middleware: 0.19.1_debug@4.3.3+supports-color@6.1.0
       import-local: 2.0.0
       internal-ip: 4.3.0
       ip: 1.1.5

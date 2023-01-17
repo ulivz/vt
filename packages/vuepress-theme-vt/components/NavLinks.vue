@@ -222,7 +222,7 @@ function css(el, property) {
     color: inherit;
 
     &:hover, &.router-link-active {
-      color: var(--c-brand);
+      color: var(--vp-c-link);
     }
   }
 
@@ -285,18 +285,7 @@ function css(el, property) {
 @media (min-width: $MQMobile) {
   .nav-links a {
     &:hover, &.router-link-active {
-      color: var(--c-brand);
-
-      &::before {
-        content: '';
-        position: absolute;
-        width: calc(100% + 30px);
-        height: 1px;
-        position: absolute;
-        bottom: -3px;
-        left: -15px;
-        transition: background-color 0.2s;
-      }
+      color: var(--vp-c-link);
     }
   }
 
