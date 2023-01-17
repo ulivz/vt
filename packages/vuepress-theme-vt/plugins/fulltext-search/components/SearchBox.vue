@@ -329,21 +329,21 @@ function highlight(str, strHighlight) {
     }
 
     &:focus, &:hover {
-      // border: 1px solid var(--c-brand);
-      border-color: var(--c-brand);
+      // border: 1px solid var(--vp-c-link);
+      border-color: var(--vp-c-link);
       transition: border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
 
     &:focus {
       cursor: auto;
-      border-color: var(--c-brand);
+      border-color: var(--vp-c-link);
 
       &::placeholder {
-        color: var(--c-brand);
+        color: var(--vp-c-link);
       }
 
       &~ .search-icon {
-        color: var(--c-brand);
+        color: var(--vp-c-link);
       }
     }
 
@@ -408,7 +408,7 @@ function highlight(str, strHighlight) {
       .parent-page-title {
         color: white;
         font-weight: 500;
-        background-color: var(--c-brand);
+        background-color: var(--vp-c-link);
         padding: 5px;
       }
 

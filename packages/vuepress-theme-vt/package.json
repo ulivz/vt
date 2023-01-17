@@ -24,6 +24,7 @@
     "@vuepress/plugin-nprogress": "1.9.7",
     "@vuepress/shared-utils": "1.9.7",
     "@vuepress/types": "1.9.7",
+    "markdown-it-link-attributes": "2",
     "cheap-watch": "1.0.3",
     "docsearch.js": "^2.5.2",
     "flexsearch": "^0.6.32",

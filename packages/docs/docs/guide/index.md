@@ -6,9 +6,9 @@
 
 I made this theme to combine eXperience of `@vue/theme` and [current huge VuePress ecosystem](https://github.com/vuepress/awesome-vuepress/), also introducing some built-in features like **full-text search**, **i18n** etc.
 
-## Features
+## Features2
 
-- [**Compatibility**](./migration.md): fully compatible with [VuePress's Default Theme](https://vuepress.vuejs.org/theme/default-theme-config.md).
+- [**Compatibility2**](./migration.md): fully compatible with [VuePress's Default Theme](https://vuepress.vuejs.org/theme/default-theme-config.html).
 - [**Full-text search**](./search.md): No server dependencies, distinguishing locales.
 - [Dark Mode](./dark-mode.md)
 - [TypeScript Support](./configuration.md)

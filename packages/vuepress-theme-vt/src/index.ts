@@ -13,7 +13,7 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
   const isAlgoliaSearch =
     themeConfig.algolia ||
     Object.keys((siteConfig.locales && themeConfig.locales) || {}).some(
-      base => themeConfig.locales[base].algolia,
+      (base) => themeConfig.locales[base].algolia
     );
 
   const enableSmoothScroll = themeConfig.smoothScroll === true;
@@ -86,8 +86,9 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
       ["smooth-scroll", enableSmoothScroll],
     ],
 
-    extendMarkdown: md => {
+    extendMarkdown: (md) => {
       const markdownItAttrs = require("markdown-it-attrs");
+      const markdownItLinksAttrs = require("markdown-it-link-attributes");
 
       md.use(markdownItAttrs, {
         // optional, these are default options
@@ -95,6 +96,21 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
         rightDelimiter: "}",
         allowedAttributes: [], // empty array = all attributes are allowed
       });
+
+      md.use(markdownItLinksAttrs, [
+        {
+          pattern: /^https?:\/\//,
+          attrs: {
+            class: "link-hover-effect external-link",
+          },
+        },
+        {
+          pattern: /^\.?\//,
+          attrs: {
+            class: "link-hover-effect absolute-link",
+          },
+        },
+      ]);
     },
   };
 });
