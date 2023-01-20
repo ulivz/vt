@@ -13,7 +13,7 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
   const isAlgoliaSearch =
     themeConfig.algolia ||
     Object.keys((siteConfig.locales && themeConfig.locales) || {}).some(
-      (base) => themeConfig.locales[base].algolia
+      base => themeConfig.locales[base].algolia,
     );
 
   const enableSmoothScroll = themeConfig.smoothScroll === true;

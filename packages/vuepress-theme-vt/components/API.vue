@@ -150,6 +150,7 @@ h2 {
 
 h3 {
   letter-spacing: -0.01em;
+  color: var(--c-brand);
   font-size: 18px;
   margin-bottom: 1em;
   transition: color 0.5s;
@@ -243,7 +244,7 @@ h1:hover .header-anchor, h1:focus .header-anchor, h2:hover .header-anchor, h2:fo
 }
 
 .api-groups a:hover {
-  color: var(--vp-c-link);
+  color: var(--c-brand);
   transition: none;
 }
 

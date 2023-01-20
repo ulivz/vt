@@ -162,7 +162,7 @@ export default {
 
     font-size inherit {
       &:hover {
-        color: var(--vp-c-link);
+        color: var(--c-brand);
       }
     }
   }
@@ -198,8 +198,12 @@ export default {
         margin-bottom: 0;
         padding: 0 1.5rem 0 1.25rem;
 
-        &:hover, &.router-link-active {
-          color: var(--vp-c-link);
+        &:hover {
+          color: var(--c-brand);
+        }
+
+        &.router-link-active {
+          color: var(--c-brand);
         }
       }
 
