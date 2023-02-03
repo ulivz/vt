@@ -1,3 +1,13 @@
+## [0.8.1](https://github.com/ins-x/vt/compare/v0.8.0...v0.8.1) (2023-02-03)
+
+
+### Features
+
+* add css variable `--vp-c-bg-inverse` ([d9a51b9](https://github.com/ins-x/vt/commit/d9a51b9a7d41769e16536aff18cff44838dc6534))
+* refine style of `--vp-c-text-1` ([3ad96ef](https://github.com/ins-x/vt/commit/3ad96efb3f9239ee2bf34789c3cbab33825a3b1a))
+
+
+
 # [0.8.0](https://github.com/ins-x/vt/compare/v0.7.6...v0.8.0) (2023-02-03)
 
 
