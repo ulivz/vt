@@ -142,12 +142,12 @@ export default {
   &.clickable {
     &.active {
       font-weight: 500;
-      color: var(--c-brand);;
-      border-left-color: var(--c-brand);;
+      color: var(--vp-c-brand);;
+      border-left-color: var(--vp-c-brand);;
     }
 
     &:hover {
-      color: var(--c-brand);;
+      color: var(--vp-c-brand);;
     }
   }
 }

@@ -189,17 +189,17 @@ export default {
     }
 
     &.active {
-      border-left-color: var(--c-brand);
+      border-left-color: var(--vp-c-brand);
 
       a {
-        color: var(--c-brand);
+        color: var(--vp-c-brand);
         font-weight: 500;
       }
     }
 
     &:hover {
       a {
-        color: var(--c-brand);
+        color: var(--vp-c-brand);
       }
     }
   }

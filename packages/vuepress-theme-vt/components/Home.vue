@@ -161,7 +161,7 @@ section {
 
 .actions .action-link {
   font-weight: 500;
-  background-color: var(--c-brand);
+  background-color: var(--vp-c-brand);
   color: #fff;
   margin-right: 18px;
 }

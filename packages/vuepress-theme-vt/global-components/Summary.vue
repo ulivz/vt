@@ -14,7 +14,7 @@
 .pia-summary-guide {
   opacity: 0.8;
   font-style: italic;
-  color: var(--c-brand);
+  color: var(--vp-c-brand);
 
   &:before {
     content: 'Click to expand'
@@ -26,7 +26,7 @@
   outline: none;
 
   &::marker {
-    color: var(--c-brand);
+    color: var(--vp-c-brand);
     content: '▶️';
     font-weight: bolder;
   }

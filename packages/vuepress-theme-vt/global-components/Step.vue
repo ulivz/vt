@@ -26,7 +26,7 @@ export default {
 }
 
 .next-step:hover {
-  border-color: var(--c-brand);
+  border-color: var(--vp-c-brand);
   transition: border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -37,7 +37,7 @@ export default {
   margin-top: 0;
   margin-bottom: 0.75em;
   display: block;
-  color: var(--c-brand);
+  color: var(--vp-c-brand);
 }
 
 .next-steps-caption {
