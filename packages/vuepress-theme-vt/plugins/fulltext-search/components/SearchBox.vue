@@ -435,7 +435,7 @@ function highlight(str, strHighlight) {
             margin: 0 3px;
             padding: 0 3px;
             border-radius: 3px;
-            background: rgba(59, 72, 206, 0.2);
+            background: var(--vp-c-active-link-bg);
           }
 
           border: 1px solid $borderColor;

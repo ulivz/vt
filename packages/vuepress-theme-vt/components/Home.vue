@@ -143,7 +143,7 @@ section {
 }
 
 .dark .heroText {
-  color: var(--c-brand-light);
+  color: var(--vp-c-brand-light);
   background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -180,7 +180,7 @@ section {
 }
 
 .actions .action-link:hover {
-  background-color: var(--c-brand-dark);
+  background-color: var(--vp-c-brand-dark);
   transition-duration: 0.2s;
 }
 
@@ -189,7 +189,7 @@ section {
 }
 
 .dark .actions .action-link:hover {
-  background-color: var(--c-brand-light);
+  background-color: var(--vp-c-brand-light);
 }
 
 .actions .sub-action-link {

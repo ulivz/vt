@@ -89,7 +89,7 @@ a {
 }
 
 a {
-  color: var(--vp-c-brand-light);
+  color: var(--vp-c-brand);
 
   &:hover {
     color: var(--vp-c-brand-dark);
@@ -101,7 +101,7 @@ html:not(.dark) {
     @media (min-width: 768px) {
       a.link-hover-effect {
         text-decoration: none;
-        color: var(--vp-c-brand);
+        color: var(--vp-c-active-link);
         max-width: 100%;
         position: relative;
         display: inline-block;
@@ -116,7 +116,7 @@ html:not(.dark) {
           border-radius: 3px;
           bottom: 10%;
           transition: color 200ms cubic-bezier(0, 0.8, 0.13, 1), top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-          background-color: alpha(#3B48CE, 0.2);
+          background-color: var(--vp-c-active-link-bg);
         }
 
         &:hover {
