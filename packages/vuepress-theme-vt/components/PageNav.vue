@@ -158,7 +158,7 @@ function flatten(items, res) {
     }
 
     &:hover {
-      border-color: var(--c-brand);
+      border-color: var(--vp-c-brand);
       transition: border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
       & span {

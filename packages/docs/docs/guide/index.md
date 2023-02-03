@@ -8,7 +8,7 @@ I made this theme to combine eXperience of `@vue/theme` and [current huge VuePre
 
 ## Features
 
-- [**Compatibility**](./migration.md): fully compatible with [VuePress's Default Theme](https://vuepress.vuejs.org/theme/default-theme-config.md).
+- [**Compatibility**](./migration.md): fully compatible with [VuePress's Default Theme](https://vuepress.vuejs.org/theme/default-theme-config.html).
 - [**Full-text search**](./search.md): No server dependencies, distinguishing locales.
 - [Dark Mode](./dark-mode.md)
 - [TypeScript Support](./configuration.md)

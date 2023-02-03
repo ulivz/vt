@@ -85,8 +85,48 @@ body {
 }
 
 a {
-  color: var(--c-brand);
   text-decoration: none;
+}
+
+a {
+  color: var(--vp-c-brand);
+
+  &:hover {
+    color: var(--vp-c-brand-dark);
+  }
+}
+
+html:not(.dark) {
+  {$contentClass}.content__default {
+    @media (min-width: 768px) {
+      a.link-hover-effect {
+        text-decoration: none;
+        color: var(--vp-c-active-link);
+        max-width: 100%;
+        position: relative;
+        display: inline-block;
+        vertical-align: bottom;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 60%;
+          left: -0.1em;
+          right: -0.1em;
+          border-radius: 3px;
+          bottom: 10%;
+          transition: color 200ms cubic-bezier(0, 0.8, 0.13, 1), top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+          background-color: var(--vp-c-active-link-bg);
+        }
+
+        &:hover {
+          &:after {
+            top: 10%;
+          }
+        }
+      }
+    }
+  }
 }
 
 p a code {
@@ -236,7 +276,7 @@ table {
 
   .theme-container:not(.no-sidebar) {
     .nav-left-links {
-      padding: 2rem 0rem 2rem calc(var(--vp-doc-padding) - 1.5rem) ;
+      padding: 2rem 0rem 2rem calc(var(--vp-doc-padding) - 1.5rem);
     }
   }
 }

@@ -132,11 +132,12 @@ a.sidebar-link {
   transition: color 0.3s;
 
   &:hover {
-    color: var(--c-brand);
+    color: var(--vp-c-brand);
   }
 
   &.active {
-    color: var(--c-brand);
+    color: var(--vp-c-brand);
+    font-weight: 500;
   }
 
   .sidebar-group & {
