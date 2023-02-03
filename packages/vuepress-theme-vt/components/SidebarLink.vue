@@ -137,6 +137,7 @@ a.sidebar-link {
 
   &.active {
     color: var(--vp-c-brand);
+    font-weight: 500;
   }
 
   .sidebar-group & {
