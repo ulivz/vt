@@ -1,3 +1,12 @@
+# [0.8.0](https://github.com/ins-x/vt/compare/v0.7.6...v0.8.0) (2023-02-03)
+
+
+### Features
+
+* refine theme style ([#88](https://github.com/ins-x/vt/issues/88)) ([66afe27](https://github.com/ins-x/vt/commit/66afe272abccc88c17b792638f80011582140003))
+
+
+
 ## [0.7.6](https://github.com/ins-x/vt/compare/v0.7.5...v0.7.6) (2023-01-16)
 
 
