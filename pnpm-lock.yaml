@@ -1,5 +1,10 @@
 lockfileVersion: 5.4
 
+patchedDependencies:
+  '@vuepress/types@1.9.7':
+    hash: 345akcy4o3rmn547gptlscwsci
+    path: patches/@vuepress__types@1.9.7.patch
+
 importers:
 
   .:
@@ -25,7 +30,7 @@ importers:
   packages/docs:
     specifiers:
       vuepress: 1.9.7
-      vuepress-theme-vt: 0.8.1
+      vuepress-theme-vt: 0.8.2
     devDependencies:
       vuepress: 1.9.7
       vuepress-theme-vt: link:../vuepress-theme-vt
@@ -67,7 +72,7 @@ importers:
       vue-toasted: ^1.1.25
       vuepress: 1.9.7
       vuepress-plugin-flowchart: ^1.4.2
-      vuepress-theme-vt: 0.8.1
+      vuepress-theme-vt: 0.8.2
     devDependencies:
       '@vuepress/plugin-back-to-top': 1.9.7
       '@vuepress/plugin-google-analytics': 1.9.7
@@ -106,7 +111,7 @@ importers:
       '@vuepress/plugin-active-header-links': 1.9.7
       '@vuepress/plugin-nprogress': 1.9.7
       '@vuepress/shared-utils': 1.9.7
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
       cheap-watch: 1.0.3
       docsearch.js: 2.6.3
       flexsearch: 0.6.32
@@ -3021,7 +3026,7 @@ packages:
       '@vuepress/plugin-last-updated': 1.9.7
       '@vuepress/plugin-register-components': 1.9.7
       '@vuepress/shared-utils': 1.9.7
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
       autoprefixer: 9.8.8
       babel-loader: 8.2.3_c5cihxqta4yrmitykip7so3rqm
       bundle-require: 2.1.8_esbuild@0.14.7
@@ -3145,7 +3150,7 @@ packages:
   /@vuepress/plugin-active-header-links/1.9.7:
     resolution: {integrity: sha512-G1M8zuV9Og3z8WBiKkWrofG44NEXsHttc1MYreDXfeWh/NLjr9q1GPCEXtiCjrjnHZHB3cSQTKnTqAHDq35PGA==}
     dependencies:
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
       lodash.debounce: 4.0.8
     transitivePeerDependencies:
       - debug
@@ -3153,7 +3158,7 @@ packages:
   /@vuepress/plugin-back-to-top/1.9.7:
     resolution: {integrity: sha512-DM1S+Q8Xn/i+zhe4zThekxb1M2abfKLklg/NKtQloklHKdNdVfk+EcxWYNmNfSii+ymDWaaG8lmH0xjVhy0iXw==}
     dependencies:
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
       lodash.debounce: 4.0.8
     transitivePeerDependencies:
       - debug
@@ -3162,7 +3167,7 @@ packages:
   /@vuepress/plugin-google-analytics/1.9.7:
     resolution: {integrity: sha512-ZpsYrk23JdwbcJo9xArVcdqYHt5VyTX9UN9bLqNrLJRgRTV0X2jKUkM63dlKTJMpBf+0K1PQMJbGBXgOO7Yh0Q==}
     dependencies:
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
     transitivePeerDependencies:
       - debug
     dev: true
@@ -3170,7 +3175,7 @@ packages:
   /@vuepress/plugin-last-updated/1.9.7:
     resolution: {integrity: sha512-FiFBOl49dlFRjbLRnRAv77HDWfe+S/eCPtMQobq4/O3QWuL3Na5P4fCTTVzq1K7rWNO9EPsWNB2Jb26ndlQLKQ==}
     dependencies:
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
       cross-spawn: 6.0.5
     transitivePeerDependencies:
       - debug
@@ -3179,7 +3184,7 @@ packages:
   /@vuepress/plugin-medium-zoom/1.9.7:
     resolution: {integrity: sha512-P00chXEEoFyQyDWiiSw1mUIdywS6vqM9jolM/3Gv3/TywqemWEm1MKMM7mLsjGiaXJbBQZE+U3/lHmzcaroYLQ==}
     dependencies:
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
       medium-zoom: 1.0.6
     transitivePeerDependencies:
       - debug
@@ -3188,7 +3193,7 @@ packages:
   /@vuepress/plugin-nprogress/1.9.7:
     resolution: {integrity: sha512-sI148igbdRfLgyzB8PdhbF51hNyCDYXsBn8bBWiHdzcHBx974sVNFKtfwdIZcSFsNrEcg6zo8YIrQ+CO5vlUhQ==}
     dependencies:
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
       nprogress: 0.2.0
     transitivePeerDependencies:
       - debug
@@ -3197,7 +3202,7 @@ packages:
     resolution: {integrity: sha512-E8It9+Gbxuorja28Fg/3MtG5JBhdQ4XkuX65uqKl86n2uOjx50Zqndt7MWOzy9bMKzaV7gQw07UbUOMVSgKT0w==}
     dependencies:
       '@vuepress/shared-utils': 1.9.7
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
       register-service-worker: 1.7.2
       workbox-build: 4.3.1
     transitivePeerDependencies:
@@ -3209,7 +3214,7 @@ packages:
     resolution: {integrity: sha512-l/w1nE7Dpl+LPMb8+AHSGGFYSP/t5j6H4/Wltwc2QcdzO7yqwC1YkwwhtTXvLvHOV8O7+rDg2nzvq355SFkfKA==}
     dependencies:
       '@vuepress/shared-utils': 1.9.7
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
     transitivePeerDependencies:
       - debug
       - supports-color
@@ -3218,7 +3223,7 @@ packages:
   /@vuepress/plugin-search/1.9.7:
     resolution: {integrity: sha512-MLpbUVGLxaaHEwflFxvy0pF9gypFVUT3Q9Zc6maWE+0HDWAvzMxo6GBaj6mQPwjOqNQMf4QcN3hDzAZktA+DQg==}
     dependencies:
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
     transitivePeerDependencies:
       - debug
     dev: true
@@ -3259,7 +3264,7 @@ packages:
       '@vuepress/plugin-active-header-links': 1.9.7
       '@vuepress/plugin-nprogress': 1.9.7
       '@vuepress/plugin-search': 1.9.7
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
       docsearch.js: 2.6.3
       lodash: 4.17.21
       stylus: 0.54.8
@@ -3280,7 +3285,7 @@ packages:
       - supports-color
     dev: true
 
-  /@vuepress/types/1.9.7:
+  /@vuepress/types/1.9.7_6bcwpop6snlk6fi72fkaeahv2a:
     resolution: {integrity: sha512-moLQzkX3ED2o18dimLemUm7UVDKxhcrJmGt5C0Ng3xxrLPaQu7UqbROtEKB3YnMRt4P/CA91J+Ck+b9LmGabog==}
     dependencies:
       '@types/markdown-it': 10.0.3
@@ -3288,6 +3293,7 @@ packages:
       webpack-chain: 6.5.1
     transitivePeerDependencies:
       - debug
+    patched: true
 
   /@webassemblyjs/ast/1.9.0:
     resolution: {integrity: sha512-C6wW5L+b7ogSDVqymbkkvuW9kruN//YisMED04xzeBBqjHa2FYnmvOlS6Xj68xWQRgWvI9cIglsjFowH/RJyEA==}
@@ -13434,7 +13440,7 @@ packages:
     dependencies:
       '@vuepress/core': 1.9.7
       '@vuepress/theme-default': 1.9.7
-      '@vuepress/types': 1.9.7
+      '@vuepress/types': 1.9.7_6bcwpop6snlk6fi72fkaeahv2a
       cac: 6.7.12
       envinfo: 7.8.1
       opencollective-postinstall: 2.0.3

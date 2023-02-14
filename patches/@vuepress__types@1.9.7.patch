@@ -1,0 +1,24 @@
+diff --git a/src/theme-default.ts b/src/theme-default.ts
+index c086041e2aed1750b96e864d3f44c5a27f318e07..a9a0e1baf8f8521af3243ef99a5fd8a9233e8c14 100644
+--- a/src/theme-default.ts
++++ b/src/theme-default.ts
+@@ -81,10 +81,18 @@ export type SidebarItem4Group = {
+    * Sidebar's depth.
+    */
+   sidebarDepth?: number;
++  /**
++   * By default the first subgroup is opened initially. 
++   * You can change this using the `initialOpenGroupIndex`: 
++   * Specify an index to open another subgroup or use `-1` for no open group.
++   * 
++   * @default 0
++   */
++  initialOpenGroupIndex?: number;
+   /**
+    * Sidebar children.
+    */
+-  children?: Array<SidebarItem4Shortcut>;
++  children?: Array<SidebarItem4Shortcut | SidebarItem4Group>;
+ };
+ 
+ /**

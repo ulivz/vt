@@ -4,7 +4,7 @@
     :class="[
       {
         collapsable,
-        'is-sub-group': depth !== 0,
+        'is-sub-group': depth !== 0 && depth !== 1,
       },
       `depth-${depth}`,
     ]"
@@ -73,16 +73,6 @@ export default {
 
 <style lang="stylus">
 .sidebar-group {
-  .sidebar-group {
-    padding-left: 0.5em;
-  }
-
-  &:not(.collapsable) {
-    .sidebar-heading:not(.clickable) {
-      cursor: auto;
-      color: inherit;
-    }
-  }
 
   // refine styles of nested sidebar groups
   &.is-sub-group {
@@ -109,6 +99,18 @@ export default {
     }
   }
 
+  &.depth-0 {
+    & > .sidebar-heading {
+      font-weight: bold;
+    }
+  }
+
+  &.depth-1 {
+    .sidebar-links {
+      padding-left: 1rem;
+    }
+  }
+
   &.depth-2 {
     & > .sidebar-heading {
       border-left: none;
@@ -121,12 +123,12 @@ export default {
   transition: color 0.15s ease;
   cursor: pointer;
   font-size: 14px;
-  font-weight: bold;
   // text-transform uppercase
   padding: 0.35rem 1.5rem 0.35rem 0rem;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
+  cursor: pointer;
 
   // border-left 0.25rem solid transparent
   &.open, &:hover {
@@ -142,12 +144,12 @@ export default {
   &.clickable {
     &.active {
       font-weight: 500;
-      color: var(--vp-c-brand);;
-      border-left-color: var(--vp-c-brand);;
+      color: var(--vp-c-brand);
+      border-left-color: var(--vp-c-brand);
     }
 
     &:hover {
-      color: var(--vp-c-brand);;
+      color: var(--vp-c-brand);
     }
   }
 }
