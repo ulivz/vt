@@ -1,3 +1,12 @@
+## [0.8.2](https://github.com/ins-x/vt/compare/v0.8.1...v0.8.2) (2023-02-14)
+
+
+### Bug Fixes
+
+* **theme:** internal link does not have link effect (close: [#89](https://github.com/ins-x/vt/issues/89)) ([#90](https://github.com/ins-x/vt/issues/90)) ([dfe8e67](https://github.com/ins-x/vt/commit/dfe8e674f019ddbb5a295c32c83b51250997b419))
+
+
+
 ## [0.8.1](https://github.com/ins-x/vt/compare/v0.8.0...v0.8.1) (2023-02-03)
 
 
