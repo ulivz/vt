@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "i18n",
-  "version": "0.8.2",
+  "version": "0.9.0",
   "description": "A VuePress implementation for VitePress theme @vue/theme, fully compatible with VuePress default theme.",
   "keywords": [
     "documentation",
