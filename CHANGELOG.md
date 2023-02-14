@@ -1,3 +1,12 @@
+# [0.9.0](https://github.com/ins-x/vt/compare/v0.8.2...v0.9.0) (2023-02-14)
+
+
+### Features
+
+* formal nested sidebar group support (close: [#91](https://github.com/ins-x/vt/issues/91)) ([#92](https://github.com/ins-x/vt/issues/92)) ([acde070](https://github.com/ins-x/vt/commit/acde07089ce2108dbc8adc2f2971366149a6c4da))
+
+
+
 ## [0.8.2](https://github.com/ins-x/vt/compare/v0.8.1...v0.8.2) (2023-02-14)
 
 
