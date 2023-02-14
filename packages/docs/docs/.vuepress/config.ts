@@ -5,6 +5,7 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
   theme: "vt",
   title: "VT",
   themeConfig: {
+    sidebarDepth: 1,
     enableDarkMode: true,
     repo: "https://github.com/ulivz/vuepress-theme-vt",
     logo: "/logo.svg",
@@ -47,6 +48,7 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
             "/guide/code-switcher",
             "/guide/status",
             "/guide/navbar",
+            "/guide/sidebar",
             "/guide/documenting",
           ],
         },
