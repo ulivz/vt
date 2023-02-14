@@ -105,7 +105,7 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
           },
         },
         {
-          pattern: /^\.?\//,
+          pattern: /^(\.{1,2})?\//,
           attrs: {
             class: "link-hover-effect absolute-link",
           },
