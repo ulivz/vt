@@ -1,3 +1,12 @@
+## [0.9.2](https://github.com/ins-x/vt/compare/v0.9.1...v0.9.2) (2023-02-25)
+
+
+### Features
+
+* **theme:** inheritable `NavIcon` ([a6fab12](https://github.com/ins-x/vt/commit/a6fab12e9af6a0fbbc344aa4d77c9c4f9dec333b))
+
+
+
 ## [0.9.1](https://github.com/ins-x/vt/compare/v0.9.0...v0.9.1) (2023-02-25)
 
 
