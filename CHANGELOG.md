@@ -1,3 +1,12 @@
+## [0.9.1](https://github.com/ins-x/vt/compare/v0.9.0...v0.9.1) (2023-02-25)
+
+
+### Features
+
+* **theme:** bump `vuepress` to 1.9.9 ([47cc2dd](https://github.com/ins-x/vt/commit/47cc2ddb7de8ec0630b384bd89f2c00e0c44d8f1))
+
+
+
 # [0.9.0](https://github.com/ins-x/vt/compare/v0.8.2...v0.9.0) (2023-02-14)
 
 
