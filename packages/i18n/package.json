@@ -13,10 +13,10 @@
   "main": "index.js",
   "types": "lib/index.d.ts",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "1.9.7",
-    "@vuepress/plugin-medium-zoom": "1.9.7",
+    "@vuepress/plugin-back-to-top": "1.9.9",
+    "@vuepress/plugin-medium-zoom": "1.9.9",
     "less": "4.1.2",
-    "vuepress": "1.9.7"
+    "vuepress": "1.9.9"
   },
   "author": "ULIVZ <chl814@foxmail.com>"
 }

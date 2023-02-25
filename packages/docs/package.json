@@ -7,7 +7,7 @@
     "build": "vuepress build docs --temp .temp"
   },
   "devDependencies": {
-    "vuepress": "1.9.7",
+    "vuepress": "1.9.9",
     "vuepress-theme-vt": "0.9.0"
   }
 }

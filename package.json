@@ -24,10 +24,5 @@
     "jest-serializer-path": "0.1.15",
     "lerna": "^4.0.0",
     "ts-jest": "27.0.7"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "@vuepress/types@1.9.7": "patches/@vuepress__types@1.9.7.patch"
-    }
   }
 }
