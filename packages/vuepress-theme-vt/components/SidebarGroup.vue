@@ -119,7 +119,7 @@ export default {
 }
 
 .sidebar-heading {
-  color: $textColor;
+  color: var(--vp-c-text-1);
   transition: color 0.15s ease;
   cursor: pointer;
   font-size: 14px;
