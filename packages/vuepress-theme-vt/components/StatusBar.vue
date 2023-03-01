@@ -1,8 +1,11 @@
 <template>
   <div class="statusbar">
-    <Content v-if="statusText.startsWith('$')" :slot-key="statusText.slice(1)" />
+    <component
+      v-if="status.type === 'component'"
+      :is="status.value"
+    ></component>
     <span v-else>
-      {{ statusText }}
+      {{ status.value }}
     </span>
   </div>
 </template>
@@ -11,14 +14,7 @@
 export default {
   name: "StatusBar",
 
-  computed: {
-    statusText() {
-      return (
-        (this.$frontmatter && this.$frontmatter.status) ||
-        this.$themeLocaleConfig.status
-      );
-    },
-  },
+  props: ['status']
 };
 </script>
 

@@ -5,8 +5,8 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
   >
-    <StatusBar
-      v-if="shouldShowStatusBar"
+    <StatusBar :status="status"
+      v-if="status"
     ></StatusBar>
 
     <Navbar
@@ -66,6 +66,8 @@ import Toc from '@theme/components/Toc.vue'
 import API from '@theme/components/API.vue'
 import { resolveSidebarItems } from '../lib/util'
 
+const selfClosedComponentRE = /^<([^<>\s]+)\s*\/>$/;
+
 export default {
   name: 'Layout',
 
@@ -81,19 +83,42 @@ export default {
 
   data () {
     return {
-      isSidebarOpen: false
+      isSidebarOpen: false,
+      statusPageStackCount: 0,
     }
   },
 
+  created() {
+    this.checkStatusPageStackCount();
+  },
+
   computed: {
-    shouldShowStatusBar() {
-      if (this.$frontmatter && this.$frontmatter.status) {
-        return true;
+    status() {
+      const statusConfig =
+        (this.$frontmatter && this.$frontmatter.status) ||
+        this.$themeConfig.status;
+
+      if(typeof statusConfig !== 'string'){
+        return;
+      }  
+
+      const matched = statusConfig.match(selfClosedComponentRE);
+      
+      if (matched) {
+        const component = Vue.component(matched[1]);
+
+        if (component) {
+          return {
+            type: "component",
+            value: component,
+          };
+        }
       }
-      if (this.$themeLocaleConfig.status) {
-        return true;
-      }
-      return false;
+
+      return {
+        type: "text",
+        value: statusConfig,
+      };
     },
 
     shouldShowNavbar () {
@@ -155,7 +180,8 @@ export default {
           'no-navbar': !this.shouldShowNavbar,
           'sidebar-open': this.isSidebarOpen,
           'no-sidebar': !this.shouldShowSidebar,
-          'statusbar-enabled': this.shouldShowStatusBar,
+          'statusbar-enabled': !!this.status,
+          'statusbar-first-show': this.statusPageStackCount === 1,
         },
         userPageClass
       ]
@@ -211,18 +237,42 @@ export default {
         return layout;
       }
     },
+
+    checkStatusPageStackCount() {
+      if(this.status) {
+        this.statusPageStackCount++;
+      } else {
+        this.statusPageStackCount = 0;
+      }
+    }
+  },
+
+  watch: {
+    $route() {
+      this.checkStatusPageStackCount();
+    },
   },
 };
 </script>
 
 <style lang="stylus">
-.theme-container.statusbar-enabled {
+.theme-container.statusbar-enabled.statusbar-first-show {
   .navbar {
     animation: navbar-top 1.5s linear 0.5s 1 normal forwards;
   }
 
   .sidebar {
     animation: sidebar-top 1.5s linear 0.5s 1 normal forwards;
+  }
+}
+
+.theme-container.statusbar-enabled:not(.statusbar-first-show) {
+  .navbar {
+    animation: navbar-top 0s linear 0s 1 normal forwards;
+  }
+
+  .sidebar {
+    animation: sidebar-top 0s linear 0s 1 normal forwards;
   }
 }
 
