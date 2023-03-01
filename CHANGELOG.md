@@ -1,3 +1,12 @@
+# [0.10.0](https://github.com/ins-x/vt/compare/v0.9.2...v0.10.0) (2023-03-01)
+
+
+### Features
+
+* using Vue component to define status ([#93](https://github.com/ins-x/vt/issues/93)) ([88c15b6](https://github.com/ins-x/vt/commit/88c15b61fcaee2e5c1a44a2dc89b20eb98eb1743))
+
+
+
 ## [0.9.2](https://github.com/ins-x/vt/compare/v0.9.1...v0.9.2) (2023-02-25)
 
 
