@@ -1,3 +1,12 @@
+## [0.10.1](https://github.com/ins-x/vt/compare/v0.10.0...v0.10.1) (2023-03-01)
+
+
+### Bug Fixes
+
+* some texts' styled issue at dark mode ([6d4a4a1](https://github.com/ins-x/vt/commit/6d4a4a14ff0e75fb4b583cd7ec79a6156ebd3bcb))
+
+
+
 # [0.10.0](https://github.com/ins-x/vt/compare/v0.9.2...v0.10.0) (2023-03-01)
 
 
