@@ -338,6 +338,11 @@ function highlight(str, strHighlight) {
       // border: 1px solid var(--vp-c-brand);
       border-color: var(--vp-c-brand);
       transition: border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+      &~.search-command .search-command-char {
+        border-color: var(--vp-c-brand);
+        color: var(--vp-c-brand);
+      }
     }
 
     &:focus {
@@ -427,7 +432,7 @@ function highlight(str, strHighlight) {
           font-size: rem;
           width: 35%;
           border: 1px solid $borderColor;
-          background: #f5f5f5;
+          background: var(--vp-c-bg-mute);
           border-left: none;
           display: table-cell;
           text-align: right;
@@ -437,11 +442,12 @@ function highlight(str, strHighlight) {
 
         .suggestion-content {
           .highlight {
-            color: #000;
-            margin: 0 3px;
+            color: white;
+            margin: 0px;
             padding: 0 3px;
             border-radius: 3px;
-            background: aquamarine;
+            background: var(--c-brand-primary);
+
           }
 
           border: 1px solid $borderColor;
@@ -459,7 +465,7 @@ function highlight(str, strHighlight) {
     }
 
     &.focused {
-      background-color: #f3f4f5;
+      background-color: var(--vp-c-bg-mute);
     }
   }
 }
