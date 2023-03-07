@@ -190,6 +190,8 @@ function css(el, property) {
 </script>
 
 <style lang="stylus">
+@require '../styles/mixins.styl';
+
 .links {
   height: 100%;
   padding-left: 1.5rem;
@@ -222,7 +224,7 @@ function css(el, property) {
     color: inherit;
 
     &:hover, &.router-link-active {
-      color: var(--vp-c-brand);
+      navbar-active-bg();
     }
   }
 
@@ -285,12 +287,7 @@ function css(el, property) {
 @media (min-width: $MQMobile) {
   .nav-links .nav-item > a {
     &:hover, &.router-link-active {
-      color: var(--vp-c-brand);
-      background-color: var(--vp-c-bg-soft);
-      transition: background-color 0.1s;
-      border-radius: var(--vp-common-border-radius);
-      margin: -10px;
-      padding: 10px;
+      navbar-active-bg();
     }
   }
 
