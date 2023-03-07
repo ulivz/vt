@@ -376,7 +376,7 @@ function highlight(str, strHighlight) {
   .search-command {
     position: absolute;
     top: 8px;
-    right: 10px;
+    right: 12px;
   }
 
   .suggestions {
@@ -441,7 +441,7 @@ function highlight(str, strHighlight) {
             margin: 0 3px;
             padding: 0 3px;
             border-radius: 3px;
-            background: var(--vp-c-active-link-bg);
+            background: aquamarine;
           }
 
           border: 1px solid $borderColor;

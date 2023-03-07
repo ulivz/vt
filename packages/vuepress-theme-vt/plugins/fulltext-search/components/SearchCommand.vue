@@ -62,7 +62,7 @@ export default {
   margin-top: 2px;
   border: 1px solid var(--vp-c-divider);
   border-right: none;
-  border-radius: 4px 0 0 4px;
+  border-radius: 20px 0 0 20px;
   padding-left: 6px;
   padding-right: 1px;
   height: 20px;
@@ -74,7 +74,7 @@ export default {
 .search-command-char:nth-child(2) {
   border-right: 1px solid var(--vp-c-divider);
   border-left: none;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 20px 20px 0;
   padding-left: 3px;
   padding-right: 6px;
 }
