@@ -253,6 +253,7 @@ export default {
         this.query = "";
         this.focusIndex = 0;
         this.focused = false;
+        this.$refs.input.blur();
 
         // reset query param
         const params = this.urlParams();
