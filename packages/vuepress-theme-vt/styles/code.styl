@@ -7,7 +7,7 @@ $newCodeBgColor = rgb(246, 248, 250);
     margin: 0;
     font-size: 0.9em;
     background-color: var(--vp-c-bg-mute);
-    border-radius: 3px;
+    border-radius: var(--vp-common-border-radius);
 
     .token {
       &.deleted {
@@ -40,7 +40,6 @@ $newCodeBgColor = rgb(246, 248, 250);
   }
 }
 
-
 div[class*='language-'] {
   position: relative;
   background-color: $newCodeBgColor;
@@ -61,7 +60,7 @@ div[class*='language-'] {
     line-height: 1.4;
 
     .highlighted {
-      background-color: var(--vp-c-bg-code-highlight)
+      background-color: var(--vp-c-bg-code-highlight);
     }
   }
 

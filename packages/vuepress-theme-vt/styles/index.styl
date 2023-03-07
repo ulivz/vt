@@ -88,44 +88,16 @@ a {
   text-decoration: none;
 }
 
-a {
+a.link-hover-effect {
+  font-weight: 600;
   color: var(--vp-c-brand);
+  border-bottom: 1px dashed currentColor;
+  display: inline-block;
+  line-height: 1.2;
 
   &:hover {
-    color: var(--vp-c-brand-dark);
-  }
-}
-
-html:not(.dark) {
-  {$contentClass}.content__default {
-    @media (min-width: 768px) {
-      a.link-hover-effect {
-        text-decoration: none;
-        color: var(--vp-c-active-link);
-        max-width: 100%;
-        position: relative;
-        display: inline-block;
-        vertical-align: bottom;
-
-        &:after {
-          content: '';
-          position: absolute;
-          top: 60%;
-          left: -0.1em;
-          right: -0.1em;
-          border-radius: 3px;
-          bottom: 10%;
-          transition: color 200ms cubic-bezier(0, 0.8, 0.13, 1), top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-          background-color: var(--vp-c-active-link-bg);
-        }
-
-        &:hover {
-          &:after {
-            top: 10%;
-          }
-        }
-      }
-    }
+    color: var(--vp-c-active-link);
+    border-bottom-style: solid;
   }
 }
 
