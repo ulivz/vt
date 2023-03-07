@@ -1,3 +1,12 @@
+## [0.11.1](https://github.com/ins-x/vt/compare/v0.11.0...v0.11.1) (2023-03-07)
+
+
+### Features
+
+* refine status page animation and padding ([8256987](https://github.com/ins-x/vt/commit/8256987f45fbdb9c0c1fd1c325fb17ce3ed716cb))
+
+
+
 # [0.11.0](https://github.com/ins-x/vt/compare/v0.10.1...v0.11.0) (2023-03-07)
 
 
