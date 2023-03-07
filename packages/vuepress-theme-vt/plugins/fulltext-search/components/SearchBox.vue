@@ -41,7 +41,7 @@
             <div class="page-title">{{ s.title || s.path }}</div>
             <div class="suggestion-content">
               <!-- prettier-ignore -->
-              <div v-if="s.headingStr" class="header">
+              <div v-if="s.headingStr && s.headingDisplay.highlightedContent" class="header">
                 {{ s.headingDisplay.prefix }}<span class="highlight">{{ s.headingDisplay.highlightedContent }}</span>{{ s.headingDisplay.suffix }}
               </div>
               <!-- prettier-ignore -->
