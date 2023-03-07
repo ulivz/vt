@@ -224,7 +224,7 @@ function css(el, property) {
     color: inherit;
 
     &:hover, &.router-link-active {
-      navbar-active-bg();
+      color: var(--vp-c-brand);
     }
   }
 
@@ -236,6 +236,14 @@ function css(el, property) {
 
     &:first-child {
       margin-left: 0;
+    }
+  }
+}
+
+.nav-left-links {
+  a {
+    &:hover, &.router-link-active {
+      navbar-active-bg();
     }
   }
 }
