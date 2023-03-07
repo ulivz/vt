@@ -1,3 +1,28 @@
+# [0.11.0](https://github.com/ins-x/vt/compare/v0.10.1...v0.11.0) (2023-03-07)
+
+
+### Bug Fixes
+
+* nav left links style issue ([3e1ed8a](https://github.com/ins-x/vt/commit/3e1ed8aa5b16ab965f7dbb69ac12cdbd802b071d))
+* search box should blur when go to result page ([d687792](https://github.com/ins-x/vt/commit/d687792c918a3544ab43583da135581b27b481e7))
+* should display serial number for `<ol>` tag ([fdb9529](https://github.com/ins-x/vt/commit/fdb95298694aa63393d84170f35eb77e6a7585ec))
+
+
+### Features
+
+* add sidebar active background ([96f655e](https://github.com/ins-x/vt/commit/96f655e3b0b83190539248578262b0b2c914ccff))
+* catch router jump error ([0c5b2ad](https://github.com/ins-x/vt/commit/0c5b2ad60e994240828e17019a14d68654ecaf9a))
+* do not display empty highlighted content ([e30d395](https://github.com/ins-x/vt/commit/e30d39515b738ef1ceea76676262408853c0a7d0))
+* exit command should work in search box ([7b22c05](https://github.com/ins-x/vt/commit/7b22c05028129c9e3d4fab0695cfdd1a9a1b39ef))
+* refactor search box style ([97a0d30](https://github.com/ins-x/vt/commit/97a0d30d1976983bff7640aee082d2a4466fd585))
+* refine code and link style ([81fdcb1](https://github.com/ins-x/vt/commit/81fdcb16fd0249f43369ff5d6d8434c8169cc381))
+* refine nav bar style ([db87122](https://github.com/ins-x/vt/commit/db871222bbabc997025d7c3d9f4cd263d98fe7f9))
+* refine nav left links active style ([1d79ed2](https://github.com/ins-x/vt/commit/1d79ed2dd1a8caa4d34b54657742c4708ebc5673))
+* refine search box highlight style ([1f53396](https://github.com/ins-x/vt/commit/1f533969ec978a2baa80347394a264279888098c))
+* refine search box style ([694a88d](https://github.com/ins-x/vt/commit/694a88d19a881b87d7527123420990567c816840))
+
+
+
 ## [0.10.1](https://github.com/ins-x/vt/compare/v0.10.0...v0.10.1) (2023-03-01)
 
 
