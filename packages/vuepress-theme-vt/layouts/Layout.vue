@@ -251,6 +251,8 @@ export default {
 }
 
 .theme-container.statusbar-enabled:not(.statusbar-first-show) {
+  animation: page-top 0s linear 0s 1 normal forwards;
+
   .navbar {
     animation: navbar-top 0s linear 0s 1 normal forwards;
   }
