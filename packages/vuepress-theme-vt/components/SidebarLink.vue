@@ -115,33 +115,25 @@ function renderExternal(h, to, text) {
 </script>
 
 <style lang="stylus">
+@require '../styles/mixins.styl';
+
 .sidebar .sidebar-sub-headers {
   padding-left: 1rem;
-  font-size: 0.95em;
 }
 
 a.sidebar-link {
   font-size: 14px;
-  // font-weight: 500;
   display: inline-block;
   color: var(--vp-c-text-2);
   padding: 0.35rem 1rem 0.35rem 0rem;
   line-height: 1.4;
   width: 100%;
   box-sizing: border-box;
-  transition: color 0.3s;
+  margin: 1px 0;
+  transition: color 0.5s;
 
-  &:hover {
-    color: var(--vp-c-brand);
-  }
-
-  &.active {
-    color: var(--vp-c-brand);
-    font-weight: 500;
-  }
-
-  .sidebar-group & {
-    padding-left: 0rem;
+  &:hover, &.active {
+    sidebar-active-bg();
   }
 
   .sidebar-sub-headers & {

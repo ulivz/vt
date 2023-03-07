@@ -72,8 +72,9 @@ export default {
 </script>
 
 <style lang="stylus">
-.sidebar-group {
+@require '../styles/mixins.styl';
 
+.sidebar-group {
   // refine styles of nested sidebar groups
   &.is-sub-group {
     padding-left: 0;
@@ -109,6 +110,12 @@ export default {
     .sidebar-links {
       padding-left: 1rem;
     }
+
+    & > .sidebar-heading {
+      &:hover {
+        sidebar-active-bg();
+      }
+    }
   }
 
   &.depth-2 {
@@ -123,11 +130,12 @@ export default {
   transition: color 0.15s ease;
   cursor: pointer;
   font-size: 14px;
+  line-height: 1.4;
   // text-transform uppercase
   padding: 0.35rem 1.5rem 0.35rem 0rem;
   width: 100%;
   box-sizing: border-box;
-  margin: 0;
+  margin: 1px 0;
   cursor: pointer;
 
   // border-left 0.25rem solid transparent
@@ -157,6 +165,5 @@ export default {
 .sidebar-group-items {
   transition: height 0.1s ease-out;
   font-size: 0.95em;
-  overflow: hidden;
 }
 </style>
