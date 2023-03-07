@@ -446,8 +446,7 @@ function highlight(str, strHighlight) {
             margin: 0px;
             padding: 0 3px;
             border-radius: 3px;
-            background: var(--c-brand-primary);
-
+            background: var(--vp-c-brand);
           }
 
           border: 1px solid $borderColor;
