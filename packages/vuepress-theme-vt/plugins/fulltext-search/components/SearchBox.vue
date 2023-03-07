@@ -249,7 +249,9 @@ export default {
           "_blank"
         );
       } else {
-        this.$router.push(this.suggestions[i].path + this.suggestions[i].slug);
+        this.$router
+          .push(this.suggestions[i].path + this.suggestions[i].slug)
+          .catch(() => {});
         this.query = "";
         this.focusIndex = 0;
         this.focused = false;
