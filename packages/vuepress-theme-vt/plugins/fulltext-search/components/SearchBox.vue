@@ -10,6 +10,7 @@
       spellcheck="false"
       @input="query = $event.target.value"
       @focus="focused = true"
+      @keyup.esc="collapseSearchInput()"
       @keyup.enter="go(focusIndex)"
       @keyup.up="onUp"
       @keyup.down="onDown"
@@ -254,8 +255,7 @@ export default {
           .catch(() => {});
         this.query = "";
         this.focusIndex = 0;
-        this.focused = false;
-        this.$refs.input.blur();
+        this.collapseSearchInput();
 
         // reset query param
         const params = this.urlParams();
@@ -283,6 +283,10 @@ export default {
     expandSearchInput() {
       this.$refs.input.focus();
       this.focused = true;
+    },
+    collapseSearchInput() {
+      this.$refs.input.blur();
+      this.focused = false;
     },
   },
 };
