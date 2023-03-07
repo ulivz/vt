@@ -1,3 +1,12 @@
+## [0.11.2](https://github.com/ins-x/vt/compare/v0.11.1...v0.11.2) (2023-03-07)
+
+
+### Bug Fixes
+
+* missing animation for page-top when status is not firstly shown ([edab885](https://github.com/ins-x/vt/commit/edab88584a3798a397588d840ca5988acb4700e6))
+
+
+
 ## [0.11.1](https://github.com/ins-x/vt/compare/v0.11.0...v0.11.1) (2023-03-07)
 
 
