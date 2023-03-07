@@ -283,20 +283,14 @@ function css(el, property) {
 }
 
 @media (min-width: $MQMobile) {
-  .nav-links a {
+  .nav-links .nav-item > a {
     &:hover, &.router-link-active {
       color: var(--vp-c-brand);
-
-      &::before {
-        content: '';
-        position: absolute;
-        width: calc(100% + 30px);
-        height: 1px;
-        position: absolute;
-        bottom: -3px;
-        left: -15px;
-        transition: background-color 0.2s;
-      }
+      background-color: var(--vp-c-bg-soft);
+      transition: background-color 0.1s;
+      border-radius: var(--vp-common-border-radius);
+      margin: -10px;
+      padding: 10px;
     }
   }
 

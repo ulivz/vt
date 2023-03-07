@@ -303,7 +303,6 @@ function highlight(str, strHighlight) {
 .search-box {
   display: inline-block;
   position: relative;
-  top: 5 px;
   margin-right: 2rem;
 
   input {
@@ -322,7 +321,7 @@ function highlight(str, strHighlight) {
     background-size: 1.2rem;
     border: 1px solid transparent;
     transition: border 0.5s;
-    border-radius: 8px;
+    border-radius: var(--vp-common-border-radius);
 
     &::placeholder {
       transition: color 0.2s ease;

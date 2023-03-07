@@ -295,7 +295,7 @@ export default {
       box-shadow: var(--vp-shadow-3);
       border-bottom-color: #ccc;
       text-align: left;
-      border-radius: 0.25rem;
+      border-radius: var(--vp-common-border-radius);
       white-space: nowrap;
       margin: 0;
     }

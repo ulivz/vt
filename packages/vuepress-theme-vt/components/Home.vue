@@ -155,7 +155,7 @@ section {
   background-color: var(--vp-c-bg-mute);
   padding: 8px 18px;
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: var(--vp-common-border-radius);
   transition: background-color 0.5s, color 0.5s;
 }
 
