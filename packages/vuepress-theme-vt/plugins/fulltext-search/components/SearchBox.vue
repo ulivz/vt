@@ -429,10 +429,9 @@ function highlight(str, strHighlight) {
         display: table;
 
         .page-title {
-          font-size: rem;
           width: 35%;
           border: 1px solid $borderColor;
-          background: var(--vp-c-bg-mute);
+          background: var(--vp-c-white-mute);
           border-left: none;
           display: table-cell;
           text-align: right;
@@ -464,7 +463,7 @@ function highlight(str, strHighlight) {
     }
 
     &.focused {
-      background-color: var(--vp-c-bg-mute);
+      background-color: var(--vp-c-white-mute);
     }
   }
 }
