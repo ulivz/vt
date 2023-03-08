@@ -1,3 +1,12 @@
+## [0.11.4](https://github.com/ins-x/vt/compare/v0.11.3...v0.11.4) (2023-03-08)
+
+
+### Features
+
+* enhance search box style ([6f0cf45](https://github.com/ins-x/vt/commit/6f0cf45e043786ef028c5ce65740bbd33cfc7f46))
+
+
+
 ## [0.11.3](https://github.com/ins-x/vt/compare/v0.11.2...v0.11.3) (2023-03-08)
 
 
