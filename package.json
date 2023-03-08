@@ -14,7 +14,7 @@
     "build:i18n": "lerna exec --scope i18n -- npm run build",
     "dev": "mono d",
     "release": "mono r --changelog --ignore-scripts --build",
-    "release:one:click": "pm run release && npm run bootstrap && git add pnpm-lock.yaml && git commit -m 'chore: lock' && git push"
+    "release:one:click": "npm run release && npm run bootstrap && git add pnpm-lock.yaml && git commit -m 'chore: lock' && git push"
   },
   "devDependencies": {
     "@nomadland/mono": "0.3.4",
