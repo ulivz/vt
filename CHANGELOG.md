@@ -1,3 +1,20 @@
+## [0.11.3](https://github.com/ins-x/vt/compare/v0.11.2...v0.11.3) (2023-03-08)
+
+
+### Bug Fixes
+
+* search box dark mode issue ([6241c51](https://github.com/ins-x/vt/commit/6241c5111eaeb5abb5f67fc646393b457ea3efc9))
+
+
+### Features
+
+* refine search box style ([e284e74](https://github.com/ins-x/vt/commit/e284e7490650b1243cf4e06efd649a1459eddef1))
+* refine search style ([620c34b](https://github.com/ins-x/vt/commit/620c34b36f6ffd9a7d4e573a583918c8fae5bced))
+* refine sidebar transistion ([f1299fb](https://github.com/ins-x/vt/commit/f1299fbefcc2153cdb32615e1ece1e8403db2acd))
+* set search max suggestions to 100 ([69601bd](https://github.com/ins-x/vt/commit/69601bd7236b7659dbef10ffea29a59bd20f3673))
+
+
+
 ## [0.11.2](https://github.com/ins-x/vt/compare/v0.11.1...v0.11.2) (2023-03-07)
 
 
