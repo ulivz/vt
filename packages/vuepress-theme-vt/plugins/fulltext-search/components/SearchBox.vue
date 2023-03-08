@@ -442,11 +442,9 @@ function highlight(str, strHighlight) {
 
         .suggestion-content {
           .highlight {
-            color: white;
             margin: 0px;
-            padding: 0 3px;
-            border-radius: 3px;
-            background: var(--vp-c-brand);
+            border-radius: 2px;
+            background: var(--vp-c-active-link-bg);
           }
 
           border: 1px solid $borderColor;
