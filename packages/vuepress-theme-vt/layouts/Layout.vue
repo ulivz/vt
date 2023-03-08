@@ -52,6 +52,7 @@ import Sidebar from "@theme/components/Sidebar.vue";
 import Toc from "@theme/components/Toc.vue";
 import API from "@theme/components/API.vue";
 import { resolveSidebarItems } from "../lib/util";
+import { $status, STATUS_HIDDEN_EVENT } from "../lib/status";
 
 const selfClosedComponentRE = /^<([^<>\s]+)\s*\/>$/;
 
@@ -70,17 +71,33 @@ export default {
 
   data() {
     return {
+      isMounted: false,
       isSidebarOpen: false,
       statusPageStackCount: 0,
+      statusClosed: false,
     };
   },
 
   created() {
     this.checkStatusPageStackCount();
+    this.$root.$on(STATUS_HIDDEN_EVENT, () => {
+      this.statusClosed = true;
+    });
   },
 
   computed: {
     status() {
+      // Only display status after layout is mounted
+      if (!this.isMounted) {
+        return;
+      }
+
+      // Check enabling status
+      const isEnabled = !this.statusClosed && $status.isSettingEnabled();
+      if (!isEnabled) {
+        return;
+      }
+
       const statusConfig =
         (this.$frontmatter && this.$frontmatter.status) ||
         this.$themeConfig.status;
@@ -177,6 +194,13 @@ export default {
     this.$router.afterEach(() => {
       this.isSidebarOpen = false;
     });
+
+    const statusVersion =
+      (this.$frontmatter && this.$frontmatter.statusVersion) ||
+      this.$themeConfig.statusVersion;
+
+    $status.setCurrentVersion(statusVersion);
+    this.isMounted = true;
   },
 
   methods: {

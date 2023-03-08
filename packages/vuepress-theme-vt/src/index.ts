@@ -29,6 +29,7 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
 
     plugins: [
       ["@vuepress/active-header-links", options.activeHeaderLinks],
+      [require.resolve("../plugins/status/index.js"), true],
       [require.resolve("../plugins/copy-code/index.js"), true],
       [
         require.resolve("../plugins/code-switcher/index.js"),

@@ -28,6 +28,11 @@ export type ThemeConfig = Omit<DefaultThemeConfig, "nav" | "locales"> & {
   status?: string;
 
   /**
+   * Used to control status version, defaults to "v1".
+   */
+  statusVersion?: string;
+
+  /**
    * Enable dark mode
    *
    * @default false
