@@ -34,14 +34,16 @@
     </p>
 
     <DropdownTransition>
-      <SidebarLinks
-        v-if="open || !collapsable"
-        class="sidebar-group-items"
-        :items="item.children"
-        :sidebar-depth="item.sidebarDepth"
-        :initial-open-group-index="item.initialOpenGroupIndex"
-        :depth="depth + 1"
-      />
+      <transition name="sidebar-group-fade">
+        <SidebarLinks
+          v-if="open || !collapsable"
+          class="sidebar-group-items"
+          :items="item.children"
+          :sidebar-depth="item.sidebarDepth"
+          :initial-open-group-index="item.initialOpenGroupIndex"
+          :depth="depth + 1"
+        />
+      </transition>
     </DropdownTransition>
   </section>
 </template>
@@ -163,7 +165,15 @@ export default {
 }
 
 .sidebar-group-items {
-  transition: height 0.1s ease-out;
   font-size: 0.95em;
+}
+
+.sidebar-group-fade-enter-active, .sidebar-group-fade-leave-active {
+  transition: height 0.2s ease-in;
+}
+
+.sidebar-group-fade-enter, .sidebar-group-fade-leave-to {
+  opacity: 0;
+  height: 0;
 }
 </style>
