@@ -443,8 +443,9 @@ function highlight(str, strHighlight) {
         .suggestion-content {
           .highlight {
             margin: 0px;
-            border-radius: 2px;
-            background: var(--vp-c-active-link-bg);
+            background: var(--vp-c-divider-light-2);
+            border-bottom: 1px dashed currentColor;
+            font-weight: bolder;
           }
 
           border: 1px solid $borderColor;
