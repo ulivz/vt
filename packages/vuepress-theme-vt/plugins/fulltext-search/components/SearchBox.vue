@@ -10,6 +10,7 @@
       spellcheck="false"
       @input="query = $event.target.value"
       @focus="focused = true"
+      @blur="focused = false"
       @keyup.esc="collapseSearchInput()"
       @keyup.enter="go(focusIndex)"
       @keyup.up="onUp"
@@ -314,11 +315,10 @@ function highlight(str, strHighlight) {
 
   input {
     background-color: var(--vp-c-bg-soft);
-    transition: background-color 0.5s;
     cursor: text;
     width: 12rem;
     height: 2.5rem;
-    color: lighten($textColor, 25%);
+    color: var(--vp-c-brand);
     display: inline-block;
     font-size: 0.9rem;
     line-height: 2rem;
@@ -327,7 +327,6 @@ function highlight(str, strHighlight) {
     transition: all 0.2s ease;
     background-size: 1.2rem;
     border: 1px solid transparent;
-    transition: border 0.5s;
     border-radius: var(--vp-common-border-radius);
 
     &::placeholder {
@@ -347,6 +346,8 @@ function highlight(str, strHighlight) {
 
     &:focus {
       cursor: auto;
+      width: 16rem;
+      transition: width 0.1s ease;
       border-color: var(--vp-c-brand);
 
       &::placeholder {
