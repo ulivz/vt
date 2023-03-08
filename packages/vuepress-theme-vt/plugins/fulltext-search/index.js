@@ -59,7 +59,7 @@ module.exports = (options, ctx, globalCtx) => ({
   define() {
     return {
       OPTIONS: options,
-      SEARCH_MAX_SUGGESTIONS: options.searchMaxSuggestions || 5,
+      SEARCH_MAX_SUGGESTIONS: options.searchMaxSuggestions || 100,
       SEARCH_PATHS: options.test || null,
       SEARCH_HOTKEYS: options.searchHotkeys || ["s", "/"],
     };
