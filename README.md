@@ -15,7 +15,7 @@ An <b>Elegant</b> VuePress Documentation Theme<br>
 <a href="https://www.npmjs.com/package/vuepress-theme-vt"><img src="https://img.shields.io/npm/v/vuepress-theme-vt?color=c95f8b&amp;label=" alt="NPM version"></a></p>
 
 <p align="center">
-  <a target="_blank" href="https://vuepress-theme-vt.vercel.app">📖 Live Documentation</a><br>
+  <a target="_blank" href="https://vt.insx.dev">📖 Live Documentation</a><br>
   <a target="_blank" href="https://vuepress-docs.vercel.app/">📚 VuePress Docs With This Theme</a>
 </p>
 
@@ -24,12 +24,12 @@ An <b>Elegant</b> VuePress Documentation Theme<br>
 
 ## Features
 
-- [**Compatibility**](https://vuepress-theme-vt.vercel.app/guide/migration.html): fully compatible with [VuePress's Default Theme](https://vuepress.vuejs.org/theme/default-theme-config.html).
-- [**Full-text search**](https://vuepress-theme-vt.vercel.app/guide/search.html): No server dependencies, distinguishing locales.
-- [Dark Mode](https://vuepress-theme-vt.vercel.app/guide/dark-mode.html)
-- [TypeScript Support](https://vuepress-theme-vt.vercel.app/guide/configuration.html)
-- [Homepage](https://vuepress-theme-vt.vercel.app/guide/home.html)
-- [API Page](https://vuepress-theme-vt.vercel.app/guide/api-page.html)
+- [**Compatibility**](https://vt.insx.dev/guide/migration.html): fully compatible with [VuePress's Default Theme](https://vuepress.vuejs.org/theme/default-theme-config.html).
+- [**Full-text search**](https://vt.insx.dev/guide/search.html): No server dependencies, distinguishing locales.
+- [Dark Mode](https://vt.insx.dev/guide/dark-mode.html)
+- [TypeScript Support](https://vt.insx.dev/guide/configuration.html)
+- [Homepage](https://vt.insx.dev/guide/home.html)
+- [API Page](https://vt.insx.dev/guide/api-page.html)
 - i18n, Code Copy, TOC, etc.
 - ...
 
