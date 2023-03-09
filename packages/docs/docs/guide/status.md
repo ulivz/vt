@@ -1,5 +1,6 @@
 ---
 status: <GlobalStatus />
+statusVersion: v5
 ---
 
 # Status
@@ -60,3 +61,42 @@ module.exports = {
   },
 };
 ```
+
+## Closing Status
+
+You can use a global method `$closeCurrentStatus` to close status:
+
+```vue
+<template>
+  <span>
+    This is page status &nbsp;
+    <a style="cursor: pointer" @click="$closeCurrentStatus">x</a>
+  </span>
+</template>
+```
+
+and using `statusVersion` to control the status version:
+
+- via page frontmatter config:
+
+```md
+---
+status: <GlobalStatus />
+statusVersion: v2
+---
+```
+
+- via global config:
+
+```ts
+// .vuepress/config.js
+module.exports = {
+  theme: "vt",
+  themeConfig: {
+    status: '<GlobalStatus />',
+    statusVersion: 'v2'
+  },
+};
+```
+
+You need bump `statusVersion` when you released new status, so that user can see the new status.
