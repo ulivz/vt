@@ -37,7 +37,8 @@
 
 ## Motivation
 
-I made this theme to combine eXperience of `@vue/theme` and [current huge VuePress ecosystem](https://github.com/vuepress/awesome-vuepress/), and introducing some built-in features like **full-text search**, **i18n** etc.
+I made this theme to combine better **eXperience** and [current huge VuePress ecosystem](https://github.com/vuepress/awesome-vuepress/), and introducing some built-in features like [Full-text search](https://vt.insx.dev/guide/search.html), **i18n** etc.
+
 
 ## Install
 
