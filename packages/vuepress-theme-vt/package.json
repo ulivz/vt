@@ -42,6 +42,8 @@
     "vuepress-plugin-smooth-scroll": "^0.0.3"
   },
   "files": [
+    "index.js",
+    "enhanceApp.js",
     "components",
     "global-components",
     "layouts",
