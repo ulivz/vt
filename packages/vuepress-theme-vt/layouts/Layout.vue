@@ -79,7 +79,6 @@ export default {
   },
 
   created() {
-    this.checkStatusPageStackCount();
     this.$root.$on(STATUS_HIDDEN_EVENT, () => {
       this.statusClosed = true;
     });
@@ -208,6 +207,8 @@ export default {
     }
 
     this.isMounted = true;
+    this.checkStatusPageStackCount();
+
   },
 
   methods: {
