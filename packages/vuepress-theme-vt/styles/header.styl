@@ -69,3 +69,14 @@
         transition: color 0.25s, opacity 0.25s;
     }
 }
+
+.theme-container.statusbar-enabled {
+    .vp-doc {
+        h1, h2, h3, h4, h5, h6 {
+            &::before {
+                margin-top: calc(-1 * (var(--vp-statusbar-height) + 72px));
+                height: calc(var(--vp-statusbar-height) + 72px);
+            }
+        }
+    }
+}
