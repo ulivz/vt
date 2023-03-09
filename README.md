@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-An <b>Elegant</b> VuePress Documentation Theme<br>
+  A <b>"Post-VuePress Era"</b> Documentation Theme<br>
 </p>
 
 <p align="center">
@@ -30,12 +30,12 @@ An <b>Elegant</b> VuePress Documentation Theme<br>
 - [TypeScript Support](https://vt.insx.dev/guide/configuration.html)
 - [Homepage](https://vt.insx.dev/guide/home.html)
 - [API Page](https://vt.insx.dev/guide/api-page.html)
+- [Global Status](https://vt.insx.dev/guide/code-switcher.html)
+- [Code Switcher](https://vt.insx.dev/guide/status.html)
 - i18n, Code Copy, TOC, etc.
 - ...
 
 ## Motivation
-
-[Next Vue's documentation](https://staging.vuejs.org/) is very cool, which is powered by [VitePress](https://github.com/vuejs/vitepress) and `@vue/theme` —— A next-generation SSG for Vue ecosystem, but currently VitePress is still in early stage and there is no plugin system.
 
 I made this theme to combine eXperience of `@vue/theme` and [current huge VuePress ecosystem](https://github.com/vuepress/awesome-vuepress/), and introducing some built-in features like **full-text search**, **i18n** etc.
 
