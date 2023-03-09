@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "vuepress-docs",
-  "version": "0.11.4",
+  "version": "0.12.0",
   "description": "docs of VuePress",
   "keywords": [
     "documentation",
@@ -23,6 +23,6 @@
     "vue-toasted": "^1.1.25",
     "vuepress": "1.9.9",
     "vuepress-plugin-flowchart": "^1.4.2",
-    "vuepress-theme-vt": "0.11.4"
+    "vuepress-theme-vt": "0.12.0"
   }
 }
