@@ -195,11 +195,18 @@ export default {
       this.isSidebarOpen = false;
     });
 
+    // initialize status
+    $status.bootstrap();
+
+    // cache current version
     const statusVersion =
       (this.$frontmatter && this.$frontmatter.statusVersion) ||
       this.$themeConfig.statusVersion;
 
-    $status.setCurrentVersion(statusVersion);
+    if (statusVersion) {
+      $status.setCurrentVersion(statusVersion);
+    }
+
     this.isMounted = true;
   },
 

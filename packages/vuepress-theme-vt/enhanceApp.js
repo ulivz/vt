@@ -6,7 +6,6 @@ export default ({
   router, // the router instance for the app
   siteData, // site metadata
 }) => {
-  // Vue.prototype.$status = $status;
   Vue.mixin({
     methods: {
       $closeCurrentStatus() {

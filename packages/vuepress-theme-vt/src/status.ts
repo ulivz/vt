@@ -9,7 +9,7 @@ const DEFAULT_SETTING: StatusSetting = {
 };
 
 export class Status {
-  constructor() {
+  bootstrap() {
     const currentVersion = this.getCurrentVersion();
     if (!currentVersion) {
       this.setCurrentVersion(DEFAULT_VERSION);
