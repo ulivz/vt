@@ -1,3 +1,17 @@
+# [0.12.0](https://github.com/ins-x/vt/compare/v0.11.4...v0.12.0) (2023-03-09)
+
+
+### Bug Fixes
+
+* header anchor cannot position correctly when status is enabled ([#95](https://github.com/ins-x/vt/issues/95)) ([fda6fa2](https://github.com/ins-x/vt/commit/fda6fa29f09318b146fed80894e9284fc0170a10))
+
+
+### Features
+
+* ability to close status ([#94](https://github.com/ins-x/vt/issues/94)) ([1d8b374](https://github.com/ins-x/vt/commit/1d8b37479061bf619f5aca0860debedb176f99c6))
+
+
+
 ## [0.11.4](https://github.com/ins-x/vt/compare/v0.11.3...v0.11.4) (2023-03-08)
 
 
