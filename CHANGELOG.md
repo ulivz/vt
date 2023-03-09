@@ -1,3 +1,12 @@
+## [0.12.1](https://github.com/ins-x/vt/compare/v0.12.0...v0.12.1) (2023-03-09)
+
+
+### Bug Fixes
+
+* missing `enhanceApp.js` ([2f5b78a](https://github.com/ins-x/vt/commit/2f5b78a4fe4922728dc08787b05d0f34b1e4425f))
+
+
+
 # [0.12.0](https://github.com/ins-x/vt/compare/v0.11.4...v0.12.0) (2023-03-09)
 
 
