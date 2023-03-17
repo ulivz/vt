@@ -174,8 +174,6 @@ export default {
           "no-navbar": !this.shouldShowNavbar,
           "sidebar-open": this.isSidebarOpen,
           "no-sidebar": !this.shouldShowSidebar,
-          "statusbar-enabled": !!this.status,
-          "statusbar-first-show": this.statusPageStackCount === 1,
         },
         userPageClass,
       ];
@@ -208,7 +206,6 @@ export default {
 
     this.isMounted = true;
     this.checkStatusPageStackCount();
-
   },
 
   methods: {
@@ -261,12 +258,26 @@ export default {
     $route() {
       this.checkStatusPageStackCount();
     },
+
+    status(newValue) {
+      if (newValue) {
+        document.documentElement.classList.add("statusbar-enabled");
+      } else {
+        document.documentElement.classList.remove("statusbar-enabled");
+      }
+
+      if (this.statusPageStackCount === 1) {
+        document.documentElement.classList.add("statusbar-first-show");
+      } else {
+        document.documentElement.classList.remove("statusbar-first-show");
+      }
+    },
   },
 };
 </script>
 
 <style lang="stylus">
-.theme-container.statusbar-enabled.statusbar-first-show {
+html.statusbar-enabled.statusbar-first-show {
   animation: page-top 1.5s linear 0.5s 1 normal forwards;
 
   .navbar {
@@ -282,7 +293,7 @@ export default {
   }
 }
 
-.theme-container.statusbar-enabled:not(.statusbar-first-show) {
+html.statusbar-enabled:not(.statusbar-first-show) {
   animation: page-top 0s linear 0s 1 normal forwards;
 
   .navbar {
