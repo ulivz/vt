@@ -1,3 +1,12 @@
+## [0.12.3](https://github.com/ins-x/vt/compare/v0.12.2...v0.12.3) (2023-03-17)
+
+
+### Features
+
+* hoist status classes to html ([#96](https://github.com/ins-x/vt/issues/96)) ([078a8c6](https://github.com/ins-x/vt/commit/078a8c61b1b4f8be316e4d420900c728f806026d))
+
+
+
 ## [0.12.1](https://github.com/ins-x/vt/compare/v0.12.0...v0.12.1) (2023-03-09)
 
 
