@@ -1,3 +1,12 @@
+## [0.12.4](https://github.com/ins-x/vt/compare/v0.12.3...v0.12.4) (2023-03-20)
+
+
+### Features
+
+* refactor style of code wrapped in link tag ([#98](https://github.com/ins-x/vt/issues/98)) ([9a60378](https://github.com/ins-x/vt/commit/9a60378cc42420e188466e64ca77dd7538be6abe))
+
+
+
 ## [0.12.3](https://github.com/ins-x/vt/compare/v0.12.2...v0.12.3) (2023-03-17)
 
 
