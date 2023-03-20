@@ -100,6 +100,24 @@ a.link-hover-effect {
     color: var(--vp-c-active-link);
     border-bottom-style: solid;
   }
+
+  &:has(> code) {
+    border: none;
+    margin-bottom: 2px;
+
+    > code {
+      padding: 0.15rem 0.5rem;
+      border: 1px dashed currentColor;
+    }
+
+    &:hover {
+      border-bottom-style: none;
+
+      > code {
+        color: var(--vp-c-active-link);
+      }
+    }
+  }
 }
 
 p a code {
