@@ -269,7 +269,7 @@ Detail
   |- /node_modules
 ```
 
-## Link & Code
+## Code wrapped in link tag
 
 - Input:
   ```md
