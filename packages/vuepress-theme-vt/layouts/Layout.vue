@@ -278,34 +278,38 @@ export default {
 
 <style lang="stylus">
 html.statusbar-enabled.statusbar-first-show {
-  animation: page-top 1.5s linear 0.5s 1 normal forwards;
+  .theme-container {
+    animation: page-top 1.5s linear 0.5s 1 normal forwards;
 
-  .navbar {
-    animation: navbar-top 1.5s linear 0.5s 1 normal forwards;
-  }
+    .navbar {
+      animation: navbar-top 1.5s linear 0.5s 1 normal forwards;
+    }
 
-  .sidebar {
-    animation: sidebar-top 1.5s linear 0.5s 1 normal forwards;
-  }
+    .sidebar {
+      animation: sidebar-top 1.5s linear 0.5s 1 normal forwards;
+    }
 
-  .toc {
-    animation: toc-top 1.5s linear 0.5s 1 normal forwards;
+    .toc {
+      animation: toc-top 1.5s linear 0.5s 1 normal forwards;
+    }
   }
 }
 
 html.statusbar-enabled:not(.statusbar-first-show) {
-  animation: page-top 0s linear 0s 1 normal forwards;
+  .theme-container {
+    animation: page-top 0s linear 0s 1 normal forwards;
 
-  .navbar {
-    animation: navbar-top 0s linear 0s 1 normal forwards;
-  }
+    .navbar {
+      animation: navbar-top 0s linear 0s 1 normal forwards;
+    }
 
-  .sidebar {
-    animation: sidebar-top 0s linear 0s 1 normal forwards;
-  }
+    .sidebar {
+      animation: sidebar-top 0s linear 0s 1 normal forwards;
+    }
 
-  .toc {
-    animation: toc-top 0s linear 0s 1 normal forwards;
+    .toc {
+      animation: toc-top 0s linear 0s 1 normal forwards;
+    }
   }
 }
 
