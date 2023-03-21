@@ -1,3 +1,12 @@
+## [0.12.5](https://github.com/ins-x/vt/compare/v0.12.4...v0.12.5) (2023-03-21)
+
+
+### Bug Fixes
+
+* status positioning style should not affect custom-layout page ([778fe36](https://github.com/ins-x/vt/commit/778fe36d41aa37736fa2b6004370824493726168))
+
+
+
 ## [0.12.4](https://github.com/ins-x/vt/compare/v0.12.3...v0.12.4) (2023-03-20)
 
 
