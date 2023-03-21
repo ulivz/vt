@@ -1,3 +1,12 @@
+## [0.12.6](https://github.com/ins-x/vt/compare/v0.12.5...v0.12.6) (2023-03-21)
+
+
+### Bug Fixes
+
+* header anchor positioning ([ae32b7f](https://github.com/ins-x/vt/commit/ae32b7f36a944841aca00265d2e8e1365eb66ec3))
+
+
+
 ## [0.12.5](https://github.com/ins-x/vt/compare/v0.12.4...v0.12.5) (2023-03-21)
 
 
