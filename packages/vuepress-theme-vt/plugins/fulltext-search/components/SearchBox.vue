@@ -39,15 +39,20 @@
             v-html="s.parentPageTitle"
           />
           <div class="suggestion-row">
-            <div class="page-title">{{ s.title || s.path }}</div>
+            <div class="page-title">
+              {{ s.title || s.path }}
+            </div>
             <div class="suggestion-content">
-              <!-- prettier-ignore -->
-              <div v-if="s.headingStr && s.headingDisplay.highlightedContent" class="header">
-                {{ s.headingDisplay.prefix }}<span class="highlight">{{ s.headingDisplay.highlightedContent }}</span>{{ s.headingDisplay.suffix }}
+              <div class="header">
+                {{ s.headingDisplay.prefix }}
+                <span class="highlight">{{ s.headingDisplay.highlightedContent }}</span>
+                {{ s.headingDisplay.suffix }}
               </div>
-              <!-- prettier-ignore -->
+
               <div v-if="s.contentStr">
-                {{ s.contentDisplay.prefix }}<span class="highlight">{{ s.contentDisplay.highlightedContent }}</span>{{ s.contentDisplay.suffix }}
+                {{ s.contentDisplay.prefix }}
+                <span class="highlight">{{ s.contentDisplay.highlightedContent }}</span>
+                {{ s.contentDisplay.suffix }}
               </div>
             </div>
           </div>
