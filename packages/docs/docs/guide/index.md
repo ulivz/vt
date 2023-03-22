@@ -1,3 +1,7 @@
+---
+groupTitle: Guide
+---
+
 # Introduction
 
 ## Motivation

@@ -135,18 +135,18 @@ function getParentPageTitle(page) {
     const parentPath = pathParts.slice(0, partsLen).join("/") + "/";
     const candidate1 = pagesByPath[parentPath];
     if (candidate1) {
-      parentTitle = candidate1.title;
+      parentTitle = candidate1.frontmatter.groupTitle || candidate1.title;
       break;
     }
     const candidate2 = pagesByPath[`${parentPath}index.html`];
     if (candidate2) {
-      parentTitle = candidate2.title;
+      parentTitle = candidate2.frontmatter.groupTitle || candidate2.title;
       break;
     }
     // FIXME: decouple this logic
     const candidate3 = pagesByPath[`${parentPath}getting-started/introduction.html`];
     if (candidate3) {
-      parentTitle = candidate3.title;
+      parentTitle = candidate3.frontmatter.groupTitle || candidate3.title;
       break;
     }
     partsLen--;
