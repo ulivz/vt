@@ -1,3 +1,12 @@
+## [0.13.1](https://github.com/ins-x/vt/compare/v0.13.0...v0.13.1) (2023-03-22)
+
+
+### Features
+
+* `groupTitle` ar frontmatter for search group ([b103765](https://github.com/ins-x/vt/commit/b103765cb2fa09eb88d33ba0a68d5ee67fe3b36d))
+
+
+
 # [0.13.0](https://github.com/ins-x/vt/compare/v0.12.6...v0.13.0) (2023-03-22)
 
 
