@@ -1,3 +1,17 @@
+# [0.13.0](https://github.com/ins-x/vt/compare/v0.12.6...v0.13.0) (2023-03-22)
+
+
+### Bug Fixes
+
+* empty search suggestions ([7d920a3](https://github.com/ins-x/vt/commit/7d920a3ee72f3a714f4f7219fb2f19494840eba2))
+
+
+### Features
+
+* enhance algorithm of find parent title ([d456719](https://github.com/ins-x/vt/commit/d456719a030037f30eb9a6fd6c3427971f3554c4))
+
+
+
 ## [0.12.6](https://github.com/ins-x/vt/compare/v0.12.5...v0.12.6) (2023-03-21)
 
 
