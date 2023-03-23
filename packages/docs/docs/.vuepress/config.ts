@@ -5,6 +5,8 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
   theme: "vt",
   title: "VT",
   themeConfig: {
+    status: "<GlobalStatus />",
+    statusVersion: "v5",
     // sidebarDepth: 1,
     enableDarkMode: true,
     repo: "https://github.com/ulivz/vuepress-theme-vt",
