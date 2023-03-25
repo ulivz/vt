@@ -30,8 +30,8 @@
 - [TypeScript Support](https://vt.insx.dev/guide/configuration.html)
 - [Homepage](https://vt.insx.dev/guide/home.html)
 - [API Page](https://vt.insx.dev/guide/api-page.html)
-- [Global Status](https://vt.insx.dev/guide/code-switcher.html)
-- [Code Switcher](https://vt.insx.dev/guide/status.html)
+- [Global Status](https://vt.insx.dev/guide/status.html)
+- [Code Switcher](https://vt.insx.dev/guide/code-switcher.html)
 - i18n, Code Copy, TOC, etc.
 - ...
 
