@@ -1,5 +1,10 @@
 <template>
-  <main :class="['page', isHomepage ? 'homepage' : '', pageName]">
+  <main :class="[
+    'page', 
+    isHomepage ? 'homepage' : '', 
+    $page.frontmatter.api ? 'enable-api' : '', 
+    pageName,
+  ]">
     <slot name="top" />
 
     <Content class="theme-default-content vp-doc" />

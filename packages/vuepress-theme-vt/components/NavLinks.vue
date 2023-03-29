@@ -190,6 +190,8 @@ function css(el, property) {
 </script>
 
 <style lang="stylus">
+@require '../styles/mixins.styl';
+
 .links {
   height: 100%;
   padding-left: 1.5rem;
@@ -222,7 +224,7 @@ function css(el, property) {
     color: inherit;
 
     &:hover, &.router-link-active {
-      color: var(--c-brand);
+      color: var(--vp-c-brand);
     }
   }
 
@@ -234,6 +236,14 @@ function css(el, property) {
 
     &:first-child {
       margin-left: 0;
+    }
+  }
+}
+
+.nav-left-links {
+  a {
+    &:hover, &.router-link-active {
+      navbar-active-bg();
     }
   }
 }
@@ -283,20 +293,9 @@ function css(el, property) {
 }
 
 @media (min-width: $MQMobile) {
-  .nav-links a {
+  .nav-links .nav-item > a {
     &:hover, &.router-link-active {
-      color: var(--c-brand);
-
-      &::before {
-        content: '';
-        position: absolute;
-        width: calc(100% + 30px);
-        height: 1px;
-        position: absolute;
-        bottom: -3px;
-        left: -15px;
-        transition: background-color 0.2s;
-      }
+      navbar-active-bg();
     }
   }
 
@@ -305,7 +304,7 @@ function css(el, property) {
       margin-bottom: -2px;
 
       &::before {
-        background-color: var(--c-brand);
+        background-color: var(--vp-c-brand);
       }
     }
   }

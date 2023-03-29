@@ -7,8 +7,8 @@
         &::before {
             display: block;
             content: ' ';
-            margin-top: -70px;
-            height: 70px;
+            margin-top: -72px;
+            height: 72px;
             visibility: hidden;
             pointer-events: none;
         }
@@ -21,14 +21,14 @@
     }
 
     h1 {
-        margin: 5rem 0 3rem;
+        margin: 5rem 0 0 0;
         font-size: 38px;
         line-height: 1.4;
         letter-spacing: -0.02em;
     }
 
     h2 {
-        margin: 5rem 0 1.8rem;
+        margin: 3.5rem 0 1.8rem 0;
         // border-top: 1px solid var(--vp-c-divider-light);
         font-size: 24px;
         letter-spacing: -0.02em;
@@ -67,5 +67,16 @@
         font-weight: 500;
         opacity: 0;
         transition: color 0.25s, opacity 0.25s;
+    }
+}
+
+html.statusbar-enabled {
+    .vp-doc {
+        h1, h2, h3, h4, h5, h6 {
+            &::before {
+                margin-top: calc(-1 * (var(--vp-statusbar-height) + 72px));
+                height: calc(var(--vp-statusbar-height) + 72px);
+            }
+        }
     }
 }

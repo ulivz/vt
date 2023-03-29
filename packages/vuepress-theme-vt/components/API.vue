@@ -150,7 +150,7 @@ h2 {
 
 h3 {
   letter-spacing: -0.01em;
-  color: var(--c-brand);
+  color: var(--vp-c-brand);
   font-size: 18px;
   margin-bottom: 1em;
   transition: color 0.5s;
@@ -244,7 +244,7 @@ h1:hover .header-anchor, h1:focus .header-anchor, h2:hover .header-anchor, h2:fo
 }
 
 .api-groups a:hover {
-  color: var(--c-brand);
+  color: var(--vp-c-brand);
   transition: none;
 }
 
@@ -252,7 +252,8 @@ h1:hover .header-anchor, h1:focus .header-anchor, h2:hover .header-anchor, h2:fo
   break-inside: avoid;
   margin-bottom: 20px;
   background-color: var(--vp-c-bg-soft);
-  border-radius: 8px;
+  border-radius: var(--vp-common-border-radius);
+
   padding: 28px 32px;
 }
 
@@ -264,7 +265,7 @@ h1:hover .header-anchor, h1:focus .header-anchor, h2:hover .header-anchor, h2:fo
 
 .api-filter {
   border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
+  border-radius: var(--vp-common-border-radius);
   padding: 6px 12px;
 }
 

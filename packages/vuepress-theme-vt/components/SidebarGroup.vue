@@ -4,7 +4,7 @@
     :class="[
       {
         collapsable,
-        'is-sub-group': depth !== 0,
+        'is-sub-group': depth !== 0 && depth !== 1,
       },
       `depth-${depth}`,
     ]"
@@ -34,14 +34,16 @@
     </p>
 
     <DropdownTransition>
-      <SidebarLinks
-        v-if="open || !collapsable"
-        class="sidebar-group-items"
-        :items="item.children"
-        :sidebar-depth="item.sidebarDepth"
-        :initial-open-group-index="item.initialOpenGroupIndex"
-        :depth="depth + 1"
-      />
+      <transition name="sidebar-group-fade">
+        <SidebarLinks
+          v-if="open || !collapsable"
+          class="sidebar-group-items"
+          :items="item.children"
+          :sidebar-depth="item.sidebarDepth"
+          :initial-open-group-index="item.initialOpenGroupIndex"
+          :depth="depth + 1"
+        />
+      </transition>
     </DropdownTransition>
   </section>
 </template>
@@ -72,18 +74,9 @@ export default {
 </script>
 
 <style lang="stylus">
+@require '../styles/mixins.styl';
+
 .sidebar-group {
-  .sidebar-group {
-    padding-left: 0.5em;
-  }
-
-  &:not(.collapsable) {
-    .sidebar-heading:not(.clickable) {
-      cursor: auto;
-      color: inherit;
-    }
-  }
-
   // refine styles of nested sidebar groups
   &.is-sub-group {
     padding-left: 0;
@@ -109,6 +102,24 @@ export default {
     }
   }
 
+  &.depth-0 {
+    & > .sidebar-heading {
+      font-weight: bold;
+    }
+  }
+
+  &.depth-1 {
+    .sidebar-links {
+      padding-left: 1rem;
+    }
+
+    & > .sidebar-heading {
+      &:hover {
+        sidebar-active-bg();
+      }
+    }
+  }
+
   &.depth-2 {
     & > .sidebar-heading {
       border-left: none;
@@ -117,16 +128,17 @@ export default {
 }
 
 .sidebar-heading {
-  color: $textColor;
+  color: var(--vp-c-text-1);
   transition: color 0.15s ease;
   cursor: pointer;
   font-size: 14px;
-  font-weight: bold;
+  line-height: 1.4;
   // text-transform uppercase
   padding: 0.35rem 1.5rem 0.35rem 0rem;
   width: 100%;
   box-sizing: border-box;
-  margin: 0;
+  margin: 1px 0;
+  cursor: pointer;
 
   // border-left 0.25rem solid transparent
   &.open, &:hover {
@@ -142,19 +154,26 @@ export default {
   &.clickable {
     &.active {
       font-weight: 500;
-      color: var(--c-brand);;
-      border-left-color: var(--c-brand);;
+      color: var(--vp-c-brand);
+      border-left-color: var(--vp-c-brand);
     }
 
     &:hover {
-      color: var(--c-brand);;
+      color: var(--vp-c-brand);
     }
   }
 }
 
 .sidebar-group-items {
-  transition: height 0.1s ease-out;
   font-size: 0.95em;
-  overflow: hidden;
+}
+
+.sidebar-group-fade-enter-active, .sidebar-group-fade-leave-active {
+  transition: height 0.2s ease-in;
+}
+
+.sidebar-group-fade-enter, .sidebar-group-fade-leave-to {
+  opacity: 0;
+  height: 0;
 }
 </style>

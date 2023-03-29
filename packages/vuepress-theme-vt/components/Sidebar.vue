@@ -73,7 +73,6 @@ export default {
 @media (max-width: $MQMobile) {
   .sidebar {
     padding-left: 1rem;
-    padding-right: 1rem;
 
     .links {
       display: block;

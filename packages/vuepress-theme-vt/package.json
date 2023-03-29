@@ -1,7 +1,7 @@
 {
   "name": "vuepress-theme-vt",
-  "version": "0.7.4",
-  "description": "A VuePress theme inspired by `@vue/theme`, fully compatible with VuePress default theme.",
+  "version": "0.13.1",
+  "description": "A \"Post-VuePress Era\" Documentation Theme",
   "keywords": [
     "documentation",
     "generator",
@@ -20,10 +20,10 @@
     "typescript": "4.5.3"
   },
   "dependencies": {
-    "@vuepress/plugin-active-header-links": "1.9.7",
-    "@vuepress/plugin-nprogress": "1.9.7",
-    "@vuepress/shared-utils": "1.9.7",
-    "@vuepress/types": "1.9.7",
+    "@vuepress/plugin-active-header-links": "1.9.9",
+    "@vuepress/plugin-nprogress": "1.9.9",
+    "@vuepress/shared-utils": "1.9.9",
+    "@vuepress/types": "1.9.9",
     "cheap-watch": "1.0.3",
     "docsearch.js": "^2.5.2",
     "flexsearch": "^0.6.32",
@@ -31,6 +31,7 @@
     "inquirer": "7.3.3",
     "lodash": "^4.17.15",
     "markdown-it-attrs": "^2",
+    "markdown-it-link-attributes": "2",
     "node-google-translate-skidz": "1.1.2",
     "prism-themes": "1.9.0",
     "stylus": "^0.54.8",
@@ -41,6 +42,8 @@
     "vuepress-plugin-smooth-scroll": "^0.0.3"
   },
   "files": [
+    "index.js",
+    "enhanceApp.js",
     "components",
     "global-components",
     "layouts",

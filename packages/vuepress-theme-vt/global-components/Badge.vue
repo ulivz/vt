@@ -78,8 +78,8 @@ export default {
 .dark {
   .badge {
     &.tip, &.green {
-      color: var(--c-brand);
-      border: 1px solid var(--c-brand);
+      color: var(--vp-c-brand);
+      border: 1px solid var(--vp-c-brand);
     }
   }
 }

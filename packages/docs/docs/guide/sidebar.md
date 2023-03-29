@@ -1,3 +1,36 @@
+# Sidebar
+
+## Sidebar Depth
+
+### Different to VuePress
+
+Different to [VuePress Default Theme](https://vuepress.vuejs.org/theme/default-theme-config.html), [sidebarDepth](https://vuepress.vuejs.org/theme/default-theme-config.html#nested-header-links) in VT defaults to `0` while VuePress defaults to `1`, so you cannot see the nested header links in VT by default.
+
+### Config by frontmatter
+
+You can display [nested header links](https://vuepress.vuejs.org/theme/default-theme-config.html#nested-header-links) for specified page by frontmatter:
+
+```md
+---
+sidebarDepth: 1
+---
+```
+
+### Config by file
+
+You can display [nested header links](https://vuepress.vuejs.org/theme/default-theme-config.html#nested-header-links) for all pages by config:
+
+```diff
+  themeConfig: {
++   sidebarDepth: 1
+  }
+```
+
+## Nested Sidebar Group
+
+VT supports nested sidebar group, the left sidebar you see now, its configuration is as follows:
+
+```ts
 import { ThemeConfig } from "vuepress-theme-vt";
 import { defineConfig4CustomTheme } from "vuepress/config";
 
@@ -5,40 +38,11 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
   theme: "vt",
   title: "VT",
   themeConfig: {
-    status: "<GlobalStatus />",
-    statusVersion: "v5",
-    // sidebarDepth: 1,
-    enableDarkMode: true,
-    repo: "https://github.com/ulivz/vuepress-theme-vt",
-    logo: "/logo.svg",
-    lastUpdated: "Last Updated",
-    nav: [
-      { text: "Guide", link: "/guide/" },
-      { text: "API", link: "/api/" },
-      {
-        text: "Nav Links on the left",
-        link: "/guide/navbar.html#nav-links-on-the-left",
-        position: "left",
-      },
-      {
-        text: "More",
-        items: [
-          { text: "Guide", link: "/guide/" },
-          { text: "API", link: "/api/" },
-        ],
-      },
-    ],
     sidebar: {
       "/guide/": [
         {
-          title: "Introduction",
-          collapsable: false,
-          children: ["/guide/", "/guide/getting-started"],
-        },
-        {
           title: "Guide",
           collapsable: false,
-          initialOpenGroupIndex: -1,
           children: [
             {
               title: "Page",
@@ -76,24 +80,9 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
           ],
         },
       ],
-      "/api/": [
-        {
-          title: "Config",
-          path: "/api/",
-          collapsable: false,
-          children: [
-            "/api/config-theme",
-            "/api/config-frontmatter",
-            "/api/config-home",
-          ],
-        },
-      ],
-    },
-    codeSwitcher: {
-      groups: {
-        default: { ts: "TypeScript", js: "JavaScript" },
-        "plugin-usage": { tuple: "Tuple", object: "Object" },
-      },
     },
   },
 }));
+```
+
+By default the first subgroup is opened initially. You can change this using the `initialOpenGroupIndex`: Specify an index to open another subgroup or use `-1` for no open group.

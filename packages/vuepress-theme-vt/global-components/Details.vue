@@ -8,7 +8,7 @@
 .pia-details {
   cursor: pointer;
   background-color: var(--vp-c-bg-soft);
-  border: 1px solid var(--c-brand-light);
+  border: 1px solid var(--vp-c-brand-light);
   padding: 20px 24px;
   border-radius: 8px;
 

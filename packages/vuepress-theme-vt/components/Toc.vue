@@ -1,5 +1,5 @@
 <template>
-  <Sticker class="vuepress-toc" v-bind="$attrs" v-if="visible">
+  <Sticker class="toc" v-bind="$attrs" v-if="visible">
     <div class="on-this-page">{{ tocTitle }}</div>
     <div
       class="vuepress-toc-item"
@@ -162,7 +162,7 @@ export default {
   display: none !important;
 }
 
-.vuepress-toc {
+.toc {
   position: fixed;
   display: none;
   max-height: 100vh;
@@ -197,17 +197,17 @@ export default {
     }
 
     &.active {
-      border-left-color: var(--c-brand);
+      border-left-color: var(--vp-c-brand);
 
       a {
-        color: var(--c-brand);
+        color: var(--vp-c-brand);
         font-weight: 500;
       }
     }
 
     &:hover {
       a {
-        color: var(--c-brand);
+        color: var(--vp-c-brand);
       }
     }
   }
@@ -219,13 +219,13 @@ export default {
   }
 }
 
-.vuepress-toc {
+.toc {
   right: calc((100vw - var(--vp-screen-max-width)) / 2 - 5rem)
 }
 
 // for vuepress-toc
 @media (min-width: $MQDesktop) {
-  .vuepress-toc {
+  .toc {
     display: block;
   }
 }

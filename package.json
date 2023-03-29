@@ -13,16 +13,17 @@
     "dev:i18n": "lerna exec --scope i18n -- npm run dev",
     "build:i18n": "lerna exec --scope i18n -- npm run build",
     "dev": "mono d",
-    "release": "mono r --changelog --ignore-scripts --build"
+    "release": "mono r --changelog --ignore-scripts --build",
+    "release:one:click": "npm run release && npm run bootstrap && git add pnpm-lock.yaml && git commit -m 'chore: lock' && git push"
   },
   "devDependencies": {
     "@nomadland/mono": "0.3.4",
-    "lerna": "^4.0.0",
-    "@types/node": "16.10.9",
     "@types/jest": "27.0.0",
+    "@types/node": "16.10.9",
     "jest": "27.3.1",
     "jest-cli": "27.3.1",
     "jest-serializer-path": "0.1.15",
+    "lerna": "^4.0.0",
     "ts-jest": "27.0.7"
   }
 }

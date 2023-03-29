@@ -128,7 +128,7 @@ export default {
       .algolia-docsearch-suggestion--category-header {
         padding: 5px 10px;
         margin-top: 0;
-        background: var(--c-brand);;
+        background: var(--vp-c-brand);;
         color: #fff;
         font-weight: 500;
 

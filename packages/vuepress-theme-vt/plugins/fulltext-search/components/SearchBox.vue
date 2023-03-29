@@ -10,6 +10,8 @@
       spellcheck="false"
       @input="query = $event.target.value"
       @focus="focused = true"
+      @blur="focused = false"
+      @keyup.esc="collapseSearchInput()"
       @keyup.enter="go(focusIndex)"
       @keyup.up="onUp"
       @keyup.down="onDown"
@@ -37,15 +39,20 @@
             v-html="s.parentPageTitle"
           />
           <div class="suggestion-row">
-            <div class="page-title">{{ s.title || s.path }}</div>
+            <div class="page-title">
+              {{ s.title || s.path }}
+            </div>
             <div class="suggestion-content">
-              <!-- prettier-ignore -->
-              <div v-if="s.headingStr" class="header">
-                {{ s.headingDisplay.prefix }}<span class="highlight">{{ s.headingDisplay.highlightedContent }}</span>{{ s.headingDisplay.suffix }}
+              <div class="header">
+                {{ s.headingDisplay.prefix }}
+                <span class="highlight">{{ s.headingDisplay.highlightedContent }}</span>
+                {{ s.headingDisplay.suffix }}
               </div>
-              <!-- prettier-ignore -->
+
               <div v-if="s.contentStr">
-                {{ s.contentDisplay.prefix }}<span class="highlight">{{ s.contentDisplay.highlightedContent }}</span>{{ s.contentDisplay.suffix }}
+                {{ s.contentDisplay.prefix }}
+                <span class="highlight">{{ s.contentDisplay.highlightedContent }}</span>
+                {{ s.contentDisplay.suffix }}
               </div>
             </div>
           </div>
@@ -249,10 +256,12 @@ export default {
           "_blank"
         );
       } else {
-        this.$router.push(this.suggestions[i].path + this.suggestions[i].slug);
+        this.$router
+          .push(this.suggestions[i].path + this.suggestions[i].slug)
+          .catch(() => {});
         this.query = "";
         this.focusIndex = 0;
-        this.focused = false;
+        this.collapseSearchInput();
 
         // reset query param
         const params = this.urlParams();
@@ -281,6 +290,10 @@ export default {
       this.$refs.input.focus();
       this.focused = true;
     },
+    collapseSearchInput() {
+      this.$refs.input.blur();
+      this.focused = false;
+    },
   },
 };
 
@@ -303,16 +316,14 @@ function highlight(str, strHighlight) {
 .search-box {
   display: inline-block;
   position: relative;
-  top: 5 px;
   margin-right: 2rem;
 
   input {
     background-color: var(--vp-c-bg-soft);
-    transition: background-color 0.5s;
     cursor: text;
     width: 12rem;
     height: 2.5rem;
-    color: lighten($textColor, 25%);
+    color: var(--vp-c-brand);
     display: inline-block;
     font-size: 0.9rem;
     line-height: 2rem;
@@ -321,29 +332,35 @@ function highlight(str, strHighlight) {
     transition: all 0.2s ease;
     background-size: 1.2rem;
     border: 1px solid transparent;
-    transition: border 0.5s;
-    border-radius: 8px;
+    border-radius: var(--vp-common-border-radius);
 
     &::placeholder {
       transition: color 0.2s ease;
     }
 
     &:focus, &:hover {
-      // border: 1px solid var(--c-brand);
-      border-color: var(--c-brand);
+      // border: 1px solid var(--vp-c-brand);
+      border-color: var(--vp-c-brand);
       transition: border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+      &~.search-command .search-command-char {
+        border-color: var(--vp-c-brand);
+        color: var(--vp-c-brand);
+      }
     }
 
     &:focus {
       cursor: auto;
-      border-color: var(--c-brand);
+      width: 16rem;
+      transition: width 0.1s ease;
+      border-color: var(--vp-c-brand);
 
       &::placeholder {
-        color: var(--c-brand);
+        color: var(--vp-c-brand);
       }
 
       &~ .search-icon {
-        color: var(--c-brand);
+        color: var(--vp-c-brand);
       }
     }
 
@@ -370,7 +387,7 @@ function highlight(str, strHighlight) {
   .search-command {
     position: absolute;
     top: 8px;
-    right: 10px;
+    right: 12px;
   }
 
   .suggestions {
@@ -408,7 +425,7 @@ function highlight(str, strHighlight) {
       .parent-page-title {
         color: white;
         font-weight: 500;
-        background-color: var(--c-brand);
+        background-color: var(--vp-c-brand);
         padding: 5px;
       }
 
@@ -418,10 +435,9 @@ function highlight(str, strHighlight) {
         display: table;
 
         .page-title {
-          font-size: rem;
           width: 35%;
           border: 1px solid $borderColor;
-          background: #f5f5f5;
+          background: var(--vp-c-white-mute);
           border-left: none;
           display: table-cell;
           text-align: right;
@@ -431,11 +447,10 @@ function highlight(str, strHighlight) {
 
         .suggestion-content {
           .highlight {
-            color: #000;
-            margin: 0 3px;
-            padding: 0 3px;
-            border-radius: 3px;
-            background: rgba(59, 72, 206, 0.2);
+            margin: 0px;
+            background: var(--vp-c-divider-light-2);
+            border-bottom: 1px dashed currentColor;
+            font-weight: bolder;
           }
 
           border: 1px solid $borderColor;
@@ -453,7 +468,7 @@ function highlight(str, strHighlight) {
     }
 
     &.focused {
-      background-color: #f3f4f5;
+      background-color: var(--vp-c-white-mute);
     }
   }
 }

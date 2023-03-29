@@ -1,3 +1,245 @@
+## [0.13.1](https://github.com/ins-x/vt/compare/v0.13.0...v0.13.1) (2023-03-22)
+
+
+### Features
+
+* `groupTitle` ar frontmatter for search group ([b103765](https://github.com/ins-x/vt/commit/b103765cb2fa09eb88d33ba0a68d5ee67fe3b36d))
+
+
+
+# [0.13.0](https://github.com/ins-x/vt/compare/v0.12.6...v0.13.0) (2023-03-22)
+
+
+### Bug Fixes
+
+* empty search suggestions ([7d920a3](https://github.com/ins-x/vt/commit/7d920a3ee72f3a714f4f7219fb2f19494840eba2))
+
+
+### Features
+
+* enhance algorithm of find parent title ([d456719](https://github.com/ins-x/vt/commit/d456719a030037f30eb9a6fd6c3427971f3554c4))
+
+
+
+## [0.12.6](https://github.com/ins-x/vt/compare/v0.12.5...v0.12.6) (2023-03-21)
+
+
+### Bug Fixes
+
+* header anchor positioning ([ae32b7f](https://github.com/ins-x/vt/commit/ae32b7f36a944841aca00265d2e8e1365eb66ec3))
+
+
+
+## [0.12.5](https://github.com/ins-x/vt/compare/v0.12.4...v0.12.5) (2023-03-21)
+
+
+### Bug Fixes
+
+* status positioning style should not affect custom-layout page ([778fe36](https://github.com/ins-x/vt/commit/778fe36d41aa37736fa2b6004370824493726168))
+
+
+
+## [0.12.4](https://github.com/ins-x/vt/compare/v0.12.3...v0.12.4) (2023-03-20)
+
+
+### Features
+
+* refactor style of code wrapped in link tag ([#98](https://github.com/ins-x/vt/issues/98)) ([9a60378](https://github.com/ins-x/vt/commit/9a60378cc42420e188466e64ca77dd7538be6abe))
+
+
+
+## [0.12.3](https://github.com/ins-x/vt/compare/v0.12.2...v0.12.3) (2023-03-17)
+
+
+### Features
+
+* hoist status classes to html ([#96](https://github.com/ins-x/vt/issues/96)) ([078a8c6](https://github.com/ins-x/vt/commit/078a8c61b1b4f8be316e4d420900c728f806026d))
+
+
+
+## [0.12.1](https://github.com/ins-x/vt/compare/v0.12.0...v0.12.1) (2023-03-09)
+
+
+### Bug Fixes
+
+* missing `enhanceApp.js` ([2f5b78a](https://github.com/ins-x/vt/commit/2f5b78a4fe4922728dc08787b05d0f34b1e4425f))
+
+
+
+# [0.12.0](https://github.com/ins-x/vt/compare/v0.11.4...v0.12.0) (2023-03-09)
+
+
+### Bug Fixes
+
+* header anchor cannot position correctly when status is enabled ([#95](https://github.com/ins-x/vt/issues/95)) ([fda6fa2](https://github.com/ins-x/vt/commit/fda6fa29f09318b146fed80894e9284fc0170a10))
+
+
+### Features
+
+* ability to close status ([#94](https://github.com/ins-x/vt/issues/94)) ([1d8b374](https://github.com/ins-x/vt/commit/1d8b37479061bf619f5aca0860debedb176f99c6))
+
+
+
+## [0.11.4](https://github.com/ins-x/vt/compare/v0.11.3...v0.11.4) (2023-03-08)
+
+
+### Features
+
+* enhance search box style ([6f0cf45](https://github.com/ins-x/vt/commit/6f0cf45e043786ef028c5ce65740bbd33cfc7f46))
+
+
+
+## [0.11.3](https://github.com/ins-x/vt/compare/v0.11.2...v0.11.3) (2023-03-08)
+
+
+### Bug Fixes
+
+* search box dark mode issue ([6241c51](https://github.com/ins-x/vt/commit/6241c5111eaeb5abb5f67fc646393b457ea3efc9))
+
+
+### Features
+
+* refine search box style ([e284e74](https://github.com/ins-x/vt/commit/e284e7490650b1243cf4e06efd649a1459eddef1))
+* refine search style ([620c34b](https://github.com/ins-x/vt/commit/620c34b36f6ffd9a7d4e573a583918c8fae5bced))
+* refine sidebar transistion ([f1299fb](https://github.com/ins-x/vt/commit/f1299fbefcc2153cdb32615e1ece1e8403db2acd))
+* set search max suggestions to 100 ([69601bd](https://github.com/ins-x/vt/commit/69601bd7236b7659dbef10ffea29a59bd20f3673))
+
+
+
+## [0.11.2](https://github.com/ins-x/vt/compare/v0.11.1...v0.11.2) (2023-03-07)
+
+
+### Bug Fixes
+
+* missing animation for page-top when status is not firstly shown ([edab885](https://github.com/ins-x/vt/commit/edab88584a3798a397588d840ca5988acb4700e6))
+
+
+
+## [0.11.1](https://github.com/ins-x/vt/compare/v0.11.0...v0.11.1) (2023-03-07)
+
+
+### Features
+
+* refine status page animation and padding ([8256987](https://github.com/ins-x/vt/commit/8256987f45fbdb9c0c1fd1c325fb17ce3ed716cb))
+
+
+
+# [0.11.0](https://github.com/ins-x/vt/compare/v0.10.1...v0.11.0) (2023-03-07)
+
+
+### Bug Fixes
+
+* nav left links style issue ([3e1ed8a](https://github.com/ins-x/vt/commit/3e1ed8aa5b16ab965f7dbb69ac12cdbd802b071d))
+* search box should blur when go to result page ([d687792](https://github.com/ins-x/vt/commit/d687792c918a3544ab43583da135581b27b481e7))
+* should display serial number for `<ol>` tag ([fdb9529](https://github.com/ins-x/vt/commit/fdb95298694aa63393d84170f35eb77e6a7585ec))
+
+
+### Features
+
+* add sidebar active background ([96f655e](https://github.com/ins-x/vt/commit/96f655e3b0b83190539248578262b0b2c914ccff))
+* catch router jump error ([0c5b2ad](https://github.com/ins-x/vt/commit/0c5b2ad60e994240828e17019a14d68654ecaf9a))
+* do not display empty highlighted content ([e30d395](https://github.com/ins-x/vt/commit/e30d39515b738ef1ceea76676262408853c0a7d0))
+* exit command should work in search box ([7b22c05](https://github.com/ins-x/vt/commit/7b22c05028129c9e3d4fab0695cfdd1a9a1b39ef))
+* refactor search box style ([97a0d30](https://github.com/ins-x/vt/commit/97a0d30d1976983bff7640aee082d2a4466fd585))
+* refine code and link style ([81fdcb1](https://github.com/ins-x/vt/commit/81fdcb16fd0249f43369ff5d6d8434c8169cc381))
+* refine nav bar style ([db87122](https://github.com/ins-x/vt/commit/db871222bbabc997025d7c3d9f4cd263d98fe7f9))
+* refine nav left links active style ([1d79ed2](https://github.com/ins-x/vt/commit/1d79ed2dd1a8caa4d34b54657742c4708ebc5673))
+* refine search box highlight style ([1f53396](https://github.com/ins-x/vt/commit/1f533969ec978a2baa80347394a264279888098c))
+* refine search box style ([694a88d](https://github.com/ins-x/vt/commit/694a88d19a881b87d7527123420990567c816840))
+
+
+
+## [0.10.1](https://github.com/ins-x/vt/compare/v0.10.0...v0.10.1) (2023-03-01)
+
+
+### Bug Fixes
+
+* some texts' styled issue at dark mode ([6d4a4a1](https://github.com/ins-x/vt/commit/6d4a4a14ff0e75fb4b583cd7ec79a6156ebd3bcb))
+
+
+
+# [0.10.0](https://github.com/ins-x/vt/compare/v0.9.2...v0.10.0) (2023-03-01)
+
+
+### Features
+
+* using Vue component to define status ([#93](https://github.com/ins-x/vt/issues/93)) ([88c15b6](https://github.com/ins-x/vt/commit/88c15b61fcaee2e5c1a44a2dc89b20eb98eb1743))
+
+
+
+## [0.9.2](https://github.com/ins-x/vt/compare/v0.9.1...v0.9.2) (2023-02-25)
+
+
+### Features
+
+* **theme:** inheritable `NavIcon` ([a6fab12](https://github.com/ins-x/vt/commit/a6fab12e9af6a0fbbc344aa4d77c9c4f9dec333b))
+
+
+
+## [0.9.1](https://github.com/ins-x/vt/compare/v0.9.0...v0.9.1) (2023-02-25)
+
+
+### Features
+
+* **theme:** bump `vuepress` to 1.9.9 ([47cc2dd](https://github.com/ins-x/vt/commit/47cc2ddb7de8ec0630b384bd89f2c00e0c44d8f1))
+
+
+
+# [0.9.0](https://github.com/ins-x/vt/compare/v0.8.2...v0.9.0) (2023-02-14)
+
+
+### Features
+
+* formal nested sidebar group support (close: [#91](https://github.com/ins-x/vt/issues/91)) ([#92](https://github.com/ins-x/vt/issues/92)) ([acde070](https://github.com/ins-x/vt/commit/acde07089ce2108dbc8adc2f2971366149a6c4da))
+
+
+
+## [0.8.2](https://github.com/ins-x/vt/compare/v0.8.1...v0.8.2) (2023-02-14)
+
+
+### Bug Fixes
+
+* **theme:** internal link does not have link effect (close: [#89](https://github.com/ins-x/vt/issues/89)) ([#90](https://github.com/ins-x/vt/issues/90)) ([dfe8e67](https://github.com/ins-x/vt/commit/dfe8e674f019ddbb5a295c32c83b51250997b419))
+
+
+
+## [0.8.1](https://github.com/ins-x/vt/compare/v0.8.0...v0.8.1) (2023-02-03)
+
+
+### Features
+
+* add css variable `--vp-c-bg-inverse` ([d9a51b9](https://github.com/ins-x/vt/commit/d9a51b9a7d41769e16536aff18cff44838dc6534))
+* refine style of `--vp-c-text-1` ([3ad96ef](https://github.com/ins-x/vt/commit/3ad96efb3f9239ee2bf34789c3cbab33825a3b1a))
+
+
+
+# [0.8.0](https://github.com/ins-x/vt/compare/v0.7.6...v0.8.0) (2023-02-03)
+
+
+### Features
+
+* refine theme style ([#88](https://github.com/ins-x/vt/issues/88)) ([66afe27](https://github.com/ins-x/vt/commit/66afe272abccc88c17b792638f80011582140003))
+
+
+
+## [0.7.6](https://github.com/ins-x/vt/compare/v0.7.5...v0.7.6) (2023-01-16)
+
+
+### Features
+
+* enhance the padding between headers ([c8dbc5f](https://github.com/ins-x/vt/commit/c8dbc5f10a6376202a11f3beb06999e5d0bcf113))
+
+
+
+## [0.7.5](https://github.com/ins-x/vt/compare/v0.7.4...v0.7.5) (2023-01-16)
+
+
+### Bug Fixes
+
+* **theme:** wrong layout of API page (close: [#86](https://github.com/ins-x/vt/issues/86)) ([e02981d](https://github.com/ins-x/vt/commit/e02981dce21c9324ed36987b9ac962191eab58fb))
+
+
+
 ## [0.7.4](https://github.com/ins-x/vt/compare/v0.7.3...v0.7.4) (2022-11-10)
 
 

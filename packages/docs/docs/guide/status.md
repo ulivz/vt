@@ -1,5 +1,6 @@
 ---
-status: $status
+status: <GlobalStatus />
+statusVersion: v5
 ---
 
 # Status
@@ -31,22 +32,71 @@ status: 'This is page status'
 ---
 ```
 
-## Rich-text page status
+## Using Vue Component
 
-You can specify rich-text page status via [markdown slot](https://vuepress.vuejs.org/guide/markdown-slot.html).
+You can specify page status via a global Vue Component, let's create `.vuepress/components/GlobalStatus.vue` as example:
+  
+```vue
+<template>
+  <span> This is page status </span>
+</template>
+```
 
-Note that you'll need declare [frontmatter.status](https://vuepress.vuejs.org/guide/frontmatter.html) to `$variable` to tell VT to leverage corresponding slot:
+- via page frontmatter config:
 
 ```md
 ---
-status: $status
+status: <GlobalStatus />
 ---
-
-::: status
-THIS IS PAGE STATUS, [JUMP TO HOME PAGE](/)
-:::
 ```
 
-::: slot status
-THIS IS PAGE STATUS, [JUMP TO HOME PAGE](/)
-:::
+- via global config:
+
+```ts
+// .vuepress/config.js
+module.exports = {
+  theme: "vt",
+  themeConfig: {
+    status: '<GlobalStatus />'
+  },
+};
+```
+
+## Closing Status
+
+You can use a global method `$closeCurrentStatus` to close status:
+
+```vue
+<template>
+  <span>
+    This is page status &nbsp;
+    <a style="cursor: pointer" @click="$closeCurrentStatus">x</a>
+  </span>
+</template>
+```
+
+and using `statusVersion` to control the status version:
+
+- via page frontmatter config:
+
+```md
+---
+status: <GlobalStatus />
+statusVersion: v2
+---
+```
+
+- via global config:
+
+```ts
+// .vuepress/config.js
+module.exports = {
+  theme: "vt",
+  themeConfig: {
+    status: '<GlobalStatus />',
+    statusVersion: 'v2'
+  },
+};
+```
+
+You need bump `statusVersion` when you released new status, so that user can see the new status.

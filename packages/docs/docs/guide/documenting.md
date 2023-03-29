@@ -268,3 +268,19 @@ Detail
     |- index.js
   |- /node_modules
 ```
+
+## Code wrapped in link tag
+
+- Input:
+  ```md
+  - [API Page](./api-page.md)
+  - [Search](./search.md)
+  - [`API Page`](./api-page.md)
+  - [`Search`](./search.md)
+  ```
+
+- Rendered:
+  - [API Page](./api-page.md)
+  - [Search](./search.md)
+  - [`API Page`](./api-page.md)
+  - [`Search`](./search.md)

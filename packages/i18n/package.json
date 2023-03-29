@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "i18n",
-  "version": "0.7.4",
+  "version": "0.13.1",
   "description": "A VuePress implementation for VitePress theme @vue/theme, fully compatible with VuePress default theme.",
   "keywords": [
     "documentation",
@@ -13,10 +13,10 @@
   "main": "index.js",
   "types": "lib/index.d.ts",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "1.9.7",
-    "@vuepress/plugin-medium-zoom": "1.9.7",
+    "@vuepress/plugin-back-to-top": "1.9.9",
+    "@vuepress/plugin-medium-zoom": "1.9.9",
     "less": "4.1.2",
-    "vuepress": "1.9.7"
+    "vuepress": "1.9.9"
   },
   "author": "ULIVZ <chl814@foxmail.com>"
 }

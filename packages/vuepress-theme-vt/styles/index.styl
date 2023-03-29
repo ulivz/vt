@@ -85,8 +85,39 @@ body {
 }
 
 a {
-  color: var(--c-brand);
+  color: var(--vp-c-brand);
   text-decoration: none;
+}
+
+a.link-hover-effect {
+  font-weight: 600;
+  color: var(--vp-c-brand);
+  border-bottom: 1px dashed currentColor;
+  display: inline-block;
+  line-height: 1.2;
+
+  &:hover {
+    color: var(--vp-c-active-link);
+    border-bottom-style: solid;
+  }
+
+  &:has(> code) {
+    border: none;
+    margin-bottom: 2px;
+
+    > code {
+      padding: 0.15rem 0.5rem;
+      border: 1px dashed currentColor;
+    }
+
+    &:hover {
+      border-bottom-style: none;
+
+      > code {
+        color: var(--vp-c-active-link);
+      }
+    }
+  }
 }
 
 p a code {
@@ -193,7 +224,7 @@ table {
   .page {
     padding-left: calc((100vw - var(--vp-screen-max-width)) / 2 + var(--vp-sidebar-width));
 
-    &.api {
+    &.enable-api {
       font-size: 20px;
       padding-left: 240px;
 
@@ -236,7 +267,7 @@ table {
 
   .theme-container:not(.no-sidebar) {
     .nav-left-links {
-      padding: 2rem 0rem 2rem calc(var(--vp-doc-padding) - 1.5rem) ;
+      padding: 2rem 0rem 2rem calc(var(--vp-doc-padding) - 1.5rem);
     }
   }
 }

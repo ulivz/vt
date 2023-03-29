@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="stylus">
 .next-step {
   border: 1px solid var(--vp-c-bg-soft);
   background-color: var(--vp-c-bg-soft);
@@ -26,8 +26,12 @@ export default {
 }
 
 .next-step:hover {
-  border-color: var(--c-brand);
+  border-color: var(--vp-c-brand);
   transition: border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  .next-steps-link {
+    color: var(--vp-c-brand);
+  }
 }
 
 .next-steps-link {
@@ -37,7 +41,7 @@ export default {
   margin-top: 0;
   margin-bottom: 0.75em;
   display: block;
-  color: var(--c-brand);
+  color: var(--vp-c-brand-light);
 }
 
 .next-steps-caption {

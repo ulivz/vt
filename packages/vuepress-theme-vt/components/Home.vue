@@ -143,7 +143,7 @@ section {
 }
 
 .dark .heroText {
-  color: var(--c-brand-light);
+  color: var(--vp-c-brand-light);
   background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -155,13 +155,13 @@ section {
   background-color: var(--vp-c-bg-mute);
   padding: 8px 18px;
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: var(--vp-common-border-radius);
   transition: background-color 0.5s, color 0.5s;
 }
 
 .actions .action-link {
   font-weight: 500;
-  background-color: var(--c-brand);
+  background-color: var(--vp-c-brand);
   color: #fff;
   margin-right: 18px;
 }
@@ -180,7 +180,7 @@ section {
 }
 
 .actions .action-link:hover {
-  background-color: var(--c-brand-dark);
+  background-color: var(--vp-c-brand-dark);
   transition-duration: 0.2s;
 }
 
@@ -189,7 +189,7 @@ section {
 }
 
 .dark .actions .action-link:hover {
-  background-color: var(--c-brand-light);
+  background-color: var(--vp-c-brand-light);
 }
 
 .actions .sub-action-link {

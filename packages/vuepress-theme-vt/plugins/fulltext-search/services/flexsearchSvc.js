@@ -17,6 +17,10 @@ export default {
     const pages = allPages.filter(
       (p) => !p.frontmatter || p.frontmatter.search !== false
     );
+
+    /**
+     * @type {import('flexsearch').CreateOptions}
+     */
     const indexSettings = {
       encode: options.encode || "simple",
       tokenize: options.tokenize || "reverse",
@@ -113,13 +117,41 @@ export default {
   normalizeString,
 };
 
+/**
+ * Input: /guide/code-switcher.html
+ * Decision Chain:
+ *   - /guide/
+ *   - /guide/index.html
+ *   - /guide/code-switcher.html
+ */
 function getParentPageTitle(page) {
   const pathParts = page.path.split("/");
-  let parentPagePath = "/";
-  if (pathParts[1]) parentPagePath = `/${pathParts[1]}/`;
-
-  const parentPage = pagesByPath[parentPagePath] || page;
-  return parentPage.title;
+  let parentTitle = page.title;
+  if (pathParts.length < 2) {
+    return parentTitle;
+  }
+  let partsLen = pathParts.length - 1;
+  while (partsLen) {
+    const parentPath = pathParts.slice(0, partsLen).join("/") + "/";
+    const candidate1 = pagesByPath[parentPath];
+    if (candidate1) {
+      parentTitle = candidate1.frontmatter.groupTitle || candidate1.title;
+      break;
+    }
+    const candidate2 = pagesByPath[`${parentPath}index.html`];
+    if (candidate2) {
+      parentTitle = candidate2.frontmatter.groupTitle || candidate2.title;
+      break;
+    }
+    // FIXME: decouple this logic
+    const candidate3 = pagesByPath[`${parentPath}getting-started/introduction.html`];
+    if (candidate3) {
+      parentTitle = candidate3.frontmatter.groupTitle || candidate3.title;
+      break;
+    }
+    partsLen--;
+  }
+  return parentTitle;
 }
 
 function getAdditionalInfo(page, queryString, queryTerms) {

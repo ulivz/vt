@@ -169,7 +169,7 @@ $border = 1.5px;
       }
 
       &.active {
-        border: $border solid var(--c-brand-light);
+        border: $border solid var(--vp-c-brand-light);
         background-color: var(--vp-c-bg-soft);
 
         & ~ li {

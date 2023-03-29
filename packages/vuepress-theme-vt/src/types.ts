@@ -23,9 +23,14 @@ export type ThemeConfig = Omit<DefaultThemeConfig, "nav" | "locales"> & {
   nav?: EnhancedNavItem[];
 
   /**
-   * Text in status bar
+   * Status config, a plain text or a Vue component declaration ("e.g. <MyStatus />")
    */
   status?: string;
+
+  /**
+   * Used to control status version, defaults to "v1".
+   */
+  statusVersion?: string;
 
   /**
    * Enable dark mode

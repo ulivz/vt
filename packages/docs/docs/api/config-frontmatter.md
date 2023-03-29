@@ -66,12 +66,14 @@ See [live example](../../../docs/docs/examples/disable-sidebar.md).
 ## sidebarDepth
 
 - **Type**: `number`
-- **Default**: `1`
+- **Default**: `0`
 
-Set maximum depth of sidebar headers, set `0` to hide headers at it:
+Set maximum depth of sidebar headers, set `1` to display nested header links at sidebar:
 
 ```md
-
+---
+sidebarDepth: 1
+---
 ```
 
 ## navbar
