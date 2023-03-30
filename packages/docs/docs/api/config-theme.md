@@ -319,18 +319,3 @@ i18n only.
 - **Default**: `undefined`
 
 i18n only.
-
-
-## selectText
-## selectText
-## selectText
-## selectText
-## selectText
-## selectText
-## selectText
-## selectText
-## selectText
-## selectText
-## selectText
-## selectText
-## selectText
