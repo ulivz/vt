@@ -97,6 +97,7 @@ importers:
       prism-themes: 1.9.0
       stylus: ^0.54.8
       stylus-loader: ^3.0.2
+      throttle-debounce: 5.0.0
       typescript: 4.5.3
       vue: ^2
       vue-router: ^3.4.5
@@ -119,6 +120,7 @@ importers:
       prism-themes: 1.9.0
       stylus: 0.54.8
       stylus-loader: 3.0.2_stylus@0.54.8
+      throttle-debounce: 5.0.0
       vue: 2.6.14
       vue-router: 3.5.3_vue@2.6.14
       vuepress-plugin-container: 2.1.5
@@ -12691,6 +12693,11 @@ packages:
   /throat/6.0.1:
     resolution: {integrity: sha512-8hmiGIJMDlwjg7dlJ4yKGLK8EsYqKgPWbG3b4wjJddKNwc7N7Dpn08Df4szr/sZdMVeOstrdYSsqzX6BYbcB+w==}
     dev: true
+
+  /throttle-debounce/5.0.0:
+    resolution: {integrity: sha512-2iQTSgkkc1Zyk0MeVrt/3BvuOXYPl/R8Z0U2xxo9rjwNciaHDG3R+Lm6dh4EeUci49DanvBnuqI6jshoQQRGEg==}
+    engines: {node: '>=12.22'}
+    dev: false
 
   /through/2.3.8:
     resolution: {integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=}
