@@ -93,6 +93,14 @@ module.exports = {
 };
 ```
 
+## sidebarActiveLinkScrollIntoView
+
+- **Type**: `boolean`
+- **Default**: `false`
+
+Whether to scroll active sidebar link into view after the page loads.
+
+
 ## search
 
 - **Type**: `boolean`
