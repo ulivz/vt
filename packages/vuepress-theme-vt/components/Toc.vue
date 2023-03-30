@@ -159,7 +159,7 @@ export default {
   display: none;
   max-height: 100vh;
   width: 15rem;
-  overflow: visible;
+  overflow-y: scroll;
   padding-top: var(--vp-navbar-height);
   padding-bottom: 150px;
   top: 50px;
