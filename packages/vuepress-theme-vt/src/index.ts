@@ -27,6 +27,10 @@ export default defineTheme<ThemeConfig>((options, ctx) => {
       };
     },
 
+    define: {
+      SIDEBAR_SCROLL_INTO_VIEW: Boolean(themeConfig.sidebarActiveLinkScrollIntoView ?? false),
+    },
+
     plugins: [
       ["@vuepress/active-header-links", options.activeHeaderLinks],
       [require.resolve("../plugins/copy-code/index.js"), true],

@@ -43,6 +43,7 @@
 </template>
 
 <script>
+/* global SIDEBAR_SCROLL_INTO_VIEW */
 import Vue from "vue";
 import Home from "@theme/components/Home.vue";
 import StatusBar from "@theme/components/StatusBar.vue";
@@ -53,6 +54,20 @@ import Toc from "@theme/components/Toc.vue";
 import API from "@theme/components/API.vue";
 import { resolveSidebarItems } from "../lib/util";
 import { $status, STATUS_HIDDEN_EVENT } from "../lib/status";
+import { throttle } from "throttle-debounce";
+
+const scrollSidebarActiveLinkIntoView = throttle(200, function () {
+  setTimeout(() => {
+    const sidebarEls = document.getElementsByClassName("sidebar");
+    if (sidebarEls.length > 0) {
+      const sidebarEl = sidebarEls[0];
+      const targetLink = sidebarEl.querySelector(".active.sidebar-link");
+      targetLink.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  });
+});
 
 const selfClosedComponentRE = /^<([^<>\s]+)\s*\/>$/;
 
@@ -188,6 +203,10 @@ export default {
   },
 
   mounted() {
+    if (SIDEBAR_SCROLL_INTO_VIEW) {
+      scrollSidebarActiveLinkIntoView();
+    }
+
     this.$router.afterEach(() => {
       this.isSidebarOpen = false;
     });

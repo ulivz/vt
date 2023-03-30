@@ -56,4 +56,8 @@ export type ThemeConfig = Omit<DefaultThemeConfig, "nav" | "locales"> & {
   codeSwitcher?: {
     groups?: Record<string, Record<string, string>>;
   };
+  /**
+   * Scroll active sidebar link into view.
+   */
+  sidebarActiveLinkScrollIntoView?: boolean;
 };
