@@ -1,3 +1,18 @@
+## [0.13.2](https://github.com/ins-x/vt/compare/v0.13.1...v0.13.2) (2023-03-30)
+
+
+### Bug Fixes
+
+* toc cannot scroll ([#102](https://github.com/ins-x/vt/issues/102)) ([082b2ff](https://github.com/ins-x/vt/commit/082b2ff209723ad7d795aa28f3e2f83857184346))
+
+
+### Features
+
+* refine close style ([b10313b](https://github.com/ins-x/vt/commit/b10313b915396941bbf1326b81daa9e19fb2c52c))
+* theme option `sidebarActiveLinkScrollIntoView` ([#101](https://github.com/ins-x/vt/issues/101)) ([edb217a](https://github.com/ins-x/vt/commit/edb217af500ef1fcf9e7795457074e16be65088b))
+
+
+
 ## [0.13.1](https://github.com/ins-x/vt/compare/v0.13.0...v0.13.1) (2023-03-22)
 
 
