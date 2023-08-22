@@ -54,9 +54,7 @@ export default {
       if (!activeRange) {
         return false;
       }
-      const localeActiveRange = this.$withLocale(activeRange);
-      console.log("localeActiveRange", localeActiveRange);
-      return routePath.startsWith(localeActiveRange);
+      return routePath.startsWith(activeRange);
     },
   },
 };
