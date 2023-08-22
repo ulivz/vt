@@ -28,6 +28,19 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
         ],
       },
     ],
+    sidebarNav: [
+      {
+        when: ["/guide/"],
+        items: [
+          {
+            text: "Guide",
+            link: "/guide/getting-started.html",
+            activeRange: "/guide/",
+          },
+          { text: "Migration", link: "/guide/migration.html" },
+        ],
+      },
+    ],
     sidebar: {
       "/guide/": [
         {

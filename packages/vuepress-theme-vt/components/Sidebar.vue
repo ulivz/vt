@@ -1,8 +1,10 @@
 <template>
   <aside class="sidebar">
+    <slot name="top" />
+
     <NavLinks :showSearchBox="false" />
 
-    <slot name="top" />
+    <SidebarNavLinks />
 
     <SidebarLinks :depth="0" :items="items" />
     <slot name="bottom" />
@@ -12,11 +14,12 @@
 <script>
 import SidebarLinks from "@theme/components/SidebarLinks.vue";
 import NavLinks from "@theme/components/NavLinks.vue";
+import SidebarNavLinks from "@theme/components/SidebarNavLinks.vue";
 
 export default {
   name: "Sidebar",
 
-  components: { SidebarLinks, NavLinks },
+  components: { SidebarLinks, NavLinks, SidebarNavLinks },
 
   props: ["items"],
 };
@@ -56,6 +59,7 @@ export default {
 
   & > .sidebar-links {
     padding: 2rem 0;
+    padding-top: 1rem;
 
     & > li > a.sidebar-link {
       line-height: 1.7;
