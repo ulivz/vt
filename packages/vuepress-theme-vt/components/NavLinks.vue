@@ -301,8 +301,6 @@ function css(el, property) {
 
   .nav-item > a:not(.external) {
     &:hover, &.router-link-active {
-      margin-bottom: -2px;
-
       &::before {
         background-color: var(--vp-c-brand);
       }

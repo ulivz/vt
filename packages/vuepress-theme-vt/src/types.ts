@@ -11,6 +11,11 @@ export type EnhancedNavItem = NavItem & {
   position?: "left" | "right";
 };
 
+export interface SidebarNavLink {
+  when: string[];
+  items: Array<{ text: string; link: string }>;
+}
+
 export type ThemeConfig = Omit<DefaultThemeConfig, "nav" | "locales"> & {
   /**
    * Locales config.
@@ -21,6 +26,11 @@ export type ThemeConfig = Omit<DefaultThemeConfig, "nav" | "locales"> & {
    * Navbar Links.
    */
   nav?: EnhancedNavItem[];
+
+  /**
+   * Sidebar nav links.
+   */
+  sidebarNav?: SidebarNavLink[];
 
   /**
    * Status config, a plain text or a Vue component declaration ("e.g. <MyStatus />")
