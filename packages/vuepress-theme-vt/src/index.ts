@@ -2,9 +2,9 @@
 
 import path from "path";
 import { defineTheme } from "@vuepress/types";
-import { ThemeConfig, EnhancedNavItem } from "./types";
+import { ThemeConfig, EnhancedNavItem, SidebarNavLink } from "./types";
 
-export { ThemeConfig, EnhancedNavItem as NavItem };
+export { ThemeConfig, EnhancedNavItem as NavItem, SidebarNavLink };
 
 export default defineTheme<ThemeConfig>((options, ctx) => {
   const { themeConfig, siteConfig } = ctx;

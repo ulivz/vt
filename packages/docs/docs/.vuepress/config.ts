@@ -28,6 +28,20 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
         ],
       },
     ],
+    sidebarNav: [
+      {
+        title: "Quick Link",
+        when: ["/guide/"],
+        items: [
+          {
+            text: "Guide",
+            link: "/guide/getting-started.html",
+            activeRange: "/guide/",
+          },
+          { text: "Migration", link: "/guide/migration.html" },
+        ],
+      },
+    ],
     sidebar: {
       "/guide/": [
         {
@@ -41,7 +55,8 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
           initialOpenGroupIndex: -1,
           children: [
             {
-              title: "Page",
+              title: "Basic",
+              collapsable: false,
               children: [
                 "/guide/home",
                 "/guide/api-page",
@@ -49,12 +64,13 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
                 "/guide/navbar",
                 "/guide/sidebar",
                 "/guide/dark-mode",
+                "/guide/search",
               ],
             },
             {
-              title: "Modules",
+              title: "Advanced",
+              collapsable: false,
               children: [
-                "/guide/search",
                 "/guide/global-components",
                 "/guide/code-switcher",
                 "/guide/status",

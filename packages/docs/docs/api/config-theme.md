@@ -93,6 +93,13 @@ module.exports = {
 };
 ```
 
+## sidebarNav
+
+- **Type**: `SidebarNavLink[]`
+- **Default**: `undefined`
+
+Define [Sidebar Nav Links](../guide/sidebar.md#sidebar-nav-links).
+
 ## sidebarActiveLinkScrollIntoView
 
 - **Type**: `boolean`
