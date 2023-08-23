@@ -1,9 +1,9 @@
 <template>
-  <div class="sidebar-nav-links">
-    <nav
-      v-if="currentSidebarNavLinks && currentSidebarNavLinks.length"
-      class="sidebar-nav-links-container"
-    >
+  <div
+    class="sidebar-nav-links"
+    v-if="currentSidebarNavLinks && currentSidebarNavLinks.length"
+  >
+    <nav class="sidebar-nav-links-container">
       <div
         v-for="item in currentSidebarNavLinks"
         :key="item.link"
