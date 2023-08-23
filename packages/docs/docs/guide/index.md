@@ -14,6 +14,7 @@ I made this theme to combine eXperience of `@vue/theme` and [current huge VuePre
 
 - [**Compatibility**](./migration.md): fully compatible with [VuePress's Default Theme](https://vuepress.vuejs.org/theme/default-theme-config.html).
 - [**Full-text search**](./search.md): No server dependencies, distinguishing locales.
+- Enhanced Sidebar: [Nested Sidebar Group](./sidebar.md#nested-sidebar-group)、[Sidebar Nav Links](./sidebar.md#sidebar-nav-links).
 - [Dark Mode](./dark-mode.md)
 - [TypeScript Support](./configuration.md)
 - [Homepage](./home.md)

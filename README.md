@@ -27,6 +27,7 @@
 - [**Compatibility**](https://vt.insx.dev/guide/migration.html): fully compatible with [VuePress's Default Theme](https://vuepress.vuejs.org/theme/default-theme-config.html).
 - [**Full-text search**](https://vt.insx.dev/guide/search.html): No server dependencies, distinguishing locales.
 - [Dark Mode](https://vt.insx.dev/guide/dark-mode.html)
+- Enhanced Sidebar: [Nested Sidebar Group](https://vt.insx.dev/guide/sidebar.html#nested-sidebar-group)、[Sidebar Nav Links](https://vt.insx.dev/guide/sidebar.html#sidebar-nav-links).
 - [TypeScript Support](https://vt.insx.dev/guide/configuration.html)
 - [Homepage](https://vt.insx.dev/guide/home.html)
 - [API Page](https://vt.insx.dev/guide/api-page.html)
