@@ -31,7 +31,7 @@ export interface SidebarNavLink {
     /**
      * Range route matcher for active behavior
      */
-    activeRange?: string;
+    activeRange?: string | string[];
   }>;
 }
 

@@ -54,6 +54,9 @@ export default {
       if (!activeRange) {
         return false;
       }
+      if (Array.isArray(activeRange)) {
+        return activeRange.some((range) => routePath.startsWith(range));
+      }
       return routePath.startsWith(activeRange);
     },
   },
