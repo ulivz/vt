@@ -1,11 +1,14 @@
 <template>
   <div
     class="sidebar-nav-links"
-    v-if="currentSidebarNavLinks && currentSidebarNavLinks.length"
+    v-if="currentSidebarNavLink && currentSidebarNavLink.items.length"
   >
+    <div class="sidebar-nav-links-title" v-if="currentSidebarNavLink.title">
+      {{ currentSidebarNavLink.title }}
+    </div>
     <nav class="sidebar-nav-links-container">
       <div
-        v-for="item in currentSidebarNavLinks"
+        v-for="item in currentSidebarNavLink.items"
         :key="item.link"
         class="nav-item"
       >
@@ -35,7 +38,7 @@ export default {
   },
 
   computed: {
-    currentSidebarNavLinks() {
+    currentSidebarNavLink() {
       const sidebarNavConfig =
         this.$themeLocaleConfig.sidebarNav || this.$themeConfig.sidebarNav;
 
@@ -45,7 +48,7 @@ export default {
         )
       );
 
-      return matched && matched.items;
+      return matched;
     },
   },
 
@@ -64,28 +67,36 @@ export default {
 </script>
 
 <style lang="stylus">
-:root {
-  --vp-sidebar-nav-links-border-radius: 25px;
-}
-
 .sidebar-nav-links {
   margin-right: 10px;
+  padding-top: 10px;
+}
+
+.sidebar-nav-links-title {
+  color: var(--vp-c-text-2);
+  font-weight: bolder;
+  margin-bottom: 10px;
+  font-size: 12px;
 }
 
 .sidebar-nav-links-container {
-  font-size: 15px;
+  font-size: 12px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  background-color: var(--vp-c-bg-soft);
-  padding: 10px 0;
-  margin-bottom: 10px;
-  border-radius: var(--vp-sidebar-nav-links-border-radius);
+  gap: 5px;
+  padding: 5px;
+  background-color: var(--vp-c-bg);
+  margin-bottom: 12px;
+  border-radius: var(--vp-common-border-radius);
+  margin-left: -10px;
+
 
   .nav-item {
     flex: 1;
     text-align: center;
     padding: 0;
+    height: 28px;
+    position: relative;
 
     .nav-link.nav-item-range-matched, .nav-link.router-link-active {
       background-color: var(--vp-c-brand);
@@ -93,20 +104,39 @@ export default {
     }
 
     .nav-link {
-      background-color: var(--vp-c-bg);
-      border-radius: var(--vp-sidebar-nav-links-border-radius);
-      padding: 5px 10px;
+      background-color: var(--vp-c-bg-soft);
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
+      line-height: 18px;
+      padding: 5px 10px;
       transition: background-color 0.1s;
     }
 
-    .nav-link:not(.router-link-active):not(.nav-item-range-matched):hover {
-      background-color: var(--vp-c-bg-mute);
+    .nav-link:not(.router-link-active):not(.nav-item-range-matched) {
+      border: 1px solid var(--vp-c-divider-light-2);
+
+      &:hover {
+        background-color: var(--vp-c-bg-mute);
+      }
     }
 
     &:last-child {
       margin-right: 0px;
+
+      .nav-link {
+        border-top-right-radius: var(--vp-common-border-radius);
+        border-bottom-right-radius: var(--vp-common-border-radius);
+      }
+    }
+
+    &:first-child {
+      .nav-link {
+        border-top-left-radius: var(--vp-common-border-radius);
+        border-bottom-left-radius: var(--vp-common-border-radius);
+      }
     }
   }
 }

@@ -13,7 +13,11 @@ export type EnhancedNavItem = NavItem & {
 
 export interface SidebarNavLink {
   /**
-   * Display navlinks when current route match these routes config
+   * Nav link title
+   */
+  title?: string;
+  /**
+   * When to display nav links (when current route match these routes conditions)
    */
   when: string[];
   /**

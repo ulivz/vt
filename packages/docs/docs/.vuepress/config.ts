@@ -30,6 +30,7 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
     ],
     sidebarNav: [
       {
+        title: "Quick Link",
         when: ["/guide/"],
         items: [
           {
