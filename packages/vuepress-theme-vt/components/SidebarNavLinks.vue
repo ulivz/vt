@@ -69,7 +69,13 @@ export default {
 <style lang="stylus">
 .sidebar-nav-links {
   margin-right: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
+  background-color: var(--vp-c-bg-soft);
+  position: sticky;
+  top: -15px;
+  scroll-behavior: smooth;
+  z-index: 10;
+  margin-left: -10px;
 }
 
 .sidebar-nav-links-title {
@@ -77,6 +83,7 @@ export default {
   font-weight: bolder;
   margin-bottom: 10px;
   font-size: 12px;
+  padding-left: 10px;
 }
 
 .sidebar-nav-links-container {
@@ -88,8 +95,6 @@ export default {
   background-color: var(--vp-c-bg);
   margin-bottom: 12px;
   border-radius: var(--vp-common-border-radius);
-  margin-left: -10px;
-
 
   .nav-item {
     flex: 1;
