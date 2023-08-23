@@ -1,6 +1,6 @@
 {
   "name": "create-vt",
-  "version": "0.13.2",
+  "version": "0.14.0",
   "description": "Scaffolding a VuePress website with vuepress-theme-vt.",
   "main": "lib/index.js",
   "repository": {
