@@ -1,3 +1,12 @@
+# [0.14.0](https://github.com/ins-x/vt/compare/v0.13.2...v0.14.0) (2023-08-23)
+
+
+### Features
+
+* **theme:** sidebar nav links (close: [#103](https://github.com/ins-x/vt/issues/103)) ([#104](https://github.com/ins-x/vt/issues/104)) ([3044b25](https://github.com/ins-x/vt/commit/3044b2517bcae477f4c8a2a6fd9fc0ab7ff0e365))
+
+
+
 ## [0.13.2](https://github.com/ins-x/vt/compare/v0.13.1...v0.13.2) (2023-03-30)
 
 
