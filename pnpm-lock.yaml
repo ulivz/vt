@@ -25,7 +25,7 @@ importers:
   packages/docs:
     specifiers:
       vuepress: 1.9.9
-      vuepress-theme-vt: 0.13.2
+      vuepress-theme-vt: 0.14.0
     devDependencies:
       vuepress: 1.9.9
       vuepress-theme-vt: link:../vuepress-theme-vt
@@ -67,7 +67,7 @@ importers:
       vue-toasted: ^1.1.25
       vuepress: 1.9.9
       vuepress-plugin-flowchart: ^1.4.2
-      vuepress-theme-vt: 0.13.2
+      vuepress-theme-vt: 0.14.0
     devDependencies:
       '@vuepress/plugin-back-to-top': 1.9.9
       '@vuepress/plugin-google-analytics': 1.9.9
@@ -6899,7 +6899,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
