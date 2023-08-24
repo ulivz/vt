@@ -16,6 +16,9 @@
     "release": "mono r --changelog --ignore-scripts --build",
     "release:one:click": "npm run release && npm run bootstrap && git add pnpm-lock.yaml && git commit -m 'chore: lock' && git push"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "@nomadland/mono": "0.3.4",
     "@types/jest": "27.0.0",
