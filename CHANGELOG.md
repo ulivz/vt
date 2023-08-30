@@ -1,3 +1,7 @@
+# [0.15.0](https://github.com/ins-x/vt/compare/v0.14.0...v0.15.0) (2023-08-30)
+
+
+
 # [0.14.0](https://github.com/ins-x/vt/compare/v0.13.2...v0.14.0) (2023-08-23)
 
 
