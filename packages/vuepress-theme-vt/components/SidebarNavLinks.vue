@@ -42,11 +42,22 @@ export default {
       const sidebarNavConfig =
         this.$themeLocaleConfig.sidebarNav || this.$themeConfig.sidebarNav;
 
-      const matched = sidebarNavConfig.find((item) =>
-        item.when.some((linkMatcher) =>
-          this.$route.path.startsWith(linkMatcher)
-        )
-      );
+      const isExcluded = (exclude, routePath) => {
+        debugger;
+        return Array.isArray(exclude)
+          ? exclude.some((excludeMatcher) =>
+              routePath.startsWith(excludeMatcher)
+            )
+          : false;
+      };
+
+      const matched = sidebarNavConfig.find((item) => {
+        return item.include.some(
+          (includeMatcher) =>
+            this.$route.path.startsWith(includeMatcher) &&
+            !isExcluded(item.exclude, this.$route.path)
+        );
+      });
 
       return matched;
     },

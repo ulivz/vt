@@ -31,7 +31,8 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
     sidebarNav: [
       {
         title: "Quick Link",
-        when: ["/guide/"],
+        include: ["/guide/"],
+        exclude: ["/guide/documenting"],
         items: [
           {
             text: "Guide",

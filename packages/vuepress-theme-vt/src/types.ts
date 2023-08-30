@@ -19,7 +19,11 @@ export interface SidebarNavLink {
   /**
    * When to display nav links (when current route match these routes conditions)
    */
-  when: string[];
+  include: string[];
+  /**
+   * When to hidden nav links (only need it when you want to exclude some paths in "include".)
+   */
+  exclude?: string[];
   /**
    * Nav links config
    */

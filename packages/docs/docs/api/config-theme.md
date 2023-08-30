@@ -98,7 +98,41 @@ module.exports = {
 - **Type**: `SidebarNavLink[]`
 - **Default**: `undefined`
 
-Define [Sidebar Nav Links](../guide/sidebar.md#sidebar-nav-links).
+Used to define [Sidebar Nav Links](../guide/sidebar.md#sidebar-nav-links), the type of `SidebarNavLink` is as follows:
+
+```ts
+export interface SidebarNavLink {
+  /**
+   * Nav link title
+   */
+  title?: string;
+  /**
+   * When to display nav links (when current route match these routes conditions)
+   */
+  include: string[];
+  /**
+   * When to hidden nav links (only need it when you want to exclude some paths in "include".)
+   */
+  exclude?: string[];
+  /**
+   * Nav links config
+   */
+  items: Array<{
+    /**
+     * Nav link's text
+     */
+    text: string;
+    /**
+     * Nav link's link, click behavior
+     */
+    link: string;
+    /**
+     * Range route matcher for active behavior
+     */
+    activeRange?: string | string[];
+  }>;
+}
+``` 
 
 ## sidebarActiveLinkScrollIntoView
 

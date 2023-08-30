@@ -106,7 +106,7 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
     sidebarNav: [
       {
         title: "Quick Link",
-        when: ["/guide/"],
+        include: ["/guide/"],
         items: [
           {
             text: "Guide",
@@ -120,5 +120,9 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
   }
 })
 ```
+
+**Also see:**
+
+- [Config: Theme > sidebarNav](../api/config-theme.md#sidebarnav)
 
 
