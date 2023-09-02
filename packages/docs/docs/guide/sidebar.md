@@ -88,7 +88,7 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
 By default the first subgroup is opened initially. You can change this using the `initialOpenGroupIndex`: Specify an index to open another subgroup or use `-1` for no open group.
 
 
-## Sidebar Nav Links
+## Sidebar Nav Links <Badge text="0.15.0+"/>
 
 The top navbar of a complex website may be extremely complicated, this results in insufficient space for the top navbar, so VT introduced an sidebar-embedded navbar (called "Sidebar Nav Links"), which can help us complete the "overall switching" ability in the Sidebar.
 
