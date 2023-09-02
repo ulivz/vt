@@ -42,6 +42,10 @@ export default {
       const sidebarNavConfig =
         this.$themeLocaleConfig.sidebarNav || this.$themeConfig.sidebarNav;
 
+      if (!Array.isArray(sidebarNavConfig)) {
+        return;
+      }
+
       const isExcluded = (exclude, routePath) => {
         debugger;
         return Array.isArray(exclude)
