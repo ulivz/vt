@@ -29,11 +29,11 @@ sponsors:
 ---
 
 ::: slot heroText
-An <b class="gradient">Elegant</b> VuePress Theme
+A <b class="gradient">"Post-VuePress Era"</b> Theme
 :::
 
 ::: slot tagline
-A VuePress 1.x theme inspired by `@vue/theme`, fully compatible with VuePress default theme.
+An elegant theme fully compatible with VuePress default theme, 
 :::
 
 ::: slot footer
