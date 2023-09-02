@@ -1,5 +1,8 @@
 # [0.15.0](https://github.com/ins-x/vt/compare/v0.14.0...v0.15.0) (2023-08-30)
 
+### Features
+
+* **theme:** support `exclude` option for sidebar nav links ([a6e2c86](https://github.com/ulivz/vt/commit/a6e2c86184bac12d1454b1492096d9a72a531c63))
 
 
 # [0.14.0](https://github.com/ins-x/vt/compare/v0.13.2...v0.14.0) (2023-08-23)
