@@ -1,9 +1,10 @@
 <template>
   <div class="statusbar">
-    <Content v-if="statusText.startsWith('$')" :slot-key="statusText.slice(1)" />
-    <span v-else>
-      {{ statusText }}
-    </span>
+    <Content
+      v-if="statusText.startsWith('$')"
+      :slot-key="statusText.slice(1)"
+    />
+    <span v-else v-html="statusText"> </span>
   </div>
 </template>
 
@@ -15,7 +16,8 @@ export default {
     statusText() {
       return (
         (this.$frontmatter && this.$frontmatter.status) ||
-        this.$themeLocaleConfig.status
+        this.$themeLocaleConfig.status ||
+        this.$themeConfig.status
       );
     },
   },

@@ -90,7 +90,7 @@ export default {
       if (this.$frontmatter && this.$frontmatter.status) {
         return true;
       }
-      if (this.$themeLocaleConfig.status) {
+      if (this.$themeLocaleConfig.status || this.$themeConfig.status) {
         return true;
       }
       return false;

@@ -5,6 +5,7 @@ export default defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
   theme: "vt",
   title: "VT",
   themeConfig: {
+    status: 'THIS IS <b>GLOBAL</b> <a href="/guide/status.html">STATUS</a>',
     enableDarkMode: true,
     repo: "https://github.com/ulivz/vuepress-theme-vt",
     logo: "/logo.svg",
