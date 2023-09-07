@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-vt",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "A VuePress theme inspired by `@vue/theme`, fully compatible with VuePress default theme.",
   "keywords": [
     "documentation",
