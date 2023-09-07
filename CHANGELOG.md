@@ -1,3 +1,12 @@
+## [0.6.5](https://github.com/ins-x/vt/compare/v0.6.4...v0.6.5) (2023-09-07)
+
+
+### Features
+
+* **theme:** support render status test as inner html ([7f46c07](https://github.com/ins-x/vt/commit/7f46c07d30ba205b7a99255e92dc5b238317c6bb))
+
+
+
 ## [0.6.2](https://github.com/aamayamaa/vuepress-theme-vuejs/compare/v0.6.1...v0.6.2) (2022-10-31)
 
 
