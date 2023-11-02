@@ -22,6 +22,11 @@
 <br>
 <br>
 
+## Status
+
+VT is now in maintenance mode and will be deprecated in the future. For a next-gen SSG, please check out [Rspress](https://rspress.dev/).
+
+
 ## Features
 
 - [**Compatibility**](https://vt.insx.dev/guide/migration.html): fully compatible with [VuePress's Default Theme](https://vuepress.vuejs.org/theme/default-theme-config.html).
