@@ -1,6 +1,6 @@
 <template>
   <Sticker class="toc" v-bind="$attrs" v-if="visible">
-    <div class="on-this-page">ON THIS PAGE</div>
+    <div class="on-this-page">{{ tocTitle }}</div>
     <div
       class="vuepress-toc-item"
       ref="chairTocItem"
@@ -46,6 +46,14 @@ export default {
         this.$frontmatter &&
         this.$frontmatter.toc !== false &&
         !!(this.$page && this.$page.headers && this.$page.headers.length)
+      );
+    },
+    tocTitle() {
+      return (
+        this.$page.frontmatter.tocTitle ||
+        this.$localeConfig.tocTitle ||
+        this.$site.themeConfig.tocTitle ||
+        "ON THIS PAGE"
       );
     },
   },
